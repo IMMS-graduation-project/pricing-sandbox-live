@@ -1,0 +1,3388 @@
+{
+  "product": {
+    "id": "ampoule",
+    "name": "스킨케어 앰플 세트",
+    "emoji": "🧴",
+    "goodType": "experience",
+    "basePrice": 60000,
+    "unit": "세트",
+    "priceSource": "올리브영",
+    "elasticityPrior": "비탄력적 (효능 체험 기반)"
+  },
+  "deltaPct": 20,
+  "discussion": true,
+  "decisions": [
+    {
+      "agent_id": "agent-hyeonwoo-0",
+      "agent_name": "임준서",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "ESG 가치에 맞는 브랜드를 찾기 어려워서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 비싸고, 지속 가능한 브랜드를 선호하기 때문에 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스럽고, 화장품에 대한 경험이 부족해 신중하게 결정하고 싶습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-sua-1",
+      "agent_name": "임다은",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비가 우선이라 가격이 부담스럽고, 대기업 브랜드 선호."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비를 중시하며, 가격이 너무 높아 구매를 고려하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가성비를 중시하므로 72,000원이 부담스럽고, 다른 대체 제품을 찾아볼 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-chaerin-2",
+      "agent_name": "한가은",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "SNS에 나올만한 화장품이어서."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비가 높아 화장품에 지출할 여유가 있으며, 신상 화장품을 선호함."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비를 중시하고, 피부 진정 효과가 좋다면 한 번 써볼 가치가 있다고 생각합니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-minjun-3",
+      "agent_name": "권수현",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 크게 관심이 없어서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 적고, 가격 대비 가치를 평가할 때 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "화장품에 큰 관심이 없어 72,000원은 좀 부담스럽고, 다른 제품을 고려할 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seojin-4",
+      "agent_name": "권유나",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 관심이 많고, 신제품이라 매력적."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 대한 애정이 크고, 품질 좋은 제품에 대한 지출이 가능함."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸더라도 품질이 좋고 효과가 확실하다면 투자할만하다고 생각합니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-doyoon-5",
+      "agent_name": "최서준",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "미닝아웃 브랜드로 생각하고 있으며, 가격에 비해 품질이 좋을 것 같아서."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "럭셔리 화장품을 선호하며, 가격이 비싸도 품질이 좋다면 구매할 의향이 있음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "가격이 높아 망설여지지만, 리뷰가 좋다면 한 번 써보고 싶긴 합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-minseo-6",
+      "agent_name": "신유나",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가전이나 화장품에 대한 관심이 적어서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 브랜드의 제품이라면 구매할 가능성이 높음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "기존에 사용하던 브랜드가 더 마음에 들어서 고민하게 됩니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-taehyun-7",
+      "agent_name": "안지훈",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "스킨케어에 대한 관심이 높고, 브랜드에 대한 신뢰도가 높아서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비를 중시하기 때문에 가격이 비싸면 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸기 때문에 다른 제품을 선택할 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jihye-8",
+      "agent_name": "강민지",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "정기 구매하는 브랜드가 있어서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가심비가 높고, 본인의 관심사에 맞는 제품이라 구매할 가능성이 높음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비가 좋은 제품을 선호하는데, 72,000원은 너무 비쌉니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yunjeong-9",
+      "agent_name": "신민지",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품을 거의 사용하지 않아서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 낮고, 가격이 비싸서 구매를 고려하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가성비가 괜찮고, 효과가 좋다면 한 번 써보고 싶습니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-jongho-10",
+      "agent_name": "이우진",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "화장품에 큰 투자 필요성을 느끼지 않아서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품에 대한 관심이 적으며, 가격이 부담스러워 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가격이 비쌌던 경험이 있어, 기존 브랜드를 계속 사용할 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seongho-11",
+      "agent_name": "강시우",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가족 지출이 우선이다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가전 제품에 대한 관심이 높고, 화장품은 거의 사용하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 신뢰가 부족하여, 가격이 부담스럽습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-eunha-12",
+      "agent_name": "한지유",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높아서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 중시하며, 가격이 비싸서 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "현재 상황에서 예산 초과로 인해 구매하기 어려울 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jeongsu-13",
+      "agent_name": "김서진",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스러워서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸고, 브랜드 충성도가 높지 않기 때문에 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가성비와 브랜드 충성도 모두 고려할 때, 효과가 좋다면 투자할만 합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-yeongja-14",
+      "agent_name": "정가은",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "고급 브랜드를 선호하고, 품질에 대한 기대가 있다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 너무 비싸고, 화장품을 거의 사용하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "가격이 부담스럽고, 기존에 사용하던 브랜드가 더 좋기 때문에 고민해야 할 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-mikyeong-15",
+      "agent_name": "윤소윤",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "저가품 부작용 경험이 있어 화장품 구매를 꺼린다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "환경과 동물복지에 대한 가치가 높아 미닝아웃 브랜드에 대한 지출 가능성이 있음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고, 화장품에 대한 경험이 부족해 신중하게 결정하고 싶습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-hyeonwoo-16",
+      "agent_name": "장서준",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비가 우선이라 가격이 부담스럽고, 대기업 브랜드 선호."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸고, 가성비를 중시하기 때문에 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가성비가 좋지 않다고 느끼며, 다른 대체 제품을 찾아볼 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-sua-17",
+      "agent_name": "조수아",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "스킨케어에 대한 관심이 높고, 브랜드에 대한 신뢰도가 높아서."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "가심비가 높고, 신상 화장품에 대한 관심이 많아 구매할 가능성이 높음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 3,
+        "rationale_cot": "가심비와 미닝아웃을 고려할 때, 한번 써보는 것은 나쁘지 않다고 생각합니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-chaerin-18",
+      "agent_name": "권지원",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 크게 관심이 없어서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성도가 높고, 품질이 좋은 제품에 대한 지출이 가능함."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸긴 하지만, 효과가 좋다면 써볼 가치가 충분하다고 생각합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-minjun-19",
+      "agent_name": "정민준",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 관심이 많고, 신제품이라 매력적."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고, 화장품에 대한 관심이 낮아 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고, 기존 브랜드를 선호하기 때문에 구매할 가능성이 낮습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seojin-20",
+      "agent_name": "임서윤",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "SNS에 나올만한 화장품이어서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸고, 화장품을 거의 사용하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가성비와 가심비를 모두 고려할 때, 효과가 좋다면 투자할만 하다고 생각합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-doyoon-21",
+      "agent_name": "안동현",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "화장품을 거의 사용하지 않아서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 중시하며, 가격이 비싸서 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "기존 브랜드가 마음에 들어서 고민하게 됩니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-minseo-22",
+      "agent_name": "황지민",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가전이나 화장품에 대한 관심이 적어서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "신상 화장품에 대한 관심이 높으며, 가격이 비싸도 구매할 가능성이 있음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스러워 다른 대체 제품을 고려할 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-taehyun-23",
+      "agent_name": "장도윤",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "스킨케어에 대한 관심이 높고, 브랜드에 대한 신뢰도가 높아서."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높고, 품질 좋은 제품에 대한 지출이 가능함."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸고, 기존 브랜드를 선호하기 때문에 구매할 가능성이 낮습니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-jihye-24",
+      "agent_name": "안다은",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "정기 구매하는 브랜드가 있어서."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고, 화장품에 대한 관심이 낮아서 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸긴 하지만, 효과가 좋다면 써볼 가치가 충분하다고 생각합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-yunjeong-25",
+      "agent_name": "강다은",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "이 제품은 제안 가격이 저렴한 편이 아니지만, 경험이 풍부한 스킨케어 브랜드라 믿고 구매할 수 있습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드와 품질을 중시하며, 피부 트러블 경험으로 인해 신뢰할 수 있는 제품에 대한 필요성이 크다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가성비를 중시하고 피부 진정 효과가 좋다는 리뷰를 믿고 투자할 만하다고 생각함."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jongho-26",
+      "agent_name": "오도현",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 적고 가성비를 중시하기 때문에 가격이 높은 제품은 고려하지 않습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "화장품 카테고리 사용이 거의 없고, 가격이 부담스럽다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품 사용 경험이 거의 없어서 가격이 부담스러움."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seongho-27",
+      "agent_name": "최준호",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비가 높은 제품만 찾고 있는데, 이 가격대는 제 예산을 초과합니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품 구매에 대한 관심이 낮고, 가격이 예산을 초과하여 구매할 수 없다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 없고 가격이 비싸서 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-eunha-28",
+      "agent_name": "정예진",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가족 지출을 통제하고 있어 개인 화장품에 큰 비용을 지출할 수 없습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가족 지출을 통제하고 있어 추가적인 지출이 불가능하다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 3,
+        "rationale_cot": "화장품에 대한 관심이 높아 피부 진정 효과가 좋으면 투자할 만하다고 생각함."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-jeongsu-29",
+      "agent_name": "서선우",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 브랜드의 제품을 구매합니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 제품을 선호하며, 새로운 제품에 대한 신뢰가 낮다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스럽고 기존에 사용하는 브랜드가 있어 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yeongja-30",
+      "agent_name": "강민지",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비가 높은 제품을 선호하므로 고가의 스킨케어 제품에 투자할 의향이 있습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "의료비 비중이 커서 화장품에 대한 지출이 어렵다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품에 큰 관심이 없고 가격이 비싸서 다른 제품을 찾겠음."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-mikyeong-31",
+      "agent_name": "송서윤",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "환경을 고려하는 가치를 중시하여 이 제품을 구매하겠습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품에 대한 지출은 보수적이며, 가격이 높아 구매하지 않겠다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가성비가 좋더라도 가격이 부담스러워 써보지 않겠음."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-hyeonwoo-32",
+      "agent_name": "최동현",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 이 가격의 제품은 구매할 수 없습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "가치 정렬이 강해 지속 가능한 브랜드에 대한 관심이 있으며, 가격이 비싸도 구매할 가능성이 있다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 적고 가격이 비싸므로 고민 후 결정할 것."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-sua-33",
+      "agent_name": "조민서",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "SNS와 플렉스 중심의 소비 성향이 있어 새로운 화장품에 대한 투자가 가능합니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 중시하며, 가격이 예산을 초과하여 구매하지 않겠다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비를 고려해 피부 진정 효과가 좋다면 투자할 가치가 있음."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-chaerin-34",
+      "agent_name": "오서연",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 적어 구입할 의향이 없습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "SNS에서의 노출을 중요하게 생각하여 새로운 화장품에 대한 관심이 높다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 3,
+        "rationale_cot": "화장품에 대한 관심이 많고, 리뷰가 좋으면 써볼 것."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-minjun-35",
+      "agent_name": "조지훈",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 3,
+        "rationale_cot": "가성비와 가심비를 모두 고려하여 이 제품을 구매할 수 있습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 낮고, 가격이 부담스럽다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "가성비를 중시하고 피부 진정 효과가 좋다면 투자할 만하다고 생각함."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-seojin-36",
+      "agent_name": "이다은",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 중시하므로 가격이 비싼 제품은 고려하지 않습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 대한 열정이 있어 새로운 제품을 시도할 가능성이 매우 높다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품에 대한 관심이 적고 가격이 비싸서 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-doyoon-37",
+      "agent_name": "전연우",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "럭셔리 화장품에 대한 관심이 높아 이 제품을 구매할 수 있습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 중시하며, 가격이 예산을 초과하여 구매하지 않겠다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비를 중시하며, 피부 진정 효과가 좋다면 투자할 것."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-minseo-38",
+      "agent_name": "장예진",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가족 지출 통제권이 있어 개인 화장품에 큰 비용을 지출할 수 없습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "럭셔리 화장품에 대한 투자 의사가 강하며, 가격이 비싸도 구매할 가능성이 높다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸고 기존 브랜드가 있어 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-taehyun-39",
+      "agent_name": "신연우",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 브랜드의 제품을 구매합니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품 카테고리 사용에 대한 관심이 낮고, 가격이 부담스럽다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품에 대한 관심이 적고 가격이 부담스러움."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jihye-40",
+      "agent_name": "박민서",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 이 가격의 제품은 구매할 수 없습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "기존에 사용하던 브랜드에 대한 충성도가 높아 새로운 제품을 구매하지 않겠다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 비싸고 기존 브랜드를 선호해 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yunjeong-41",
+      "agent_name": "권소윤",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가성비를 중시하므로 가격이 비싼 제품은 고려하지 않습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 추가적인 지출이 불가능하다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 비싸고 기존 브랜드가 있어 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jongho-42",
+      "agent_name": "김하준",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비가 높은 제품만 찾고 있는데, 이 가격대는 제 예산을 초과합니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품에 대한 지출은 보수적이며, 가격이 높아 구매하지 않겠다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 비싸고 기존 브랜드가 있어 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seongho-43",
+      "agent_name": "임건우",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비가 높은 제품을 선호하므로 고가의 스킨케어 제품에 투자할 의향이 있습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가족 지출 통제권이 있어 추가적인 지출이 어렵다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가성비를 중시하며, 피부 진정 효과가 좋다면 투자할 것."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-eunha-44",
+      "agent_name": "홍예림",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비가 높은 제품만 찾고 있는데, 이 가격대는 제 예산을 초과합니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 예산을 초과하여 구매할 수 없다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 부담스럽고 기존 브랜드가 있어 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jeongsu-45",
+      "agent_name": "조동현",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 브랜드의 제품을 구매합니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 제품을 선호하며, 새로운 제품에 대한 신뢰가 낮다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 비싸고 기존 브랜드가 있어 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yeongja-46",
+      "agent_name": "최수민",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "이 제품은 제안 가격이 저렴한 편이 아니지만, 경험이 풍부한 스킨케어 브랜드라 믿고 구매할 수 있습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "기존에 사용하던 브랜드에 대한 충성도가 높아 새로운 제품에 대한 신뢰가 낮다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스럽고 기존 브랜드가 있어 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-mikyeong-47",
+      "agent_name": "정은서",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가족 지출을 통제하고 있어 개인 화장품에 큰 비용을 지출할 수 없습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 예산을 초과하여 구매할 수 없다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 부담스럽고 기존 브랜드가 있어 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-hyeonwoo-48",
+      "agent_name": "권동현",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 이 가격의 제품은 구매할 수 없습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가성비를 중시하며, 가격이 예산을 초과하여 구매하지 않겠다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 부담스럽고 기존 브랜드가 있어 고민 중."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-sua-49",
+      "agent_name": "임유진",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 적고 가성비를 중시하기 때문에 가격이 높은 제품은 고려하지 않습니다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품 카테고리 사용이 거의 없고, 가격이 부담스럽다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비를 중시하며, 피부 진정 효과가 좋다면 투자할 것."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-chaerin-50",
+      "agent_name": "한가은",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "SNS에 올릴 핫한 신상이라 구매 결정. 가심비가 높아 실망할 확률이 적을 것 같음."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "SNS에 올릴 신상 화장품이라서 즉시 구매할 것임."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "저는 SNS에 자주 노출되기 때문에, 가성비가 좋은 제품이라면 72,000원도 괜찮아요. 피부 진정 효과도 좋다고 하니 한번 써보고 싶습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-minjun-51",
+      "agent_name": "전민준",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 전혀 없어서 구매할 이유를 못 느끼겠음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "관심 없는 화장품 카테고리라 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "화장품에 대한 관심이 별로 없어서 72,000원이 부담스러워요. 다른 제품에 투자하고 싶습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seojin-52",
+      "agent_name": "임수빈",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 대한 관심이 크고, 제품이 고급스러워 보여서 구매할 것임."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 대한 관심이 높아 구매할 것임."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 관심이 많아서 리뷰를 보고 피부 진정 효과가 좋다면 한번 써보고 싶어요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-doyoon-53",
+      "agent_name": "이하준",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "화장품에 대한 관심은 있으나 가격이 부담스러움."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "브랜드 선호가 강해 미닝아웃 브랜드가 아니면 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "화장품에 대한 경험이 없어서 72,000원은 좀 부담스럽습니다. 다른 기계식 키보드에 관심이 더 많아요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-minseo-54",
+      "agent_name": "강하은",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "럭셔리 화장품에 대한 수요가 많아 구매할 것임."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비가 높아 가성비가 좋은 화장품을 선호하므로 구매할 것임."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가격이 좀 비싸지만 피부 진정 효과가 좋다니 한번 써보고 싶습니다. 재구매 가능성도 있을 것 같아요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-taehyun-55",
+      "agent_name": "윤지호",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하고, 가성비를 중시하기 때문에 구매하지 않음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가성비를 중시해 가격이 높은 화장품은 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가격은 괜찮지만, 써보지 않은 제품에 과감하게 투자하기는 망설여집니다. 추가 후기를 보고 싶어요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jihye-56",
+      "agent_name": "홍채원",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품은 항상 동일 브랜드를 사용하기 때문에 새로운 제품에 대한 흥미가 없음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품 사용이 적어 필요성을 느끼지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가격은 좀 세지만, 피부 진정 효과가 좋다면 한번 써볼까 싶어요. 고민해봐야겠지만."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-yunjeong-57",
+      "agent_name": "전예림",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품 카테고리 자체를 거의 사용하지 않기 때문에 관심 없음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품 카테고리에 대한 관심이 낮아 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 큰 관심이 없고, 72,000원이 부담스러워요. 다른 물건에 투자하고 싶습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jongho-58",
+      "agent_name": "안연우",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "기본적인 화장품만 사용하고 있어 새로운 제품에 대한 필요성을 느끼지 않음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품 카테고리 자체를 거의 사용하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비가 좋다고 해도, 72,000원은 너무 비싸요. 적절한 가격대의 제품을 찾아야겠어요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seongho-59",
+      "agent_name": "한예준",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 적고 가격도 부담스러움."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "기본 브랜드만 사용해 새로운 화장품 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸긴 하지만, 효과가 좋다면 투자해볼 만하다고 생각합니다. 리뷰가 좋으면 한번 써봐야겠네요."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-eunha-60",
+      "agent_name": "안지우",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "브랜드 충성도가 높아 새로운 제품을 시도할 마음이 없음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가족 지출 통제권이 있어 구매할 수 없음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가격이 괜찮은 것 같지만, 기존 브랜드가 더 마음에 들어서 고민해봐야겠어요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jeongsu-61",
+      "agent_name": "장승우",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품은 항상 같은 브랜드를 고수하기 때문에 구매하지 않음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "익숙한 브랜드만 선호해 새로운 브랜드는 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "모니터는 오래 사용하지만 화장품은 거의 사용하지 않아서 72,000원이 부담스러워요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yeongja-62",
+      "agent_name": "홍하윤",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "백화점 화장품에 대한 신뢰가 높고, 새로운 브랜드에 대한 호기심이 있음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 제한적이라 화장품 구매에 소극적임."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품은 기본 브랜드만 사용하는 편이라, 72,000원은 좀 부담스러워요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-mikyeong-63",
+      "agent_name": "박서연",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비를 중시하다 보니 가격이 부담스러워 구매하지 않음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "환경과 동물복지에 중점을 두어 저가 브랜드는 선호하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가전제품에 대한 관심이 많지만 화장품은 거의 사용하지 않아서 이 제품은 구매하지 않을 것 같아요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-hyeonwoo-64",
+      "agent_name": "송시우",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "ESG와 지속 가능성에 대한 가치가 높아 해당 브랜드에 대한 호감이 커서 구매할 것임."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 매우 적어 화장품 구매가 어려움."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가족 지출 통제권이 있어서 화장품에 큰 지출은 힘들 것 같아요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-sua-65",
+      "agent_name": "이은서",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하고, 가성비를 중시하기 때문에 구매하지 않음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "SNS에 올릴 화장품이기에 즉시 구매할 것임."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높아서 기존에 사용하던 브랜드를 계속 사용하고 싶어요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-chaerin-66",
+      "agent_name": "송가은",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "SNS에 올릴 핫한 신상이라 구매 결정. 가심비가 높아 실망할 확률이 적을 것 같음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "관심사와 예산에 따라 화장품 구매를 주저함."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "약간 비싼 느낌이 드는 이 제품은 화장품을 자주 사지 않아서 고민해봐야 할 것 같아요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-minjun-67",
+      "agent_name": "김준호",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스럽고, 화장품에 대한 관심이 적음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 대한 관심이 높아 구매할 것임."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가격이 부담스럽고, 화장품에 대한 경험이 없어서 구매할 마음이 없습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seojin-68",
+      "agent_name": "송윤아",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티 enthusiast로서 이 제품에 대한 기대가 크고 구매할 것임."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비가 높아 가성비가 좋은 화장품을 선호하므로 구매할 것임."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "K-뷰티에 대한 관심이 많고 효과가 좋다고 하니 한번 써보고 싶어요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-doyoon-69",
+      "agent_name": "장민준",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가격이 괜찮고, 브랜드 충성도가 높아 구매할 것임."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 브랜드를 구매할 것임."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸서 고민이 되네요. 기존 브랜드가 더 마음에 들어서 고민해봐야겠어요."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-minseo-70",
+      "agent_name": "한다은",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "기본적인 화장품만 사용하고 있어 새로운 제품에 대한 필요성을 느끼지 않음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가전과 화장품에 대한 관심이 적어 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "화장품에 대한 관심이 높고, 피부 진정 효과가 좋다는 리뷰를 보고 한번 써보고 싶습니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-taehyun-71",
+      "agent_name": "서민준",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성이 강해 익숙한 제품을 구매할 것임."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "프리미엄 화장품에 대한 관심이 높아 구매할 것임."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 적고, 72,000원은 좀 부담스러워요."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-jihye-72",
+      "agent_name": "윤하윤",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품 카테고리 자체를 거의 사용하지 않기 때문에 관심 없음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "자녀 학용품에 예산을 더 쓰기 때문에 화장품 구매는 어려움."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가성비가 좋다고 해도, 화장품에 대한 경험이 거의 없어서 구매하지 않을 것 같아요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yunjeong-73",
+      "agent_name": "오수빈",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "기본적인 화장품만 사용하고 있어 새로운 제품에 대한 필요성을 느끼지 않음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "SNS에 올릴 화장품이기에 즉시 구매할 것임."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "가심비가 중요해서, 피부 진정 효과가 좋다면 72,000원도 괜찮아요. 한번 써보고 싶어요."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-jongho-74",
+      "agent_name": "조우진",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품 카테고리 자체를 거의 사용하지 않기 때문에 관심 없음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "K-뷰티에 대한 관심이 높아 구매할 것임."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "저가품 부작용 경험이 있어서 화장품에 대한 신뢰가 떨어져서 구매하기 힘들 것 같아요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seongho-75",
+      "agent_name": "홍하준",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 예산을 초과함. 기본 브랜드만 사용."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 높고, 저가품 부작용 경험으로 인해 품질에 대한 불신이 큽니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고 화장품에 대한 경험이 적어 투자하기에는 망설여진다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-eunha-76",
+      "agent_name": "윤지원",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 전혀 없음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가족 지출 통제권이 있어 구매할 수 없습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가족 지출 통제가 심해 가격이 너무 비싸서 구매할 수 없다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jeongsu-77",
+      "agent_name": "임건우",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성으로 인해 익숙한 제품만 고수."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성이 강하지만, 예산이 부족하여 구매할 수 없습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 제품이 아닌 다른 브랜드에 투자하기 어렵다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yeongja-78",
+      "agent_name": "최지우",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하고, 기존 브랜드에 충성."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "화장품에 대한 지출이 제한적이며, 동일 브랜드를 수십 년 사용해 왔습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "여러 해를 같은 브랜드의 화장품을 사용해왔기 때문에 새로운 브랜드에 대한 투자는 고려하지 않는다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-mikyeong-79",
+      "agent_name": "김민지",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "예산 내에서 고가 화장품을 선호."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높고, 가끔 프리미엄 제품에 투자합니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스럽고, 기존에 선호하는 브랜드가 있기 때문에 구매하지 않기로 했다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-hyeonwoo-80",
+      "agent_name": "김주원",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 충분하지 않음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가성비를 최우선으로 생각하며, 예산 초과로 인해 구매할 수 없습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 높아서 기존에 사용하던 브랜드로 돌아가야 할 것 같다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-sua-81",
+      "agent_name": "강지유",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "화장품에 관심이 적고, 예산 초과."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "SNS에 대한 관심이 많아 새로운 제품을 시도하는 것을 좋아합니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "화장품에 대한 관심이 적고, 가격이 비싸서 구매할 마음이 없다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-chaerin-82",
+      "agent_name": "서윤아",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "화장품 사용에 대한 관심이 없음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "화장품에 대한 관심이 적고, 예산이 부족합니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격대비 효과가 좋더라도 화장품에 관심이 적어 구매를 고려하지 않는다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-minjun-83",
+      "agent_name": "신예준",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하고, 화장품에 대한 관심이 낮음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "화장품에 대한 관심이 높고, 새로운 제품을 시도하는 것을 좋아합니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "기존 브랜드에 대한 충성도가 높아 새로운 제품을 시도하기에는 주저하게 된다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seojin-84",
+      "agent_name": "윤윤서",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "가심비를 중시하여 적절한 가격대의 제품 구매."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비가 중요하지만, 스킨케어에 대한 관심이 높아 구매할 수 있습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고 화장품에 대한 경험이 적어 투자하기에는 망설여진다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-doyoon-85",
+      "agent_name": "홍지호",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "가심비를 중요하게 생각하며, 예산 내에서 구매."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하고, 화장품에 대한 지출이 제한적입니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스러워서 구매하지 않기로 했다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-minseo-86",
+      "agent_name": "강가은",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "화장품에 대한 관심이 많고 예산도 충분."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "프리미엄 제품을 선호하며, 스킨케어에도 관심이 많습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고 기존 브랜드에 대한 충성도가 높아 새로운 제품을 시도하기가 어렵다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-taehyun-87",
+      "agent_name": "전성민",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "프리미엄 제품에 대한 관심이 높고 예산이 충분."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비와 미닝아웃을 고려해 구매할 수 있습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 높고, 기존에 선호하는 브랜드가 있기 때문에 구매하지 않기로 했다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-jihye-88",
+      "agent_name": "권예림",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하고, 기존 브랜드에 대한 충성."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 너무 낮아 구매할 수 없습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스럽고, 기존 브랜드에 대한 충성도가 높아 구매를 고려하지 않는다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yunjeong-89",
+      "agent_name": "홍윤아",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 초과하며 기존 브랜드에 충성."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "화장품에 대한 관심이 낮고, 예산이 부족합니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고 화장품에 대한 경험이 적어 구매를 고려하지 않는다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jongho-90",
+      "agent_name": "황현우",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하고, 가전 제품에만 관심."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하고, 화장품에 대한 지출이 제한적입니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스럽고 기존 브랜드에 대한 충성도가 높아 구매를 고려하지 않는다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seongho-91",
+      "agent_name": "김수현",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하고, 화장품에 대한 관심이 낮음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산 초과로 인해 구매할 수 없습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고 화장품에 대한 경험이 적어 구매를 고려하지 않는다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-eunha-92",
+      "agent_name": "정유진",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하며, 화장품에 대한 관심이 적습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "기존 브랜드에 대한 충성도가 높아 새로운 제품을 시도하기에는 주저하게 된다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jeongsu-93",
+      "agent_name": "송도현",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 초과하며 기존 브랜드에 충성."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성이 높고, 가끔 프리미엄 제품에 투자합니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스럽고, 기존 브랜드에 대한 충성도가 높아 구매를 고려하지 않는다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yeongja-94",
+      "agent_name": "안지원",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하고, 화장품에 대한 관심이 낮음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하고, 화장품에 대한 지출이 제한적입니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고 화장품에 대한 경험이 적어 구매를 고려하지 않는다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-mikyeong-95",
+      "agent_name": "최수빈",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "예산 내에서 가심비를 고려하여 구매."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하며, 화장품에 대한 관심이 적습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스럽고 기존 브랜드에 대한 충성도가 높아 구매를 고려하지 않는다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-hyeonwoo-96",
+      "agent_name": "조수현",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "예산이 충분하고, 화장품에 대한 관심이 높음."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비가 중요하지만, 스킨케어에 대한 관심이 높아 구매할 수 있습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고 화장품에 대한 경험이 적어 구매를 고려하지 않는다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-sua-97",
+      "agent_name": "홍지우",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "예산이 충분하고, 화장품에 대한 관심이 높음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하여 구매할 수 없습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스럽고, 기존 브랜드에 대한 충성도가 높아 구매를 고려하지 않는다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-chaerin-98",
+      "agent_name": "황예림",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "예산이 충분하고, 화장품에 대한 관심이 높음."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "스킨케어에 대한 관심이 높고, 새로운 제품을 시도하는 것을 좋아합니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고 화장품에 대한 경험이 적어 구매를 고려하지 않는다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-minjun-99",
+      "agent_name": "송준서",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 초과하며 기존 브랜드에 충성."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하고, 화장품에 대한 지출이 제한적입니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스럽고 기존 브랜드에 대한 충성도가 높아 구매를 고려하지 않는다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seojin-100",
+      "agent_name": "황소윤",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 관심이 많고, 가성비보다는 가심비를 중시하므로 가격이 높더라도 품질이 좋다면 구매할 것."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 대한 높은 관심과 가심비를 중시하여, 가격이 적당하다고 판단."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티 enthusiast로서 경험이 중요하니, 피부 진정 효과에 대한 긍정적인 후기를 보고 투자해볼 만하다고 생각합니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-doyoon-101",
+      "agent_name": "권지훈",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심도가 낮고, 미닝아웃 브랜드에만 집중하므로 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "브랜드 선호가 강해 미닝아웃 브랜드가 아닌 제품은 구매하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "화장품에 큰 관심이 없고, 가격이 부담스러워서 고민이 됩니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-minseo-102",
+      "agent_name": "박수빈",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "럭셔리 화장품을 선호하고, 가격이 적정하다면 구매할 의사가 있음."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "럭셔리 화장품에 대한 투자 의향이 높고, 가심비를 중시하여 구매 결정."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비를 중시하므로 가격 대비 효과가 좋다면 기꺼이 투자할 의향이 있습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-taehyun-103",
+      "agent_name": "권성민",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높고, 스킨케어에 대한 관심이 있으므로 신뢰할 수 있는 브랜드라면 구매할 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "브랜드 충성도가 높아 새로운 브랜드 제품에 대한 신뢰 부족."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스러워서 써보고 재구매할지 고민하게 될 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jihye-104",
+      "agent_name": "장지원",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비를 중시하며, 중간 가격대의 화장품을 선호하므로 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 최우선으로 생각하며, 가격이 높은 제품은 고려하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "피부 진정 효과가 좋다고 하니 한번 써보고 싶습니다. 재구매 가능성도 높습니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-yunjeong-105",
+      "agent_name": "이예림",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품에 대한 관심이 낮고, 가격이 비싸므로 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품 카테고리 사용이 거의 없어 구매 의사 없음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "과감하게 투자하기에는 후기가 더 필요하다고 생각합니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jongho-106",
+      "agent_name": "박연우",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품 사용 자체가 거의 없으므로 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "기본 브랜드만 사용하고 있으며 새로운 제품에 대한 관심 부족."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가격이 부담스럽긴 하지만, 피부 진정 효과가 좋다면 한번 써볼 가치가 있다고 생각합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-seongho-107",
+      "agent_name": "신주원",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "기본 브랜드만 사용하며, 화장품에 대한 관심이 거의 없어 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "구매 여력이 없고, 화장품에 대한 관심이 적음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 큰 관심이 없어서 가격이 부담스럽습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-eunha-108",
+      "agent_name": "최수민",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가족 지출을 통제받고 있으며, 화장품 구매가 필요 없어 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "브랜드 충성도가 강해 새로운 제품에 대한 신뢰 부족."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비가 좋다고 해도 가격이 너무 비싸서 체험해보고 적절한 가격대의 제품을 찾아야 합니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jeongsu-109",
+      "agent_name": "송시우",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "브랜드 충성도가 높고, 익숙한 제품을 선호하므로 새로운 제품은 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품에 대한 관심이 낮고, 기존 브랜드만 선호."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "만족할 만한 제품이라면 비싼 가격도 투자할 만하다고 생각합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-yeongja-110",
+      "agent_name": "이하은",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 너무 높고, 화장품에 대한 관심이 낮아 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 제한적이며, 화장품 구매에 대한 우선순위가 낮음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "기존에 사용해본 브랜드가 더 마음에 들어서 고민이 됩니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-mikyeong-111",
+      "agent_name": "전채원",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "백화점 화장품에 대한 선호가 높고, 가격이 적정하다면 구매할 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 낮고, 가격이 높아 구매 의사 없음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 높아서 가족의 지출 통제권 때문에 구매하기 어려울 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-hyeonwoo-112",
+      "agent_name": "윤준서",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "소득이 낮고, 예산이 부족하므로 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 대한 높은 관심과 가심비를 중시하여, 가격이 적당하다고 판단."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스러워서 고민하게 될 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-sua-113",
+      "agent_name": "정예림",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티에 대한 관심이 높고, 가격이 적정하다면 즉시 구매할 것."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "신상 화장품에 대한 관심이 높고, 가심비를 중시하여 구매 결정."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비를 중시하므로 효과가 좋다면 한번 써보는 것이 좋다고 생각합니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-chaerin-114",
+      "agent_name": "김하윤",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가성비를 중시하며, 고가의 화장품은 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "프리미엄 화장품에 대한 투자 의향이 높고, 품질에 대한 신뢰가 있음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가성비와 가심비를 중시하므로 효과가 좋다면 한번 써보는 것이 좋다고 생각합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-minjun-115",
+      "agent_name": "임승우",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비를 중시하며, 가격이 적정하다면 구매할 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 최우선으로 생각하며, 가격이 높은 제품은 고려하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스럽고, 기존에 사용하던 브랜드가 있어서 고민하게 될 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seojin-116",
+      "agent_name": "윤지우",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "화장품에 대한 관심도가 높고, 가격이 적정하다면 구매할 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "브랜드 충성도가 높아 새로운 브랜드 제품에 대한 신뢰 부족."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가전 제품에 더 관심이 많아서 화장품은 우선순위가 낮습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-doyoon-117",
+      "agent_name": "오준호",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가성비를 중시하며, 중간 가격대의 제품을 선호하므로 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가심비가 높고, 화장품에 대한 관심이 많아 구매 결정."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "피부 진정 효과가 좋다고 하니 한번 써볼 가치가 있다고 생각합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-minseo-118",
+      "agent_name": "윤민지",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품 사용에 대한 관심이 없어 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "K-뷰티에 대한 높은 관심과 가심비를 중시하여, 가격이 적당하다고 판단."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 높아서 고민하게 될 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-taehyun-119",
+      "agent_name": "권주원",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 3,
+        "rationale_cot": "가격이 적정하고, 화장품에 대한 관심이 높아 구매할 의사가 있음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "브랜드 충성도가 높아 새로운 브랜드 제품에 대한 신뢰 부족."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가격이 부담스럽지만, 효과가 좋다면 한번 써볼 만하다고 생각합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-jihye-120",
+      "agent_name": "강지원",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가성비를 중시하며, 가격이 비싸므로 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "기본 브랜드만 사용하고 있으며 새로운 제품에 대한 관심 부족."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "피부 진정 효과가 좋다는 후기를 보고 한번 써보고 싶습니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-yunjeong-121",
+      "agent_name": "김윤아",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 중시하며, 고가의 화장품은 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "구매 여력이 없고, 화장품에 대한 관심이 적음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "기존에 사용해본 브랜드가 더 마음에 들어서 고민이 됩니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jongho-122",
+      "agent_name": "조성민",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가성비를 중시하며, 화장품 구매가 필요 없어 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품 카테고리 사용이 거의 없어 구매 의사 없음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스러워서 고민하게 될 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seongho-123",
+      "agent_name": "조수현",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "소득이 낮고, 예산이 부족하므로 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 낮고, 가격이 높아 구매 의사 없음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가성비와 가심비를 중시하므로 효과가 좋다면 한번 써보는 것이 좋다고 생각합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-eunha-124",
+      "agent_name": "조윤아",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 높고, 화장품에 대한 관심이 낮아 구매하지 않을 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 제한적이며, 화장품 구매에 대한 우선순위가 낮음."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "피부 진정 효과가 좋다고 하니 한번 써볼 가치가 있다고 생각합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-jeongsu-125",
+      "agent_name": "안지호",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높고 가격에 대해 여유가 있어, 경험이 좋은 스킨케어 앰플을 구입할 것."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성도가 높아, 익숙한 제품을 선호하는 경향이 있어 구매할 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드에 대한 충성이 강하고, 피부 진정 효과에 대한 긍정적인 리뷰가 많아 72,000원에 투자할 만하다고 판단."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yeongja-126",
+      "agent_name": "오채원",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "소득이 낮고 예산 상한이 적어 구매가 불가능하다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "예산 상한이 적고, 오랜 시간 동일 브랜드의 화장품을 사용해왔기 때문에 새로운 제품에 대한 시도는 부담."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-mikyeong-127",
+      "agent_name": "서하은",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성도가 높아, 고가의 스킨케어 제품을 선호한다."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드에 대한 높은 충성도로 인해 가격이 비싸도 구매할 가능성이 높다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드에 대한 충성이 높고, 피부 진정 효과가 좋다면 한 번 써볼 가치가 있다고 생각."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-hyeonwoo-128",
+      "agent_name": "정서진",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비를 중시하며 예산을 초과하는 가격에 구매하지 않겠다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 중시하여 가격이 높은 상품은 구매하지 않을 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 경험이 적어 가격이 비싸면 고민이 깊어질 것."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-sua-129",
+      "agent_name": "권다은",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 필요한 지출을 조절해야 한다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가심비가 높고 화장품에 대한 관심이 많아 구매할 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "피부 진정 효과가 좋다고 하니, 가성비를 고려해 한 번 써볼 만하다고 판단."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-chaerin-130",
+      "agent_name": "박수민",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "SNS 노출 중심 소비로, 신상 화장품에 대한 관심이 높다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품에 대한 관심이 없고, 가격이 비싸서 구매하지 않을 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가격이 부담스럽고, 후기나 추가 정보가 필요해 망설여짐."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-minjun-131",
+      "agent_name": "조현우",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품에 대한 관심이 적고, 예산이 부족하다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "K-뷰티에 대한 높은 관심과 가심비로 인해 구매할 가능성이 높다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸지만 효과가 좋다면 투자할 가치가 있다고 생각."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-seojin-132",
+      "agent_name": "장지유",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "K-뷰티 제품에 대한 높은 관심으로, 품질이 좋다면 구매할 것."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 3,
+        "rationale_cot": "미닝아웃 브랜드 선호로 인해 구매 가능성이 있다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "기존에 사용 중인 브랜드가 있고, 가격이 비싸서 고민이 필요."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-doyoon-133",
+      "agent_name": "송동현",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비를 중시하나, 품질이 중요하여 고가의 제품도 구매할 수 있다."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "화장품에 대한 관심이 높고, SNS 노출을 위해 즉각 구매할 수 있다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 큰 관심이 없고, 가격이 비싸서 다른 제품으로 대체할 듯."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-minseo-134",
+      "agent_name": "박유나",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "화장품에 대한 지출이 크고, 브랜드 충성도가 높다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 낮고 가격이 비쌀 경우 구매하지 않을 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가성비가 좋고, 브랜드에 대한 신뢰가 생기면 재구매할 수도 있다고 생각."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-taehyun-135",
+      "agent_name": "조건우",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성도가 높고, 가격에 대해 여유가 있어 구매할 것."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "소득이 낮아 가격이 비싼 상품은 구매하지 않을 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가격이 다소 비싸지만, 만족할 만한 제품이라면 시도해볼 만하다고 판단."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-jihye-136",
+      "agent_name": "임가은",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "예산이 한정되어 있어 구매를 고려하지 않는다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "가성비가 좋지 않지만, 중간 가격대를 선호하여 구매할 가능성이 있다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "기존 브랜드를 선호하고, 가격이 부담스러워 고민이 필요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yunjeong-137",
+      "agent_name": "권서윤",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품 카테고리에서 거의 미사용으로 구매하지 않을 것이다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 낮고 가격이 비쌀 경우 구매하지 않을 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품 사용 경험이 적고, 가격이 비싸서 관심이 적음."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jongho-138",
+      "agent_name": "윤준서",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 중시하여 가격이 높은 화장품은 구매하지 않겠다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "소득이 낮고 예산 상한이 적어 구매가 불가능하다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품 카테고리를 거의 사용하지 않기 때문에 관심이 없음."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seongho-139",
+      "agent_name": "한지훈",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "고가의 브랜드에 대한 선호가 있어, 적절한 품질의 제품을 구매할 것이다."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 제품을 선호할 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "기본 브랜드만 사용하므로 새로운 제품에 대한 관심이 적음."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-eunha-140",
+      "agent_name": "안수빈",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 구매를 고려하지 않겠다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "소득이 없어서 구매할 수 없다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가족 지출 통제권이 있어 화장품에 대한 지출이 어렵다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jeongsu-141",
+      "agent_name": "최준우",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성도가 높아, 고가의 스킨케어 제품을 선호한다."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 제품을 선호하여 구매할 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성이 강하고, 고가의 화장품에 대한 투자에 긍정적."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yeongja-142",
+      "agent_name": "오지유",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비를 중시하며 예산을 초과하는 가격에 구매하지 않겠다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "소득이 낮고 예산 상한이 적어 구매가 불가능하다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 비싼 만큼 고민이 필요하고, 기존 브랜드 선호."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-mikyeong-143",
+      "agent_name": "오지유",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "K-뷰티 제품에 대한 높은 관심으로, 품질이 좋다면 구매할 것."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비가 높고 화장품에 대한 관심이 많아 구매할 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "기존의 화장품 브랜드가 마음에 드는 만큼 새로운 시도는 망설여짐."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-hyeonwoo-144",
+      "agent_name": "장승현",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품에 대한 관심이 적고, 예산이 부족하다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "K-뷰티에 대한 높은 관심과 가심비로 인해 구매할 가능성이 높다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "가심비가 높고, 새로운 제품에 대해 긍정적인 자세를 가지고 있어 구매할 의향이 있음."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-sua-145",
+      "agent_name": "최수빈",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높고, 가격에 대해 여유가 있어, 경험이 좋은 스킨케어 앰플을 구입할 것이다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 낮고 가격이 비쌀 경우 구매하지 않을 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "가성비와 미닝아웃을 모두 고려해볼 때, 이 제품은 투자할 만하다고 생각."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-chaerin-146",
+      "agent_name": "황유진",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 필요한 지출을 조절해야 한다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "소득이 낮아 가격이 비싼 상품은 구매하지 않을 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가성비가 높고, 효과가 좋다면 투자할 가치가 있다고 판단."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-minjun-147",
+      "agent_name": "황주원",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성도가 높고, 가격에 대해 여유가 있어 구매할 것이다."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 제품을 선호할 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심도가 낮아 구매를 고려하지 않음."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-seojin-148",
+      "agent_name": "서예림",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비를 중시하며 예산을 초과하는 가격에 구매하지 않겠다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 낮고 가격이 비쌀 경우 구매하지 않을 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "K-뷰티에 대한 관심이 높고, 효과가 좋다면 시도해볼 만하다고 생각."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-doyoon-149",
+      "agent_name": "정주원",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "소득이 낮아 가격이 비싼 상품은 구매하지 않을 것이다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "기존 브랜드에 대한 충성이 강해 새로운 제품에 대한 관심이 적음."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-minseo-150",
+      "agent_name": "한수빈",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "가심비가 높아 스킨케어 앰플 세트에 대한 가치를 느끼고 있다. 품질이 보장된 브랜드라면 가격이 비싸도 구매할 의향이 있다."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비가 높고, 브랜드 신뢰도가 중요하므로 가격이 비싸도 품질이 좋다면 구매할 것."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "가심비를 중시하며, 럭셔리 화장품을 정기 구매하는 편이라 화장품에 대한 투자는 긍정적입니다. 피부 진정 효과가 좋다면 한 번 써볼 가치가 있다고 생각합니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-taehyun-151",
+      "agent_name": "임건우",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 브랜드의 제품은 구매할 가능성이 높다. 가격이 높지만 품질에 대한 신뢰감이 있다."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성도가 높아 선호하는 브랜드 제품이라면 가격에 상관없이 구매할 것."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "브랜드 충성도가 높고 저가품 부작용 경험으로 품질에 대한 불신이 있습니다. 가격이 비싼 만큼 유명 브랜드의 제품을 선호할 것 같습니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-jihye-152",
+      "agent_name": "조수아",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비를 중시하는 편이라 가격이 비싼 제품에 대한 구매는 망설여진다. 더 저렴한 대안을 찾을 가능성이 크다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 중시하여 가격이 비싸면 구매하지 않을 것."
+      },
+      "postDiscussionDecision": {
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "가성비를 중요하게 생각하지만, 중간 가격대의 화장품에 대한 경험이 있어서 피부 진정 효과가 좋다면 투자할 만하다고 판단합니다."
+      },
+      "flipped": true
+    },
+    {
+      "agent_id": "agent-yunjeong-153",
+      "agent_name": "신지원",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 제한적이라 가격이 비싼 제품은 구매하기 어려울 것 같다. 가성비를 중시하는 성향이 강하다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산 초과로 인해 구매를 고려하지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가성비를 중시하지만, 시간 부족으로 화장품은 동일 브랜드 반복 사용 중입니다. 새 제품에 대한 관심이 적어 구매하지 않을 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jongho-154",
+      "agent_name": "최도윤",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "화장품에 대한 관심이 적고 가격에 민감하다. 이 가격대의 화장품은 구매하지 않을 것 같다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "화장품 카테고리 자체를 거의 미사용하므로 구매할 이유가 없음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가성비를 최우선으로 두고 있으며, 화장품 사용 경험이 거의 없기 때문에 가격이 비싼 이 제품에 대한 필요성을 느끼지 못합니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seongho-155",
+      "agent_name": "장수현",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "소득이 없고 예산이 제한적이라 구매가 불가능하다. 화장품에 대한 관심이 있더라도 구매는 어렵다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "기본 브랜드만 사용하고 있어 비싼 제품에 대한 필요성을 느끼지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산 상한이 낮고 화장품에 대한 투자가 적은 편이라, 이 가격의 앰플 세트를 구매하기는 어렵습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-eunha-156",
+      "agent_name": "이다은",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높고 가격이 비싸더라도 품질이 보장된 제품은 구매할 의향이 있다. 사용해보고 싶다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가족 지출 통제권이 있어 구매할 수 없음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가족 지출 통제권이 있어 개인 소비가 어렵습니다. 또한, 화장품은 브랜드에 대한 충성도가 높기 때문에 구매하지 않을 것 같습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-jeongsu-157",
+      "agent_name": "조연우",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가격이 부담스럽고, 화장품은 오랫동안 사용해온 브랜드가 있어 새로운 제품을 시도하기 어려울 것 같다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높고, 신뢰하는 브랜드의 제품이라면 가격에 상관없이 구매할 가능성이 높음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "브랜드 충성도가 강하고 익숙한 제품을 고수하는 편입니다. 가격이 비싼 제품에 대한 투자 의사가 적습니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-yeongja-158",
+      "agent_name": "이하윤",
+      "baselineDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸고, 화장품에 대한 소비가 적다. 기존에 사용해온 제품으로 만족하고 있다."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "가격이 예산을 초과하므로 구매하지 않을 것."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "오랜 기간 동일 브랜드를 사용해왔기 때문에 새로운 제품에 대한 관심이 적고, 가격이 부담스러워 구매하지 않을 것입니다."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-mikyeong-159",
+      "agent_name": "서서연",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "브랜드 충성도가 높고, 가격이 비싸더라도 품질과 경험 중시로 구매할 가능성이 있다."
+      },
+      "preDiscussionDecision": {
+        "buy": true,
+        "confidence": 3,
+        "rationale_cot": "브랜드 충성도가 높고 품질에 대한 신뢰가 있으므로 가격이 비싸도 구매할 수 있음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "주로 백화점 화장품을 선호하고, 가격이 높은 제품에 대한 신중함이 있어 구매하지 않을 것 같습니다."
+      },
+      "flipped": true
+    }
+  ],
+  "thread": {
+    "leader": {
+      "agent_id": "agent-seojin-4",
+      "seedPost": "72,000원에 이 앰플 세트 진짜 가성비 대박! 화장품은 써봐야 알잖아요. 리뷰 보니까 피부 진정 효과가 확실히 좋다던데, 가격대비 효과 생각하면 충분히 투자할 만한 듯. 한번 써보고 재구매 결정해도 늦지 않을듯!"
+    },
+    "comments": [
+      {
+        "agent_id": "agent-hyeonwoo-0",
+        "text": "가격이 저렴한 편이 아니라면 고민해봐야 할 것 같아요. 한 번 써보고 결정을 내려도 좋겠지만, 꼭 후기가 중요하니 참고하세요!"
+      },
+      {
+        "agent_id": "agent-minjun-19",
+        "text": "가격대비 효과가 좋더라도 화장품에 대한 경험이 없으니 나한텐 쌀 때도 매력이 없음. 차라리 스펙 높은 기계식 키보드 보고 싶음."
+      },
+      {
+        "agent_id": "agent-seojin-36",
+        "text": "가격대비 효과 괜찮다고 생각하지만, 72,000원이 좀 부담스럽네. 써보고 싶긴 한데, 재구매는 좀 고민하게 될 듯."
+      },
+      {
+        "agent_id": "agent-minseo-54",
+        "text": "정말 72,000원이면 가성비 괜찮겠네요! 피부 진정 효과가 좋다니 한번 써보고 싶은 마음 듭니다. 재구매 가능성이 보이네요."
+      },
+      {
+        "agent_id": "agent-taehyun-71",
+        "text": "가격은 괜찮지만, 써보지 않았는데 과감하게 투자하기는 좀 망설여지네요. 혹시 사용 후기 더 있을까요?"
+      },
+      {
+        "agent_id": "agent-yunjeong-89",
+        "text": "가격이 좀 세긴 한데, 피부 진정 효과가 좋다면 한 번 써볼까도 싶네요. 계속 재구매하는 브랜드가 따로 있으니 고민 좀 해봐야겠어요."
+      },
+      {
+        "agent_id": "agent-jongho-106",
+        "text": "화장품에 큰 관심도 없는데 72,000원은 좀 부담스럽다. 리뷰 좋다 해도 그 돈이면 다른 거 살래."
+      },
+      {
+        "agent_id": "agent-eunha-124",
+        "text": "가성비가 좋다고 해서 72,000원은 너무 비싸요. 평소에 체험해보고 적절한 가격대의 제품 찾아야죠."
+      },
+      {
+        "agent_id": "agent-jeongsu-141",
+        "text": "가격이 좀 비싸긴 한데, 만족할만한 제품이라면 투자해볼 만하죠. 리뷰가 좋으면 한번 써봐야겠네요."
+      },
+      {
+        "agent_id": "agent-mikyeong-159",
+        "text": "가격이 괜찮은 듯 하지만, 저도 기존에 사용해본 브랜드가 더 마음에 들어서 고민해봐야겠어요. 몸이 아프니까 신중해야죠."
+      }
+    ]
+  },
+  "metrics": {
+    "Q0": 0.39375,
+    "Q1": 0.2,
+    "Q2": 0.30625,
+    "deltaQ1": -0.19374999999999998,
+    "deltaQ2": -0.08749999999999997,
+    "elasticity_sim": -2.46031746031746,
+    "elasticity_post": -1.1111111111111107,
+    "wom_m": 0.45161290322580633,
+    "mcnemar": {
+      "b": 17,
+      "c": 34,
+      "chi2": 5.019607843137255,
+      "significant": true
+    },
+    "flipCount": 51,
+    "cohort": {
+      "gen": {
+        "Z": {
+          "n": 30,
+          "Q0": 0.4,
+          "Q1": 0.2,
+          "Q2": 0.43333333333333335
+        },
+        "M": {
+          "n": 70,
+          "Q0": 0.45714285714285713,
+          "Q1": 0.2714285714285714,
+          "Q2": 0.35714285714285715
+        },
+        "X": {
+          "n": 30,
+          "Q0": 0.13333333333333333,
+          "Q1": 0.03333333333333333,
+          "Q2": 0.2
+        },
+        "Boomer": {
+          "n": 30,
+          "Q0": 0.5,
+          "Q1": 0.2,
+          "Q2": 0.16666666666666666
+        }
+      },
+      "val": {
+        "미닝아웃": {
+          "n": 13,
+          "Q0": 0.3076923076923077,
+          "Q1": 0.23076923076923078,
+          "Q2": 0.07692307692307693
+        },
+        "가성비": {
+          "n": 64,
+          "Q0": 0.21875,
+          "Q1": 0.078125,
+          "Q2": 0.34375
+        },
+        "가심비": {
+          "n": 46,
+          "Q0": 0.5652173913043478,
+          "Q1": 0.34782608695652173,
+          "Q2": 0.41304347826086957
+        },
+        "브랜드": {
+          "n": 37,
+          "Q0": 0.5135135135135135,
+          "Q1": 0.21621621621621623,
+          "Q2": 0.1891891891891892
+        }
+      },
+      "inc": {
+        "저소득(<300만)": {
+          "n": 40,
+          "Q0": 0.325,
+          "Q1": 0.075,
+          "Q2": 0.225
+        },
+        "중소득(300-500만)": {
+          "n": 64,
+          "Q0": 0.453125,
+          "Q1": 0.28125,
+          "Q2": 0.34375
+        },
+        "고소득(>500만)": {
+          "n": 56,
+          "Q0": 0.375,
+          "Q1": 0.19642857142857142,
+          "Q2": 0.32142857142857145
+        }
+      },
+      "house": {
+        "부모동거": {
+          "n": 10,
+          "Q0": 0.2,
+          "Q1": 0.1,
+          "Q2": 0.1
+        },
+        "1인가구": {
+          "n": 60,
+          "Q0": 0.5166666666666667,
+          "Q1": 0.25,
+          "Q2": 0.36666666666666664
+        },
+        "딩크": {
+          "n": 20,
+          "Q0": 0.7,
+          "Q1": 0.4,
+          "Q2": 0.35
+        },
+        "자녀가족": {
+          "n": 50,
+          "Q0": 0.1,
+          "Q1": 0.04,
+          "Q2": 0.28
+        },
+        "시니어": {
+          "n": 20,
+          "Q0": 0.55,
+          "Q1": 0.3,
+          "Q2": 0.25
+        }
+      }
+    }
+  },
+  "populationSize": 160
+}

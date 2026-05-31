@@ -2,12 +2,12 @@ import { NextResponse } from 'next/server';
 import { callDecide, callComment, type DecideRequest } from '@/lib/openai';
 
 export const runtime = 'nodejs';
-export const maxDuration = 60;
+export const maxDuration = 300;
 
 export async function POST(request: Request) {
-  if (!process.env.OPENAI_API_KEY) {
-    return NextResponse.json({ error: 'OPENAI_API_KEY가 설정되지 않았습니다.' }, { status: 500 });
-  }
+  // if (!process.env.OPENAI_API_KEY) {
+  //   return NextResponse.json({ error: 'OPENAI_API_KEY가 설정되지 않았습니다.' }, { status: 500 });
+  // }
   try {
     const body = (await request.json()) as DecideRequest;
     if (body.stage === 'comment') {

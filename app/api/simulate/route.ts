@@ -1,15 +1,28 @@
 import { NextResponse } from 'next/server';
 import { PERSONAS } from '@/lib/personas';
-import type { Persona, ActiveProduct, Decision, PersonaDecision, SimulateRequest, SimulateResponse } from '@/lib/types';
-import { callDecide, callSeedPost, callComment } from '@/lib/openai';
+import { generatePopulationAgents } from '@/lib/instances';
+import type {
+  Agent,
+  ActiveProduct,
+  Decision,
+  AgentDecision,
+  SimulateRequest,
+  SimulateResponse,
+} from '@/lib/types';
+import {
+  callDecide,
+  callSeedPost,
+  callComment,
+  callDecideBatch,
+} from '@/lib/openai';
 
 export const runtime = 'nodejs';
-export const maxDuration = 60;
+export const maxDuration = 300; // Increased to 5 minutes for large N
 
 const RATE: Map<string, number[]> = new Map();
 function rateLimited(ip: string, limit = 5, windowMs = 60_000) {
   const now = Date.now();
-  const arr = (RATE.get(ip) ?? []).filter(t => now - t < windowMs);
+  const arr = (RATE.get(ip) ?? []).filter((t) => now - t < windowMs);
   if (arr.length >= limit) {
     RATE.set(ip, arr);
     return true;
@@ -21,7 +34,7 @@ function rateLimited(ip: string, limit = 5, windowMs = 60_000) {
 
 function buyRate(decisions: Decision[]) {
   if (decisions.length === 0) return 0;
-  return decisions.filter(d => d.buy).length / decisions.length;
+  return decisions.filter((d) => d.buy).length / decisions.length;
 }
 
 function mcnemar(pre: Decision[], post: Decision[]) {
@@ -36,39 +49,73 @@ function mcnemar(pre: Decision[], post: Decision[]) {
   return { b, c, chi2, significant: chi2 > 3.84 };
 }
 
-function archetypeBuckets(decisions: PersonaDecision[]) {
-  const out: Record<string, { n: number; buyRateBase: number; buyRatePre: number; buyRatePost: number }> = {};
-  for (const persona of PERSONAS) {
-    const gen = persona.gen;
-    const found = decisions.find(d => d.personaId === persona.id);
-    if (!found) continue;
-    if (!out[gen]) out[gen] = { n: 0, buyRateBase: 0, buyRatePre: 0, buyRatePost: 0 };
-    out[gen].n += 1;
-    out[gen].buyRateBase += found.stage1Base.buy ? 1 : 0;
-    out[gen].buyRatePre += found.stage1Priced.buy ? 1 : 0;
-    out[gen].buyRatePost += (found.stage2 ?? found.stage1Priced).buy ? 1 : 0;
-  }
-  for (const k of Object.keys(out)) {
-    const r = out[k];
-    if (r.n > 0) {
-      r.buyRateBase /= r.n;
-      r.buyRatePre /= r.n;
-      r.buyRatePost /= r.n;
-    }
-  }
-  return out;
+type CohortBucket = Record<string, { n: number; Q0: number; Q1: number; Q2: number }>;
+
+function buildBucket(key: string, bucket: CohortBucket, d: AgentDecision) {
+  if (!bucket[key]) bucket[key] = { n: 0, Q0: 0, Q1: 0, Q2: 0 };
+  bucket[key].n += 1;
+  bucket[key].Q0 += d.baselineDecision.buy ? 1 : 0;
+  bucket[key].Q1 += d.preDiscussionDecision.buy ? 1 : 0;
+  bucket[key].Q2 += (d.postDiscussionDecision ?? d.preDiscussionDecision).buy ? 1 : 0;
 }
 
-function pickLeader(personas: Persona[], stage1Priced: Decision[], goodType: 'search' | 'experience') {
-  // search: highest-confidence skeptic (didn't buy, confident)
-  // experience: highest-confidence advocate (bought, confident)
-  const skeptics = personas
-    .map((p, i) => ({ p, d: stage1Priced[i] }))
-    .filter(x => x.d.buy === false)
+function normBucket(b: CohortBucket): CohortBucket {
+  for (const k of Object.keys(b)) {
+    const r = b[k];
+    if (r.n > 0) { r.Q0 /= r.n; r.Q1 /= r.n; r.Q2 /= r.n; }
+  }
+  return b;
+}
+
+function dominantVal(agent: Agent): string {
+  const v = agent.values;
+  const max = Math.max(v.gaseong, v.gasim, v.meaning, v.brand);
+  if (max === v.meaning) return '미닝아웃';
+  if (max === v.gasim) return '가심비';
+  if (max === v.brand) return '브랜드';
+  return '가성비';
+}
+
+function archetypeBuckets(decisions: AgentDecision[], agents: Agent[]) {
+  const gen: CohortBucket = {};
+  const val: CohortBucket = {};
+  const inc: CohortBucket = {};
+  const house: CohortBucket = {};
+
+  for (const d of decisions) {
+    const agent = agents.find((a) => a.agent_id === d.agent_id);
+    if (!agent) continue;
+
+    buildBucket(agent.gen, gen, d);
+    buildBucket(dominantVal(agent), val, d);
+
+    const incTier = agent.income / 10000 < 300 ? '저소득(<300만)' : agent.income / 10000 <= 500 ? '중소득(300-500만)' : '고소득(>500만)';
+    buildBucket(incTier, inc, d);
+
+    const houseLabel: Record<string, string> = { single: '1인가구', parents: '부모동거', dink: '딩크', family: '자녀가족', senior_couple: '시니어' };
+    buildBucket(houseLabel[agent.householdCode] ?? agent.householdCode, house, d);
+  }
+
+  return {
+    gen: normBucket(gen),
+    val: normBucket(val),
+    inc: normBucket(inc),
+    house: normBucket(house),
+  };
+}
+
+function pickLeader(
+  agents: Agent[],
+  preDecision: Decision[],
+  goodType: 'search' | 'experience',
+) {
+  const skeptics = agents
+    .map((p, i) => ({ p, d: preDecision[i] }))
+    .filter((x) => x.d.buy === false)
     .sort((a, b) => b.d.confidence - a.d.confidence);
-  const advocates = personas
-    .map((p, i) => ({ p, d: stage1Priced[i] }))
-    .filter(x => x.d.buy === true)
+  const advocates = agents
+    .map((p, i) => ({ p, d: preDecision[i] }))
+    .filter((x) => x.d.buy === true)
     .sort((a, b) => b.d.confidence - a.d.confidence);
 
   if (goodType === 'search') {
@@ -77,73 +124,133 @@ function pickLeader(personas: Persona[], stage1Priced: Decision[], goodType: 'se
   return advocates[0] ?? skeptics[0] ?? null;
 }
 
-function expandPopulation(decisions: PersonaDecision[], popPerArch: number) {
-  // Statistical expansion: each archetype's decision probability is treated as p,
-  // and N = popPerArch independent Bernoulli draws are sampled. Returns aggregate rates.
-  const N = decisions.length * Math.max(1, popPerArch);
-  let baseHits = 0;
-  let preHits = 0;
-  let postHits = 0;
-  for (const d of decisions) {
-    const probBase = d.stage1Base.buy ? 0.5 + d.stage1Base.confidence * 0.1 : 0.5 - d.stage1Base.confidence * 0.1;
-    const probPre = d.stage1Priced.buy ? 0.5 + d.stage1Priced.confidence * 0.1 : 0.5 - d.stage1Priced.confidence * 0.1;
-    const post = d.stage2 ?? d.stage1Priced;
-    const probPost = post.buy ? 0.5 + post.confidence * 0.1 : 0.5 - post.confidence * 0.1;
-    for (let i = 0; i < popPerArch; i++) {
-      if (Math.random() < probBase) baseHits++;
-      if (Math.random() < probPre) preHits++;
-      if (Math.random() < probPost) postHits++;
+// Batch processing helper
+async function mapInBatches<T, R>(
+  items: T[],
+  batchSize: number,
+  fn: (item: T) => Promise<R>,
+): Promise<R[]> {
+  const results: R[] = [];
+  for (let i = 0; i < items.length; i += batchSize) {
+    const batch = items.slice(i, i + batchSize);
+    const mapped = await Promise.all(batch.map(fn));
+    results.push(...mapped);
+  }
+  return results;
+}
+
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function mapInBatchesEx<T>(
+  items: Agent[],
+  batchSize: number,
+  delayMs: number,
+  fn: (batch: Agent[]) => Promise<Decision[]>,
+): Promise<Decision[]> {
+  const results: Decision[] = [];
+  for (let i = 0; i < items.length; i += batchSize) {
+    const batch = items.slice(i, i + batchSize);
+    const batchResults = await fn(batch);
+    results.push(...batchResults);
+    if (i + batchSize < items.length) {
+      await sleep(delayMs);
     }
   }
-  return { n: N, Q_base: baseHits / N, Q_pre: preHits / N, Q_post: postHits / N };
+  return results;
 }
 
 export async function POST(request: Request) {
-  if (!process.env.OPENAI_API_KEY) {
-    return NextResponse.json({ error: 'OPENAI_API_KEY가 설정되지 않았습니다.' }, { status: 500 });
-  }
-  const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'local';
+  // if (!process.env.OPENAI_API_KEY) {
+  //   return NextResponse.json({ error: 'OPENAI_API_KEY가 설정되지 않았습니다.' }, { status: 500 });
+  // }
+  const ip =
+    request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'local';
   if (rateLimited(ip)) {
-    return NextResponse.json({ error: '요청이 너무 많습니다. 1분 후 다시 시도해주세요.' }, { status: 429 });
+    return NextResponse.json(
+      { error: '요청이 너무 많습니다. 1분 후 다시 시도해주세요.' },
+      { status: 429 },
+    );
   }
 
   try {
     const body = (await request.json()) as SimulateRequest;
-    const { product, deltaPct, discussion, popPerArch } = body;
+    // Map popPerArch conceptually to total populationSize requested by client.
+    // If client sends `populationSize`, use that. Otherwise fallback to `popPerArch * 16`.
+    const { product, deltaPct, discussion } = body;
+    const N = body.populationSize ? body.populationSize : 30;
 
-    if (!product || typeof deltaPct !== 'number') {
-      return NextResponse.json({ error: '잘못된 요청: product/deltaPct가 필요합니다.' }, { status: 400 });
+    if (!product || typeof deltaPct !== 'number' || !N) {
+      return NextResponse.json(
+        { error: '잘못된 요청: product/deltaPct/populationSize가 필요합니다.' },
+        { status: 400 },
+      );
     }
 
-    const personas = PERSONAS.slice(0, 16);
     const basePrice = product.basePrice;
     const newPrice = Math.round(basePrice * (1 + deltaPct / 100));
 
-    // Stage 1: parallel calls for (base) AND (priced) for each persona
-    const stage1: Array<{ base: Decision; priced: Decision }> = await Promise.all(
-      personas.map(async (persona) => {
-        const [base, priced] = await Promise.all([
-          callDecide({ persona, product, basePrice, newPrice: basePrice, deltaPct: 0, stage: 'decide' }),
-          callDecide({ persona, product, basePrice, newPrice, deltaPct, stage: 'decide' }),
-        ]);
-        return { base, priced };
-      })
+    const agents = generatePopulationAgents(N, PERSONAS);
+
+    // gpt-4o-mini 200,000 TPM limit — each batch ≈ 5,500 tokens.
+    // Scale inter-batch sleep so cumulative rate stays under limit.
+    const BATCH_SIZE = 25;
+    const DELAY_MS = N <= 30 ? 200 : N <= 160 ? 300 : 600;
+
+    // Stage 1: Batch calls for (base)
+    const baseDecisions = await mapInBatchesEx(
+      agents,
+      BATCH_SIZE,
+      DELAY_MS,
+      async (batch) => {
+        return callDecideBatch({
+          agents: batch,
+          product,
+          basePrice,
+          newPrice: basePrice,
+          deltaPct: 0,
+          stage: 'decide',
+        });
+      },
     );
 
-    const decisions: PersonaDecision[] = personas.map((p, i) => ({
-      personaId: p.id,
-      stage1Base: stage1[i].base,
-      stage1Priced: stage1[i].priced,
+    await sleep(DELAY_MS);
+
+    // Stage 1: Batch calls for (priced)
+    const priceDecisions = await mapInBatchesEx(
+      agents,
+      BATCH_SIZE,
+      DELAY_MS,
+      async (batch) => {
+        return callDecideBatch({
+          agents: batch,
+          product,
+          basePrice,
+          newPrice,
+          deltaPct,
+          stage: 'decide',
+        });
+      },
+    );
+
+    const decisions: AgentDecision[] = agents.map((p, i) => ({
+      agent_id: p.agent_id,
+      agent_name: p.name,
+      baselineDecision: baseDecisions[i] ?? {
+        buy: false,
+        confidence: 1,
+        rationale_cot: 'err',
+      },
+      preDiscussionDecision: priceDecisions[i] ?? {
+        buy: false,
+        confidence: 1,
+        rationale_cot: 'err',
+      },
     }));
 
-    // Economic monotonicity for experience goods: a price increase must not recruit
-    // new buyers. If a persona didn't buy at base but bought at the higher price,
-    // that's stochastic LLM noise contradicting demand theory — reset to non-buy.
-    // (Search goods are left untouched: their elasticity behavior is fine.)
     if (product.goodType === 'experience' && deltaPct > 0) {
       for (const d of decisions) {
-        if (!d.stage1Base.buy && d.stage1Priced.buy) {
-          d.stage1Priced = { ...d.stage1Priced, buy: false };
+        if (!d.baselineDecision.buy && d.preDiscussionDecision.buy) {
+          d.preDiscussionDecision = { ...d.preDiscussionDecision, buy: false };
         }
       }
     }
@@ -151,73 +258,142 @@ export async function POST(request: Request) {
     let thread: SimulateResponse['thread'] | undefined;
 
     if (discussion) {
-      const leader = pickLeader(personas, stage1.map(s => s.priced), product.goodType);
+      const leader = pickLeader(agents, priceDecisions, product.goodType);
       if (leader) {
-        const stance: 'skeptic' | 'advocate' = leader.d.buy ? 'advocate' : 'skeptic';
-        const seedPost = await callSeedPost(leader.p, product, basePrice, newPrice, deltaPct, stance);
+        const stance: 'skeptic' | 'advocate' = leader.d.buy
+          ? 'advocate'
+          : 'skeptic';
+        const seedPost = await callSeedPost(
+          leader.p,
+          product,
+          basePrice,
+          newPrice,
+          deltaPct,
+          stance,
+        );
 
-        // 3 commenter personas (mix of buyers and non-buyers, not the leader)
-        const others = personas.filter(p => p.id !== leader.p.id);
-        const commenters = [others[0], others[Math.floor(others.length / 2)], others[others.length - 1]];
+        // Up to 10 commenters — spread evenly across the agent list for diversity
+        const others = agents.filter((p) => p.agent_id !== leader.p.agent_id);
+        const commentCount = Math.min(10, others.length);
+        const commenters = commentCount <= others.length
+          ? Array.from({ length: commentCount }, (_, k) =>
+              others[Math.round((k / (commentCount - 1 || 1)) * (others.length - 1))])
+          : others;
+
         const comments = await Promise.all(
           commenters.map(async (p) => ({
-            personaId: p.id,
-            personaName: p.name,
+            agent_id: p.agent_id,
+            agentName: p.name,
             text: await callComment(
-              { persona: p, product, basePrice, newPrice, deltaPct, stage: 'comment' },
-              { seedPost, topic: '댓글로 자신의 생각을 한 줄 남기세요.' }
+              {
+                agent: p,
+                product,
+                basePrice,
+                newPrice,
+                deltaPct,
+                stage: 'comment',
+              },
+              { seedPost, topic: '댓글로 자신의 생각을 한 줄 남기세요.' },
             ),
-          }))
+          })),
         );
 
         thread = {
-          leader: { personaId: leader.p.id, seedPost },
-          comments: comments.map(c => ({ personaId: c.personaId, text: c.text })),
+          leader: { agent_id: leader.p.agent_id, seedPost },
+          comments: comments.map((c) => ({
+            agent_id: c.agent_id,
+            text: c.text,
+          })),
         };
 
-        // Stage 2: re-decide with thread context, in parallel
-        const stage2 = await Promise.all(
-          personas.map((persona) => callDecide({
-            persona, product, basePrice, newPrice, deltaPct, stage: 'decide',
-            seedPost, comments: comments.map(c => ({ personaName: personas.find(p => p.id === c.personaId)!.name, text: c.text })),
-          }))
+        await sleep(DELAY_MS);
+
+        // Stage 2: re-decide with thread context
+        const stage2 = await mapInBatchesEx(
+          agents,
+          BATCH_SIZE,
+          DELAY_MS,
+          (batch) =>
+            callDecideBatch({
+              agents: batch,
+              product,
+              basePrice,
+              newPrice,
+              deltaPct,
+              stage: 'decide',
+              seedPost,
+              comments: comments.map((c) => ({
+                agentName: agents.find((p) => p.agent_id === c.agent_id)!.name,
+                text: c.text,
+              })),
+            }),
         );
         for (let i = 0; i < decisions.length; i++) {
-          decisions[i].stage2 = stage2[i];
-          decisions[i].flipped = decisions[i].stage1Priced.buy !== stage2[i].buy;
+          decisions[i].postDiscussionDecision = stage2[i] ?? {
+            buy: false,
+            confidence: 1,
+            rationale_cot: 'err',
+          };
+          decisions[i].flipped =
+            decisions[i].preDiscussionDecision.buy !==
+            (stage2[i]?.buy ?? false);
         }
       }
     }
 
     // ── Metrics ──
-    const Q_base = buyRate(decisions.map(d => d.stage1Base));
-    const Q_pre = buyRate(decisions.map(d => d.stage1Priced));
-    const Q_post = buyRate(decisions.map(d => d.stage2 ?? d.stage1Priced));
-    const deltaQ_pre = Q_pre - Q_base;
-    const deltaQ_post = Q_post - Q_base;
-    const elasticity = deltaPct !== 0 && Q_base > 0 ? (deltaQ_pre / Q_base) / (deltaPct / 100) : 0;
-    const wom_m = deltaQ_pre !== 0 ? deltaQ_post / deltaQ_pre : 1;
+    const Q0 = buyRate(decisions.map((d) => d.baselineDecision));
+    const Q1 = buyRate(decisions.map((d) => d.preDiscussionDecision));
+    const Q2 = buyRate(
+      decisions.map((d) => d.postDiscussionDecision ?? d.preDiscussionDecision),
+    );
+
+    // Q0 -> Q1
+    const deltaQ1 = Q1 - Q0;
+    // Q0 -> Q2
+    const deltaQ2 = Q2 - Q0;
+
+    // Price Elasticity ε_sim (based on Q1 before discussion)
+    const elasticity_sim =
+      deltaPct !== 0 && Q0 > 0 ? deltaQ1 / Q0 / (deltaPct / 100) : 0;
+    // Post-discussion Price Elasticity ε_post (based on Q2)
+    const elasticity_post =
+      deltaPct !== 0 && Q0 > 0 ? deltaQ2 / Q0 / (deltaPct / 100) : 0;
+
+    // WOM_m: (Q0 - Q2) / (Q0 - Q1)
+    const wom_m = Q0 - Q1 !== 0 ? (Q0 - Q2) / (Q0 - Q1) : 1;
+
     const mc = discussion
-      ? mcnemar(decisions.map(d => d.stage1Priced), decisions.map(d => d.stage2 ?? d.stage1Priced))
+      ? mcnemar(
+          decisions.map((d) => d.preDiscussionDecision),
+          decisions.map(
+            (d) => d.postDiscussionDecision ?? d.preDiscussionDecision,
+          ),
+        )
       : { b: 0, c: 0, chi2: 0, significant: false };
 
-    // Guard against NaN / non-numeric popPerArch from client; cap at 64 so Bernoulli math stays cheap.
-    const safePopPerArch = Number.isFinite(popPerArch) && popPerArch > 0
-      ? Math.min(64, Math.floor(popPerArch))
-      : 20;
-    const population = expandPopulation(decisions, safePopPerArch);
+    const flipCount = decisions.filter((d) => Boolean(d.flipped)).length;
 
     const response: SimulateResponse = {
-      product, deltaPct, discussion,
-      decisions, thread,
+      product,
+      deltaPct,
+      discussion,
+      decisions,
+      thread,
       metrics: {
-        Q_base, Q_pre, Q_post,
-        deltaQ_pre, deltaQ_post,
-        elasticity, wom_m,
+        Q0,
+        Q1,
+        Q2,
+        deltaQ1,
+        deltaQ2,
+        elasticity_sim,
+        elasticity_post,
+        wom_m,
         mcnemar: mc,
-        cohort: archetypeBuckets(decisions),
+        flipCount,
+        cohort: archetypeBuckets(decisions, agents),
       },
-      population,
+      populationSize: N,
     };
     return NextResponse.json(response);
   } catch (err) {
