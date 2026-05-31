@@ -73,7 +73,7 @@ export default function Sandbox({ personas }: SandboxProps) {
   const [custom, setCustom] = useState<CustomFormState>(DEFAULT_CUSTOM);
   const [deltaPct, setDeltaPct] = useState<number>(20);
   const [discussion, setDiscussion] = useState<boolean>(true);
-  const [popPerArch, setPopPerArch] = useState<number>(20); // N=320 default
+  const [popPerArch, setPopPerArch] = useState<number>(10); // N=160 default
   // Safe derived population multiplier — guards against NaN if state ever becomes corrupt.
   const safePopPerArch =
     Number.isFinite(popPerArch) && popPerArch > 0 ? popPerArch : 20;
@@ -303,7 +303,7 @@ export default function Sandbox({ personas }: SandboxProps) {
           호모 실리쿠스 · 페르소나 시뮬레이션 샌드박스
         </h1>
         <p className="app-subtitle">
-          GPT-4o-mini 기반 16개 한국 페르소나가 가격 인상에 대해 실시간으로
+          GPT-4o-mini 기반 N명의 한국 소비자 에이전트가 가격 인상에 대해 실시간으로
           추론합니다. 탐색재(Search) vs 경험재(Experience) 가격 탄력성과 토론 후
           행동 변화(WOM_m)를 측정.
         </p>
@@ -591,11 +591,11 @@ export default function Sandbox({ personas }: SandboxProps) {
               <span>시뮬레이션 인구:</span>
               <select
                 value={String(popPerArch)}
-                onChange={(e) => setPopPerArch(Number(e.target.value) || 20)}
+                onChange={(e) => setPopPerArch(Number(e.target.value) || 10)}
               >
-                <option value="1">N = 16명 (아키타입만)</option>
-                <option value="10">N = 160명</option>
-                <option value="20">N = 320명 (기본값)</option>
+                <option value="1">N = 16명</option>
+                <option value="10">N = 160명 (기본값)</option>
+                <option value="20">N = 320명</option>
                 <option value="32">N = 512명</option>
               </select>
             </div>
