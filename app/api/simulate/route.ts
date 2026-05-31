@@ -17,7 +17,7 @@ import {
 } from '@/lib/openai';
 
 export const runtime = 'nodejs';
-export const maxDuration = 300; // Increased to 5 minutes for large N
+export const maxDuration = 60;
 
 const RATE: Map<string, number[]> = new Map();
 function rateLimited(ip: string, limit = 5, windowMs = 60_000) {
