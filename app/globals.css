@@ -504,7 +504,7 @@ input[type="range"] {
   background: linear-gradient(90deg, var(--navy), var(--gold));
   border-radius: 3px;
 }
-.value-bar-pct { width: 28px; text-align: right; color: var(--ink); font-weight: 600; }
+.value-bar-pct { min-width: 36px; text-align: right; color: var(--ink); font-weight: 600; white-space: nowrap; }
 .modal-sources {
   font-size: 10px;
   color: var(--ink-mute);

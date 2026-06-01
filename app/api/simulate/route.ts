@@ -107,21 +107,13 @@ function archetypeBuckets(decisions: AgentDecision[], agents: Agent[]) {
 function pickLeader(
   agents: Agent[],
   preDecision: Decision[],
-  goodType: 'search' | 'experience',
+  _goodType: 'search' | 'experience',
 ) {
-  const skeptics = agents
+  // Pick the most confident agent regardless of buy/no-buy stance.
+  // Biasing toward skeptic for search goods caused Q2→0% (all-negative discussion).
+  return agents
     .map((p, i) => ({ p, d: preDecision[i] }))
-    .filter((x) => x.d.buy === false)
-    .sort((a, b) => b.d.confidence - a.d.confidence);
-  const advocates = agents
-    .map((p, i) => ({ p, d: preDecision[i] }))
-    .filter((x) => x.d.buy === true)
-    .sort((a, b) => b.d.confidence - a.d.confidence);
-
-  if (goodType === 'search') {
-    return skeptics[0] ?? advocates[0] ?? null;
-  }
-  return advocates[0] ?? skeptics[0] ?? null;
+    .sort((a, b) => b.d.confidence - a.d.confidence)[0] ?? null;
 }
 
 // Batch processing helper
