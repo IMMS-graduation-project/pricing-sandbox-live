@@ -500,6 +500,7 @@ input[type="range"] {
   overflow: hidden;
 }
 .value-bar-fill {
+  display: block;
   height: 100%;
   background: linear-gradient(90deg, var(--navy), var(--gold));
   border-radius: 3px;
