@@ -17,7 +17,7 @@ import {
 } from '@/lib/openai';
 
 export const runtime = 'nodejs';
-export const maxDuration = 60;
+export const maxDuration = 300;
 
 const RATE: Map<string, number[]> = new Map();
 function rateLimited(ip: string, limit = 5, windowMs = 60_000) {
@@ -194,8 +194,8 @@ export async function POST(request: Request) {
 
     // Scale batch size up for larger N to stay under 60s Vercel timeout.
     // gpt-4o-mini handles 80 agents per batch well within context limits.
-    const BATCH_SIZE = N;
-    const DELAY_MS = 100;
+    const BATCH_SIZE = 25;
+    const DELAY_MS = 200;
 
     // Stage 1: Run base and priced decisions IN PARALLEL (they're independent)
     const [baseDecisions, priceDecisions] = await Promise.all([
@@ -274,7 +274,7 @@ export async function POST(request: Request) {
 
         // Scale comments down for large N to stay under timeout
         const others = agents.filter((p) => p.agent_id !== leader.p.agent_id);
-        const commentCount = Math.min(N <= 30 ? 10 : 5, others.length);
+        const commentCount = Math.min(10, others.length);
         const commenters = commentCount <= others.length
           ? Array.from({ length: commentCount }, (_, k) =>
               others[Math.round((k / (commentCount - 1 || 1)) * (others.length - 1))])
