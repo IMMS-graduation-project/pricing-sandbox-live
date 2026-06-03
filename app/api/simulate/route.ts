@@ -192,46 +192,44 @@ export async function POST(request: Request) {
 
     const agents = generatePopulationAgents(N, PERSONAS);
 
-    // gpt-4o-mini 200,000 TPM limit — each batch ≈ 5,500 tokens.
-    // Scale inter-batch sleep so cumulative rate stays under limit.
-    const BATCH_SIZE = 25;
-    const DELAY_MS = N <= 30 ? 200 : N <= 160 ? 300 : 600;
+    // Scale batch size up for larger N to stay under 60s Vercel timeout.
+    // gpt-4o-mini handles 80 agents per batch well within context limits.
+    const BATCH_SIZE = N <= 30 ? 16 : 80;
+    const DELAY_MS = N <= 30 ? 200 : 100;
 
-    // Stage 1: Batch calls for (base)
-    const baseDecisions = await mapInBatchesEx(
-      agents,
-      BATCH_SIZE,
-      DELAY_MS,
-      async (batch) => {
-        return callDecideBatch({
-          agents: batch,
-          product,
-          basePrice,
-          newPrice: basePrice,
-          deltaPct: 0,
-          stage: 'decide',
-        });
-      },
-    );
-
-    await sleep(DELAY_MS);
-
-    // Stage 1: Batch calls for (priced)
-    const priceDecisions = await mapInBatchesEx(
-      agents,
-      BATCH_SIZE,
-      DELAY_MS,
-      async (batch) => {
-        return callDecideBatch({
-          agents: batch,
-          product,
-          basePrice,
-          newPrice,
-          deltaPct,
-          stage: 'decide',
-        });
-      },
-    );
+    // Stage 1: Run base and priced decisions IN PARALLEL (they're independent)
+    const [baseDecisions, priceDecisions] = await Promise.all([
+      mapInBatchesEx(
+        agents,
+        BATCH_SIZE,
+        DELAY_MS,
+        async (batch) => {
+          return callDecideBatch({
+            agents: batch,
+            product,
+            basePrice,
+            newPrice: basePrice,
+            deltaPct: 0,
+            stage: 'decide',
+          });
+        },
+      ),
+      mapInBatchesEx(
+        agents,
+        BATCH_SIZE,
+        DELAY_MS,
+        async (batch) => {
+          return callDecideBatch({
+            agents: batch,
+            product,
+            basePrice,
+            newPrice,
+            deltaPct,
+            stage: 'decide',
+          });
+        },
+      ),
+    ]);
 
     const decisions: AgentDecision[] = agents.map((p, i) => ({
       agent_id: p.agent_id,
@@ -274,9 +272,9 @@ export async function POST(request: Request) {
           stance,
         );
 
-        // Up to 10 commenters — spread evenly across the agent list for diversity
+        // Scale comments down for large N to stay under timeout
         const others = agents.filter((p) => p.agent_id !== leader.p.agent_id);
-        const commentCount = Math.min(10, others.length);
+        const commentCount = Math.min(N <= 30 ? 10 : 5, others.length);
         const commenters = commentCount <= others.length
           ? Array.from({ length: commentCount }, (_, k) =>
               others[Math.round((k / (commentCount - 1 || 1)) * (others.length - 1))])
