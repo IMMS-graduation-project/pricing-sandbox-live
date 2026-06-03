@@ -16,59 +16,59 @@
       "agent_id": "agent-hyeonwoo-0",
       "agent_name": "임준서",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비와 미닝아웃을 중시하며, 예산 내에서 지속 가능한 제품을 선호하기 때문에 구매를 결정했다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "관심도는 낮고, 긴급도가 낮아서 당장 구매할 필요성을 느끼지 못함."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 예산 내에 있으며, 지속 가능한 브랜드를 선호하기 때문에 구매를 결정했습니다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못한다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스럽고, 다른 저렴한 모델을 찾아보려고 합니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 가성비가 떨어져서 다른 대안을 찾겠어요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-sua-1",
       "agent_name": "임다은",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가성비와 브랜드 선호가 강해, 가격대비 성능이 뛰어난 제품을 찾고 있어 이 가격에 적합하다고 판단했다."
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "가성비를 중시하지만, 가격이 부담스러워서 구매를 고려하지 않음."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가성비가 좋고 예산 내에서 구매할 수 있는 가격이기 때문에 구매할 것입니다."
+        "rationale_cot": "가성비를 중시하지만 가격이 부담스러워 다음 기회를 기다릴 것 같다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 너무 높아 다른 대안이 필요할 것 같습니다."
+        "confidence": 4,
+        "rationale_cot": "가격이 너무 비쌉니다. 다른 브랜드에서 더 좋은 대안을 찾는 게 나을 것 같아요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-chaerin-2",
       "agent_name": "한가은",
       "baselineDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가전 제품에 대한 관심이 없고, 가격이 비슷한 다른 제품이 많아 구매를 고려하지 않는다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고, 가전제품에 대한 필요성이 적어 구매하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "모니터에 대한 관심이 낮고, 필요성이 느껴지지 않아 구매하지 않을 것입니다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 사용 필요성이 떨어져 구매할 의사가 없다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가전은 무관심한 편이라 굳이 이 가격을 지불할 필요는 없어요."
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮아서 그냥 패스하겠습니다."
       },
       "flipped": false
     },
@@ -78,17 +78,17 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "스펙 비교와 가성비를 중요시하는 나에게 27인치 1440p 모니터는 매력적이다. 즉시 구매 결정을 내렸다."
+        "rationale_cot": "카테고리 관심도가 매우 높고 긴급도가 높아 가격 인상에도 불구하고 구매를 결정함."
       },
       "preDiscussionDecision": {
         "buy": true,
-        "confidence": 5,
-        "rationale_cot": "게임을 자주 하며, 가격이 적절하여 구매할 것입니다."
+        "confidence": 4,
+        "rationale_cot": "긴급도가 높고 관심도가 매우 높아 가격을 감수하고 구매 결정을 내렸다."
       },
       "postDiscussionDecision": {
         "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 조금 부담스럽지만, 성능이 좋다면 나쁘지 않은 선택일 것 같아요."
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높아 가격 인상에도 불구하고 구매할 수밖에 없네요."
       },
       "flipped": false
     },
@@ -98,17 +98,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 3,
-        "rationale_cot": "가전은 그냥 쓸만하면 되기 때문에 이 가격의 모니터는 필요하지 않다."
+        "rationale_cot": "관심도가 낮고, 가전제품에 대한 필요성이 적어 구매하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가전은 그냥 쓸만하면 된다는 생각으로, 필요성을 느끼지 못해 구매하지 않겠습니다."
+        "confidence": 4,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 이유가 없다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가성비를 고려하면 더 저렴한 모델을 찾아보는 게 좋을 것 같습니다."
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸서 다른 대안을 알아보는 쪽으로 가겠습니다."
       },
       "flipped": false
     },
@@ -116,39 +116,39 @@
       "agent_id": "agent-doyoon-5",
       "agent_name": "최서준",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "고급 모니터를 자주 교체하는 편이므로, 스펙과 가격이 마음에 들어 구매를 결정했다."
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요를 느끼지 못함."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전은 가성비가 중요하기 때문에 가격이 적절한 이 제품을 구매할 것입니다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스러워 다음 할인까지 기다릴 것 같다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 비싸서 다른 할인 모델을 찾아보려 합니다."
+        "confidence": 2,
+        "rationale_cot": "관심이 별로 없어서 그냥 넘어갈게요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-minseo-6",
       "agent_name": "신유나",
       "baselineDecision": {
-        "buy": false,
-        "confidence": 3,
-        "rationale_cot": "브랜드에 대한 충성도가 높아, 익숙한 브랜드의 제품이 아니면 구매하지 않기로 했다."
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "관심도가 높고 긴급도가 중간 이상인 만큼 구매를 고려함."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 3,
-        "rationale_cot": "대기업 브랜드 선호로, 가격 대비 성능이 부족하다고 느껴져 구매하지 않을 것입니다."
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요를 느끼지 못한다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 너무 비싸고, 다른 저렴한 대안이 많을 것 같아요."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 가성비가 떨어지기 때문에 다른 제품을 고려할 거예요."
       },
       "flipped": false
     },
@@ -156,21 +156,21 @@
       "agent_id": "agent-taehyun-7",
       "agent_name": "안지훈",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가심비를 중시하며, 가격대비 성능이 뛰어난 제품을 찾고 있어 이 가격에 구매를 고려한다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 탐색체력이 낮아 귀찮아서 그냥 넘어감."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "취미용으로 사용하기에 적합한 가격으로, 구매할 것입니다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "관심도가 높고 긴급도가 높아 가격을 감수하고 구매할 것 같다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가성비를 따지면 다른 모델이 더 좋을 것 같습니다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮아서 그냥 패스하겠습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-jihye-8",
@@ -178,37 +178,37 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "가전 제품에 대한 관심이 적고, 필요한 제품이 아니어서 구매하지 않는다."
+        "rationale_cot": "관심도가 낮고 탐색 체력이 거의 없어 구매를 보류함."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가격이 적절하고, 필요한 제품이기에 구매할 것입니다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못한다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 비싸다고 생각하며, 다른 대안을 고려해야 할 것 같습니다."
+        "confidence": 1,
+        "rationale_cot": "시간이 없어서 그냥 다른 모델로 넘어갈게요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-yunjeong-9",
       "agent_name": "신민지",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "스펙과 가격을 비교한 결과, 가성비가 뛰어난 제품으로 판단하여 구매를 결정했다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요를 느끼지 못함."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "모니터 교체 주기가 길어, 현재 사용하는 제품에 만족하고 있어 구매하지 않을 것입니다."
+        "rationale_cot": "가격이 부담스러워 다음 할인까지 기다릴 것 같다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다시 생각해봐야 할 것 같습니다."
+        "confidence": 4,
+        "rationale_cot": "가격이 너무 비싸서 고민하게 되네요."
       },
       "flipped": false
     },
@@ -217,20 +217,20 @@
       "agent_name": "이우진",
       "baselineDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가전은 실용성이 중요하므로, 이 가격의 모니터는 필요하지 않다."
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요를 못 느끼고 있음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 3,
-        "rationale_cot": "가게 운영에 필요한 제품으로, 가격이 적당하여 구매할 것입니다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 이유가 없다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스럽고 다른 브랜드를 찾아보려 합니다."
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮아서 그냥 넘어갈게요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-seongho-11",
@@ -238,17 +238,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "가전 제품 구매에 대한 관심이 없고, 예산이 없기 때문에 구매하지 않겠다."
+        "rationale_cot": "예산이 없어서 구매할 수 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전 제품에 대한 지출이 없는 상황으로, 구매하지 않을 것입니다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못한다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 비싸서 다른 저렴한 모델을 고려할 것 같습니다."
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸서 다른 대안을 찾아봐야겠어요."
       },
       "flipped": false
     },
@@ -257,18 +257,18 @@
       "agent_name": "한지유",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "소득이 없어 구매할 수 있는 여력이 없다."
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요를 느끼지 못함."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 없기 때문에 구매할 수 없습니다."
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스러워 다음 할인까지 기다릴 것 같다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 높아 다른 브랜드를 찾아보려 합니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 너무 비싸서 고민하게 되네요."
       },
       "flipped": false
     },
@@ -277,18 +277,18 @@
       "agent_name": "김서진",
       "baselineDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "브랜드 충성도가 높아, 익숙하지 않은 제품은 구매하지 않기로 했다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 높고, 익숙한 브랜드를 선호하여 구매하지 않겠습니다."
+        "confidence": 1,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못한다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 대안을 찾아보려 합니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 가성비가 떨어져서 다른 대안을 찾겠어요."
       },
       "flipped": false
     },
@@ -297,18 +297,18 @@
       "agent_name": "정가은",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전 제품에 대한 필요성이 느껴지지 않아서 구매하지 않겠다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요를 느끼지 못함."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산 초과로 인해 구매하지 않을 것입니다."
+        "confidence": 1,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못한다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 너무 비싸고 가성비를 고려하면 다른 모델이 좋을 것 같습니다."
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸고 가성비가 떨어지기 때문에 다른 제품을 고려할 거예요."
       },
       "flipped": false
     },
@@ -317,20 +317,20 @@
       "agent_name": "윤소윤",
       "baselineDecision": {
         "buy": true,
-        "confidence": 5,
-        "rationale_cot": "예산 내에서 스펙이 뛰어난 제품이므로, 즉시 구매 결정을 내렸다."
+        "confidence": 4,
+        "rationale_cot": "긴급도가 높아서 가격 인상에도 불구하고 구매를 고려함."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "모니터를 자주 교체하는 편으로, 가격이 적절해 구매할 것입니다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스러워 다음 할인까지 기다릴 것 같다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 저렴한 모델을 고려할 것 같습니다."
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸서 다른 대안을 알아보는 쪽으로 가겠습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-hyeonwoo-16",
@@ -338,17 +338,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "가전은 실용성이 중요하므로, 이 가격의 모니터는 필요하지 않다."
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요를 느끼지 못함."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가전 제품에 대한 관심이 낮아 구매하지 않겠습니다."
+        "confidence": 5,
+        "rationale_cot": "관심도가 높고 긴급도가 높아 가격을 감수하고 구매 결정을 내렸다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 높아서 다른 대안을 찾아보려 합니다."
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮아서 그냥 패스하겠습니다."
       },
       "flipped": false
     },
@@ -358,57 +358,57 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 3,
-        "rationale_cot": "가전 제품에 대한 관심이 적고, 필요한 제품이 아니어서 구매하지 않는다."
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "플렉스 소비를 위해 가격이 적절하여 구매할 것입니다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못한다."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 브랜드를 찾아볼 생각입니다."
+        "rationale_cot": "가격이 너무 비싸서 고민하게 되네요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-chaerin-18",
       "agent_name": "권지원",
       "baselineDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 4,
-        "rationale_cot": "가성비와 가심비를 중시하는 나에게 이 가격의 모니터는 매력적이다."
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전 제품에 대한 관심이 높아 구매할 것입니다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스러워 다음 할인까지 기다릴 것 같다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 비싸고, 가성비를 고려하면 다른 모델이 좋을 것 같습니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 가성비가 떨어져서 다른 대안을 찾겠어요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-minjun-19",
       "agent_name": "정민준",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가격과 성능이 적절하다고 판단하여 즉시 구매 결정을 내렸다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스러워서 구매를 고려하지 않음."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "예산 내에서 구매 가능하여 가성비가 좋다고 판단해 구매할 것입니다."
+        "rationale_cot": "관심도가 높고 긴급도가 높아 가격을 감수하고 구매 결정을 내렸다."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 부담스럽지만, 성능이 좋다면 고려해볼 만 합니다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높아서 가격 인상에도 불구하고 구매할 수밖에 없네요."
       },
       "flipped": false
     },
@@ -418,17 +418,17 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "가전 제품에 대한 관심이 높아, 이 가격대의 모니터 구매를 고려한다."
+        "rationale_cot": "관심도가 높고 긴급도가 높아 가격 인상에도 불구하고 구매를 결정함."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "필요성이 낮아 구매하지 않을 것입니다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못한다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 너무 비싸고, 다른 저렴한 대안이 많을 것 같아요."
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸서 다른 대안을 알아보는 쪽으로 가겠습니다."
       },
       "flipped": false
     },
@@ -436,59 +436,59 @@
       "agent_id": "agent-doyoon-21",
       "agent_name": "안동현",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "스펙과 가격을 비교한 결과, 가성비가 뛰어난 제품으로 판단하여 구매를 결정했다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전 제품에 대한 투자로 가격이 적절하여 구매할 것입니다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스러워 다음 할인까지 기다릴 것 같다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 대안을 찾아보려 합니다."
+        "confidence": 4,
+        "rationale_cot": "가격이 비쌉니다. 다른 브랜드에서 더 좋은 대안을 찾는 게 나을 것 같아요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-minseo-22",
       "agent_name": "황지민",
       "baselineDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 4,
-        "rationale_cot": "가전 제품에 대한 관심이 높아, 이 가격대의 모니터 구매를 고려한다."
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요를 느끼지 못함."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 4,
-        "rationale_cot": "가격이 적절하고, 필요한 제품으로 구매할 것입니다."
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못한다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 비쌉니다. 다른 모델을 고려할 것 같습니다."
+        "confidence": 2,
+        "rationale_cot": "시간이 없어서 그냥 다른 모델로 넘어갈게요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-taehyun-23",
       "agent_name": "장도윤",
       "baselineDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가전 제품에 대한 필요성이 느껴지지 않아서 구매하지 않겠다."
+        "confidence": 4,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 너무 높아 구매하지 않을 것입니다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못한다."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 저렴한 모델을 찾아보려 합니다."
+        "rationale_cot": "긴급도가 높아서 가격 인상에도 불구하고 구매할 수밖에 없네요."
       },
       "flipped": false
     },
@@ -496,79 +496,79 @@
       "agent_id": "agent-jihye-24",
       "agent_name": "안다은",
       "baselineDecision": {
-        "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전 제품 구매에 대한 관심이 없고, 예산이 없기 때문에 구매하지 않겠다."
-      },
-      "preDiscussionDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "가격이 적당하고, 필요한 제품이기에 구매할 것입니다."
+        "rationale_cot": "관심도가 높고 긴급도가 높아 가격 인상에도 불구하고 구매를 결정함."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 부담스러워 다음 할인까지 기다릴 것 같다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 비싸서 다른 대안을 찾아보려 합니다."
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸서 다른 대안을 찾아봐야겠어요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-yunjeong-25",
       "agent_name": "강다은",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 3,
-        "rationale_cot": "가격이 적정하고 가성비가 좋다면 구입할 의향이 있다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 비싸서 구매하기 어렵습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 적당하고 가성비가 좋은 제품으로 판단되어 구매할 의사가 있다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고, 긴급도가 낮아서 구매할 필요성을 느끼지 못함."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 360,000원이지만, 저가품 부작용 경험이 있어 품질을 우선시해야 합니다. 가성비가 중요하지만 예산을 초과할 수 없어 대안을 찾아야 합니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 너무 비싸고, 가성비가 떨어진다고 생각합니다. 다른 대안이 많으니 신중하게 고려할 필요가 있습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-jongho-26",
       "agent_name": "오도현",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "5년 이상 사용한 경험이 있고, 가격이 합리적이다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스러워서 현재로서는 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가성비가 뛰어나고 모니터를 자주 교체하지 않기 때문에 이 가격에 구매할 것이다."
+        "rationale_cot": "가격이 부담스러워서 구입을 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스럽고 가성비가 우선이라는 점에서 다른 저렴한 모델을 비교해보는 것이 좋습니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 높아서 다른 대안을 찾아보는 것이 더 나을 것 같습니다. 가성비가 떨어진다고 생각해요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-seongho-27",
       "agent_name": "최준호",
       "baselineDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "긴급도가 낮고, 가격이 예산을 초과하여 구매하지 않습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "예산 초과가 아니지만, 현재의 모니터가 충분하다고 느껴서 구매하지 않겠다."
+        "confidence": 5,
+        "rationale_cot": "필요하지만 예산이 초과하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "360,000원은 제 예산보다 높아서 다른 저렴한 모델을 찾아보는 게 좋을 것 같습니다."
+        "confidence": 4,
+        "rationale_cot": "이 가격에 사는 것은 부담이 크고, 가성비가 좋지 않다고 느낍니다. 다른 브랜드를 찾는 게 좋겠어요."
       },
       "flipped": false
     },
@@ -577,18 +577,18 @@
       "agent_name": "정예진",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가족의 지출 통제 때문에 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 비싸고, 현재 필요한 상황이 아닙니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가족의 지출 통제를 받고 있어서 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고 긴급하지 않아 구매를 미룸."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 너무 비싸서 다른 대안을 찾아보는 것이 좋겠어요."
+        "rationale_cot": "가격이 비싸고 가성비가 좋지 않아서 구매하기 어려울 것 같습니다. 다른 대안을 찾아보겠습니다."
       },
       "flipped": false
     },
@@ -597,18 +597,18 @@
       "agent_name": "서선우",
       "baselineDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "브랜드 충성도가 높아 익숙한 제품을 선호한다."
+        "confidence": 5,
+        "rationale_cot": "예산을 초과하는 가격으로 구매가 어렵습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "브랜드 충성도가 높아 새로운 브랜드의 제품을 구매하기 어려운 상황이다."
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가성비를 따지면 가격이 부담스럽습니다. 다른 할인 모델을 찾아봐야겠어요."
+        "confidence": 4,
+        "rationale_cot": "가격이 너무 비싸고 가성비가 맞지 않는 것 같습니다. 다른 브랜드를 찾아보는 것이 더 현명할 것 같아요."
       },
       "flipped": false
     },
@@ -617,18 +617,18 @@
       "agent_name": "강민지",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "예산을 초과하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 저렴하더라도 품질 불신이 있어 구매를 망설인다."
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮아 구매 의사가 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 너무 비쌉니다. 가성비를 고려하면 다른 모델을 찾아보는 게 낫습니다."
+        "rationale_cot": "가격이 비싸서 구매하기 어렵습니다. 다른 좋은 대안들이 많으니 비교해봐야겠어요."
       },
       "flipped": false
     },
@@ -637,58 +637,58 @@
       "agent_name": "송서윤",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 초과되어 대안이 필요하다."
+        "confidence": 5,
+        "rationale_cot": "현재 필요한 것이 아니며, 가격이 부담스럽습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비가 좋고 필요성이 느껴져서 구매할 계획이다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고 가격이 부담스러워 구입을 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 높아 보이네요. 다른 저렴한 모델을 비교해봐야 할 것 같습니다."
+        "rationale_cot": "가격이 너무 비싸고 가성비가 떨어져서 구매할 수 없을 것 같습니다. 다른 브랜드를 찾아보는 게 낫겠어요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-hyeonwoo-32",
       "agent_name": "최동현",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비와 미닝아웃을 고려했을 때 구매할 의향이 있다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 비싸서 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가성비와 디자인이 마음에 들어서 구매할 것이다."
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못함."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "360,000원은 부담스러운 가격입니다. 가성비를 고려해 저렴한 모델을 찾아보겠습니다."
+        "rationale_cot": "가격이 너무 비싸고 가성비가 맞지 않아서 다른 대안을 찾아보는 것이 좋을 것 같습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-sua-33",
       "agent_name": "조민서",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비가 좋고 필요성이 크다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 예산을 초과하여 구매가 어렵습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전제품에 대한 관심이 적어 구매하지 않겠다."
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고 예산이 부족하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 너무 높습니다. 가성비를 따지면 다른 대안이 많을 것 같아요."
+        "rationale_cot": "가격이 비싸고 가성비가 떨어지기 때문에 구매하기 어려울 것 같습니다. 다른 브랜드를 찾아보겠습니다."
       },
       "flipped": false
     },
@@ -696,39 +696,39 @@
       "agent_id": "agent-chaerin-34",
       "agent_name": "오서연",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 3,
-        "rationale_cot": "가전은 필요한 경우가 많아 가격이 적정하다면 구매할 것이다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산을 초과해 구매가 불가능합니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "게임과 관련된 기기이므로 필요하여 구매할 것이다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높고 관심도가 매우 높아서 가격을 감수하고 구매함."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 모델을 찾아봐야겠어요."
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸고 가성비가 좋지 않아서 구매를 고려하기 어렵습니다. 다른 대안을 찾아봐야겠습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-minjun-35",
       "agent_name": "조지훈",
       "baselineDecision": {
         "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가전은 실용성이 중요하고 가격이 적정하다."
+        "confidence": 3,
+        "rationale_cot": "긴급도가 높아 가격 인상에도 불구하고 구매합니다."
       },
       "preDiscussionDecision": {
         "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비가 좋고 현재 사용하는 모니터가 오래되어서 구매할 것이다."
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높고 관심도가 높아 가격을 감수하고 구매함."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 비싸서 다른 저렴한 모델을 고려해야 할 것 같습니다."
+        "rationale_cot": "가격이 비싸고 가성비가 떨어지기 때문에 구매하기 어렵습니다. 다른 브랜드를 찾아보는 게 좋겠어요."
       },
       "flipped": true
     },
@@ -736,19 +736,19 @@
       "agent_id": "agent-seojin-36",
       "agent_name": "이다은",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전은 필요할 때마다 교체하므로 가격이 적정하다면 구매할 것이다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "현재로서는 필요하지 않으며, 가격이 비쌉니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전제품에 대한 관심이 적어 구매하지 않겠다."
+        "confidence": 5,
+        "rationale_cot": "긴급도가 낮고 예산이 부족하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 360,000원은 저에게 부담이 큽니다. 다른 대안을 찾아보겠습니다."
+        "rationale_cot": "가격이 너무 비싸고 가성비가 좋지 않아서 구매할 수 없을 것 같습니다. 다른 대안들을 찾아봐야겠어요."
       },
       "flipped": false
     },
@@ -758,57 +758,57 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 4,
-        "rationale_cot": "가전은 자주 교체하므로 가격이 적정하면 구매할 것이다."
+        "rationale_cot": "긴급도가 높고, 가격을 감수하고 구매합니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비가 좋고 필요성이 느껴져서 구매할 계획이다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스러워서 구입을 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 너무 비쌉니다. 가성비를 고려해 다른 제품을 찾아보는 게 좋겠습니다."
+        "rationale_cot": "가격이 비싸고 가성비가 떨어져서 구매하기 어려울 것 같습니다. 다른 브랜드를 알아보는 게 좋겠어요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-minseo-38",
       "agent_name": "장예진",
       "baselineDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가전은 필수적이며 가격이 적정하다."
+        "rationale_cot": "예산을 초과하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가성비에 대한 가치가 높아 이 가격에 구매할 것이다."
+        "rationale_cot": "긴급도가 높고 관심도가 높아 가격을 감수하고 구매함."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 부담스러워 다른 저렴한 모델을 찾아봐야 할 것 같습니다."
+        "rationale_cot": "가격이 너무 비싸고, 가성비가 맞지 않는 것 같습니다. 다른 대안을 찾아보는 것이 좋을 것 같아요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-taehyun-39",
       "agent_name": "신연우",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스러워서 구매하기 어렵습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 제한되어 있어서 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 360,000원이면 예산을 초과하니 다른 대안을 찾아야 할 것 같아요."
+        "rationale_cot": "가격이 비싸서 구매하기 어려울 것 같습니다. 가성비가 좋지 않아서 다른 브랜드를 찾아봐야겠어요."
       },
       "flipped": false
     },
@@ -817,18 +817,18 @@
       "agent_name": "박민서",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "현재 필요한 것이 아니며, 가격이 비쌉니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "현재 사용하는 모니터가 충분하다고 생각하여 구매하지 않겠다."
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못함."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 비싸서 다른 저렴한 모델을 고려해야 할 것 같습니다."
+        "rationale_cot": "가격이 너무 비싸고 가성비가 떨어져서 구매하기 어렵습니다. 다른 대안을 찾아보겠습니다."
       },
       "flipped": false
     },
@@ -837,38 +837,38 @@
       "agent_name": "권소윤",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 비싸서 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비가 좋고 현재 사용하는 모니터가 오래되어서 구매할 것이다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 초과하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 대안을 찾아봐야겠어요."
+        "rationale_cot": "가격이 비싸고 가성비가 좋지 않아서 구매할 수 없을 것 같습니다. 다른 브랜드를 알아보는 것이 좋겠어요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-jongho-42",
       "agent_name": "김하준",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "예산을 초과해 구매가 불가능합니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전제품에 대한 관심이 적어 구매하지 않겠다."
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못함."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 360,000원은 저에게 부담이 큽니다. 다른 대안을 찾아보겠습니다."
+        "rationale_cot": "가격이 비싸고 가성비가 떨어져서 구매하기 어려울 것 같습니다. 다른 대안을 찾아봐야겠습니다."
       },
       "flipped": false
     },
@@ -876,19 +876,19 @@
       "agent_id": "agent-seongho-43",
       "agent_name": "임건우",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 적정하고 가성비가 좋다면 구입할 의향이 있다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 비싸서 구매하기 어렵습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 제한되어 있어서 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스러워서 구입을 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 비싸서 다른 저렴한 모델을 고려해야 할 것 같습니다."
+        "confidence": 4,
+        "rationale_cot": "가격이 너무 비싸고 가성비가 맞지 않아서 구매하기 어렵습니다. 다른 대안을 찾아보는 게 좋겠어요."
       },
       "flipped": false
     },
@@ -896,19 +896,19 @@
       "agent_id": "agent-eunha-44",
       "agent_name": "홍예림",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전은 필요성이 크고 가격이 적정하다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "예산이 부족하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 제한되어 있어서 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고 예산이 부족하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 부담스러워 다른 저렴한 모델을 찾아봐야 할 것 같습니다."
+        "rationale_cot": "가격이 비싸고 가성비가 좋지 않아서 구매하기 힘들 것 같습니다. 다른 브랜드를 찾아보는 것이 좋겠어요."
       },
       "flipped": false
     },
@@ -917,18 +917,18 @@
       "agent_name": "조동현",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 초과되어 대안이 필요하다."
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스러워서 구매하기 어렵습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전제품에 대한 관심이 적어 구매하지 않겠다."
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못함."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 너무 높습니다. 가성비를 따지면 다른 대안이 많을 것 같아요."
+        "rationale_cot": "가격이 비싸고 가성비가 떨어져서 구매하기 어려울 것 같습니다. 다른 대안을 찾아봐야겠습니다."
       },
       "flipped": false
     },
@@ -937,58 +937,58 @@
       "agent_name": "최수민",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 초과되어 대안이 필요하다."
+        "confidence": 5,
+        "rationale_cot": "예산 초과로 인해 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비가 좋고 필요성이 느껴져서 구매할 계획이다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스러워서 구입을 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 모델을 찾아봐야겠어요."
+        "rationale_cot": "가격이 너무 비싸고, 가성비가 맞지 않는 것 같습니다. 다른 대안을 찾아보는 것이 좋을 것 같아요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-mikyeong-47",
       "agent_name": "정은서",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 초과되어 대안이 필요하다."
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 비싸서 구매하기 어렵습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비가 뛰어나고 필요한 제품이므로 구매할 것이다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 못함."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 360,000원이면 예산을 초과하니 다른 대안을 찾아야 할 것 같아요."
+        "rationale_cot": "가격이 비싸고 가성비가 좋지 않아서 구매하기 어렵습니다. 다른 브랜드를 알아보는 것이 좋겠어요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-hyeonwoo-48",
       "agent_name": "권동현",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 초과되어 대안이 필요하다."
+        "confidence": 5,
+        "rationale_cot": "예산을 초과하여 구매가 어렵습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "브랜드 충성도가 높아 새로운 브랜드의 제품을 구매하기 어려운 상황이다."
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스러워서 구입을 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 비싸서 다른 저렴한 모델을 고려해야 할 것 같습니다."
+        "rationale_cot": "가격이 비싸고 가성비가 떨어져서 구매하기 힘들 것 같습니다. 다른 대안을 찾아봐야겠습니다."
       },
       "flipped": false
     },
@@ -997,18 +997,18 @@
       "agent_name": "임유진",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 초과되어 대안이 필요하다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸서 현재로서는 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 제한되어 있어서 구매할 수 없다."
+        "confidence": 5,
+        "rationale_cot": "예산이 초과하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 부담스러워 다른 저렴한 모델을 찾아봐야 할 것 같습니다."
+        "rationale_cot": "가격이 너무 비싸고 가성비가 맞지 않아서 구매하기 어렵습니다. 다른 대안을 찾아보는 게 좋겠어요."
       },
       "flipped": false
     },
@@ -1018,17 +1018,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "27인치 모니터는 필요하지 않음. 관심도가 낮고, 가전제품에 대한 투자 우선순위가 낮음."
+        "rationale_cot": "관심도가 낮고, 모니터에 대한 필요성이 없어서 구매하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "관심이 없고 가전은 그냥 쓸만하면 되는 타입이라 구매하지 않음."
+        "rationale_cot": "관심도가 낮고 가전제품에 대한 우선가치가 낮아 구매하지 않겠음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 5,
-        "rationale_cot": "모니터에 큰 관심이 없어서 구매하지 않을 것 같아요."
+        "rationale_cot": "관심도가 낮고 긴급도가 매우 낮아서 구매할 이유가 없어요. 가격이 비싸고 다른 대안이 많으니 더 고민할 것 같아요."
       },
       "flipped": false
     },
@@ -1038,17 +1038,17 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 4,
-        "rationale_cot": "가격이 적당하고 스펙도 괜찮아 보인다. 가성비를 중요시하지만, 이번엔 필요한 것 같아 구매."
+        "rationale_cot": "긴급도가 높아서 가격이 부담되더라도 필요성을 느껴 구매."
       },
       "preDiscussionDecision": {
         "buy": true,
         "confidence": 4,
-        "rationale_cot": "가성비가 좋고 스펙이 마음에 들어서 구매할 것임."
+        "rationale_cot": "긴급도가 높고 관심도가 높아서 가격이 부담되더라도 구매할 것임."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 대안을 찾아보려 합니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 가성비가 떨어져서 다른 모델 찾는 게 더 나을 것 같아요. 긴급도가 높지만 탐색 체력이 높지 않아서 고민 중입니다."
       },
       "flipped": true
     },
@@ -1056,19 +1056,19 @@
       "agent_id": "agent-seojin-52",
       "agent_name": "임수빈",
       "baselineDecision": {
-        "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가전 제품에 관심이 적고, 다른 분야에 지출이 많아 구매할 마음이 없다."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높고, 예산 내에서 구매 가능하므로 선택함."
       },
       "preDiscussionDecision": {
-        "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가전은 필요할 때만 구매하는 편이라 관심이 없음."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높고 가격이 예산 내에 있어 구매할 것임."
       },
       "postDiscussionDecision": {
-        "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가전은 그냥 쓸만하면 되기 때문에 구매하지 않을 것 같아요."
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "긴급도가 높고 가격이 부담되긴 하지만 필요해서 구매할 것 같아요. 다른 대안도 있지만 이 제품이 필요해요."
       },
       "flipped": false
     },
@@ -1078,17 +1078,17 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "모니터가 필요하다. 가격도 적당하고, 스펙도 괜찮아 보인다. 가성비가 좋을 것."
+        "rationale_cot": "관심도가 높고, 필요성이 있어서 가격이 비싸도 구매."
       },
       "preDiscussionDecision": {
         "buy": true,
         "confidence": 4,
-        "rationale_cot": "고급 모니터에 대한 관심이 있어 구매할 것임."
+        "rationale_cot": "관심도가 매우 높고 긴급도가 있어 가격을 감수하고 구매할 것임."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 모델을 찾아보려 합니다."
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸고 긴급도가 높지만 탐색 체력이 낮아서 다른 대안 찾아보기 귀찮아서 그냥 고민 중입니다."
       },
       "flipped": true
     },
@@ -1098,37 +1098,37 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 4,
-        "rationale_cot": "취미로 모니터를 사용하기 때문에, 가격이 적당하다면 구매할 의향이 있다."
+        "rationale_cot": "가성비를 고려하여 필요하다고 생각하고 구매."
       },
       "preDiscussionDecision": {
         "buy": true,
-        "confidence": 4,
-        "rationale_cot": "취미용으로 사용할 수 있는 좋은 모니터라 구매."
+        "confidence": 5,
+        "rationale_cot": "관심도가 높고 긴급도가 높아 가격 인상에도 불구하고 구매할 것임."
       },
       "postDiscussionDecision": {
-        "buy": false,
+        "buy": true,
         "confidence": 5,
-        "rationale_cot": "가격이 부담스러워 대안 모델을 찾아보는 것이 좋겠습니다."
+        "rationale_cot": "가격이 비싸지만 긴급도가 높아서 구매할 것 같아요. 스펙도 나쁘지 않아서 이 제품으로 결정할 것 같아요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-taehyun-55",
       "agent_name": "윤지호",
       "baselineDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 부족해 구매할 수 없다."
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고 탐색 체력이 낮아 구매를 포기."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "예산이 부족하여 구매할 수 없음."
+        "confidence": 2,
+        "rationale_cot": "예산 초과로 인해 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 비싸고, 가성비를 따져보면 다른 모델이 좋을 것 같습니다."
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아서 구매할 이유가 없어요. 가격이 비싸서 고민하게 됩니다."
       },
       "flipped": false
     },
@@ -1137,18 +1137,18 @@
       "agent_name": "홍채원",
       "baselineDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "모니터는 필요하지만, 가격이 더 저렴한 대안이 많아 구매를 미루기로 했다."
+        "confidence": 2,
+        "rationale_cot": "가전 제품에 대한 관심이 없고, 탐색 체력이 낮아 구매하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "가전은 실용적이지 않으면 구매하지 않음."
+        "rationale_cot": "긴급도가 낮고 탐색 체력이 부족해 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 너무 높다고 생각해서 다른 대안을 고려할 것 같아요."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 다른 대안 찾아봐야 할 것 같아요."
       },
       "flipped": false
     },
@@ -1157,18 +1157,18 @@
       "agent_name": "전예림",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전 제품에 대한 필요성이 낮고, 화장품에 더 많은 예산을 할당하고 있다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 4,
-        "rationale_cot": "모니터는 오래 사용해왔고 새로 살 필요성을 느끼지 못함."
+        "confidence": 3,
+        "rationale_cot": "가전 제품에 대한 관심도가 낮고 탐색 체력이 부족해 구매하지 않겠음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스럽고 다른 저렴한 모델을 찾아볼 계획입니다."
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸고 긴급도가 높지 않아서 구매할 이유가 없어요. 다른 대안을 먼저 찾아보겠습니다."
       },
       "flipped": false
     },
@@ -1178,37 +1178,37 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 4,
-        "rationale_cot": "가격이 적당하고, 가전 제품을 새로 사는 것이 필요하다."
+        "rationale_cot": "가전 제품이 필요하고, 예산 내에서 구매할 수 있어 선택."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가게 운영에 필요한 필수 아이템이라 구매할 것임."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "너무 비싸서 다른 모델을 찾아보는 게 좋을 것 같아요."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 구매를 고려하지 않을 것 같아요. 더 저렴한 대안을 찾는 게 좋겠어요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-seongho-59",
       "agent_name": "한예준",
       "baselineDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "모니터 사용이 오래되어서 새로 구매할 필요성을 느끼지 못한다."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 없고 가전에는 큰 관심이 없음."
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 저렴한 모델을 찾아보려 합니다."
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 고민하게 됩니다. 다른 대안을 찾아봐야겠어요."
       },
       "flipped": false
     },
@@ -1216,19 +1216,19 @@
       "agent_id": "agent-eunha-60",
       "agent_name": "안지우",
       "baselineDecision": {
-        "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가전 제품에 대한 관심이 적어서 구매할 생각이 없다."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성도가 높아 익숙한 브랜드의 제품을 선택하여 구매."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "브랜드 충성도가 높아 신뢰하는 브랜드의 제품이라 구매."
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
-        "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 너무 비싸서 고민하게 됩니다."
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "긴급도가 높아서 가격이 비싸도 구매할 것 같아요. 스펙을 고려하면 이 제품이 필요해요."
       },
       "flipped": true
     },
@@ -1238,17 +1238,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "브랜드 충성을 중시하기 때문에, 익숙한 브랜드의 제품이 아니면 구매하지 않겠음."
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 3,
-        "rationale_cot": "가전은 필요한 시점에만 구매하며 현재는 필요성을 못 느낌."
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 대안을 찾아볼 것 같습니다."
+        "confidence": 4,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 다른 대안 찾아봐야 할 것 같아요. 가성비가 중요하거든요."
       },
       "flipped": false
     },
@@ -1256,19 +1256,19 @@
       "agent_id": "agent-yeongja-62",
       "agent_name": "홍하윤",
       "baselineDecision": {
-        "buy": false,
-        "confidence": 1,
-        "rationale_cot": "모니터를 새로 구매할 필요성을 느끼지 못하고, 화장품에 더 많은 지출을 원함."
+        "buy": true,
+        "confidence": 3,
+        "rationale_cot": "긴급도가 높고, 가격이 부담되더라도 필요하다고 생각하여 구매."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "가전은 실용적인 제품만 구매하므로 관심 없음."
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워 대안 모델을 찾아보는 게 좋겠습니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 고민하게 됩니다. 다른 대안도 많으니 신중하게 검토해볼 것 같아요."
       },
       "flipped": false
     },
@@ -1277,38 +1277,38 @@
       "agent_name": "박서연",
       "baselineDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가전 제품에 대한 필요성이 낮고, 예산이 부족해 구매를 고려하지 않음."
+        "confidence": 1,
+        "rationale_cot": "관심도가 낮고 예산이 부족하여 구매하지 않음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "미닝아웃 가치와 브랜드의 가심비가 마음에 들어 구매."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 비싸서 다른 저렴한 모델을 고려할 것 같아요."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 구매를 고민할 것 같아요. 다른 대안 찾아봐야겠어요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-hyeonwoo-64",
       "agent_name": "송시우",
       "baselineDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "환경을 고려하여 중고 제품을 선호하기 때문에, 새 제품 구매는 고려하지 않음."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가전은 보수적이고 필요할 때만 구매하는 편."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 대안을 찾아보려 합니다."
+        "confidence": 4,
+        "rationale_cot": "긴급도가 높지만 가격이 비싸니까 다른 대안 찾아봐야 할 것 같아요."
       },
       "flipped": false
     },
@@ -1317,18 +1317,18 @@
       "agent_name": "이은서",
       "baselineDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 부족해 구매할 수 없다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가전은 실용적이지 않으면 구매하지 않음."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 너무 비싸서 고민하게 됩니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 구매하기 어려울 것 같아요. 다른 대안도 많으니 신중하게 검토해야 해요."
       },
       "flipped": false
     },
@@ -1336,29 +1336,69 @@
       "agent_id": "agent-chaerin-66",
       "agent_name": "송가은",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 적당하고, 가전제품에 대한 관심이 있어 구매할 생각이 있다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "탐색 체력이 낮아서 구매하기 귀찮음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비와 가심비 모두 만족하는 제품이라 구매."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워 대안 모델을 찾아보는 게 좋겠습니다."
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아서 구매할 이유가 없어요. 가격이 비싸서 고민하게 됩니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-minjun-67",
       "agent_name": "김준호",
       "baselineDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 구매할 이유가 없어요. 더 저렴한 대안을 찾아볼 것 같아요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-seojin-68",
+      "agent_name": "송윤아",
+      "baselineDecision": {
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "필요성이 높고 예산 내에서 구매할 수 있어 선택함."
+      },
+      "preDiscussionDecision": {
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 않음."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 구매할 이유가 없어요. 다른 대안 찾아봐야겠어요."
+      },
+      "flipped": false
+    },
+    {
+      "agent_id": "agent-doyoon-69",
+      "agent_name": "장민준",
+      "baselineDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "모니터를 새로 구매해야 할 필요성이 있어, 가격이 적당하므로 구매 결정을 내리겠다."
+        "rationale_cot": "관심도가 높고 긴급도가 높아 필요성을 느껴 구매."
       },
       "preDiscussionDecision": {
         "buy": false,
@@ -1367,88 +1407,48 @@
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 비싸서 다른 저렴한 모델을 고려할 것 같아요."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 고민하게 됩니다. 다른 대안도 많으니 신중하게 검토해야 해요."
       },
       "flipped": false
-    },
-    {
-      "agent_id": "agent-seojin-68",
-      "agent_name": "송윤아",
-      "baselineDecision": {
-        "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전 제품에 대한 필요성이 낮고, 예산이 부족해 구매하지 않겠다."
-      },
-      "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전의 필요성 느끼고 가성비가 좋아 구매."
-      },
-      "postDiscussionDecision": {
-        "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 대안을 찾아볼 것 같습니다."
-      },
-      "flipped": true
-    },
-    {
-      "agent_id": "agent-doyoon-69",
-      "agent_name": "장민준",
-      "baselineDecision": {
-        "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가전 제품에 대한 필요성이 적고, 예산이 부족해 구매를 고려하지 않음."
-      },
-      "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전의 필요성을 느끼고 가성비가 뛰어나 구매."
-      },
-      "postDiscussionDecision": {
-        "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 너무 비싸서 고민하게 됩니다."
-      },
-      "flipped": true
     },
     {
       "agent_id": "agent-minseo-70",
       "agent_name": "한다은",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 적당하고, 가전 제품을 새로 사는 것이 필요하다."
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "필요한 제품이며 가격이 적당해 구매할 것임."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매할 필요성을 느끼지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워 대안 모델을 찾아보는 게 좋겠습니다."
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 고민하게 됩니다. 다른 대안도 많으니 신중하게 검토해야 해요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-taehyun-71",
       "agent_name": "서민준",
       "baselineDecision": {
-        "buy": false,
-        "confidence": 1,
-        "rationale_cot": "모니터를 새로 구매할 필요성을 느끼지 못하고, 화장품에 더 많은 지출을 원함."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "필요성이 높고, 가격이 부담되더라도 구매."
       },
       "preDiscussionDecision": {
-        "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 저렴하더라도 관심이 없고 필요성을 못 느끼고 있음."
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "관심도가 높고 긴급도가 높아 가격 인상에도 불구하고 구매할 것임."
       },
       "postDiscussionDecision": {
-        "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 비싸서 다른 저렴한 모델을 고려할 것 같아요."
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "긴급도가 높고 가격이 비싸도 필요해서 구매할 것 같아요. 다른 대안도 있지만 이 제품이 필요해요."
       },
       "flipped": false
     },
@@ -1456,19 +1456,19 @@
       "agent_id": "agent-jihye-72",
       "agent_name": "윤하윤",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 적당하고, 가전 제품을 새로 사는 것이 필요하다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가전은 실용적이지 않으면 구매하지 않음."
+        "confidence": 5,
+        "rationale_cot": "관심도가 높고 긴급도가 높아 가격을 감수하고 구매할 것임."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워서 다른 대안을 찾아보려 합니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 다른 대안 찾아봐야 할 것 같아요."
       },
       "flipped": false
     },
@@ -1477,18 +1477,18 @@
       "agent_name": "오수빈",
       "baselineDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 부족해 구매할 수 없다."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
+        "confidence": 2,
         "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 너무 비싸서 고민하게 됩니다."
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 고민하게 됩니다. 다른 대안도 많으니 신중하게 검토해야 해요."
       },
       "flipped": false
     },
@@ -1498,37 +1498,37 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "모니터 사용이 오래되어서 새로 구매할 필요성을 느끼지 못한다."
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매하지 않음."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 4,
-        "rationale_cot": "가전의 필요성을 느끼고 가성비가 뛰어나 구매."
+        "rationale_cot": "관심도가 높고 긴급도가 높아 가격을 감수하고 구매할 것임."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가격이 부담스러워 대안 모델을 찾아보는 게 좋겠습니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아서 고민하게 됩니다. 다른 대안도 많으니 신중하게 검토해야 해요."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-seongho-75",
       "agent_name": "홍하준",
       "baselineDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 2,
-        "rationale_cot": "가격이 예산 내에 있으며, 가성비를 중시하는 내가 필요로 하는 모니터."
+        "rationale_cot": "예산이 초과하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 합리적이고 가성비가 뛰어난 제품으로, 가게 운영에 필수적인 모니터이기 때문에 구매할 예정이다."
+        "rationale_cot": "가격이 다소 비싸지만, 가게 운영에 필수적인 모니터이므로 구매 결정을 내렸습니다."
       },
       "postDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 제 예산 내에 있고, 가성비가 뛰어난 제품으로 보이기 때문에 구매를 고려합니다."
+        "rationale_cot": "가격이 너무 비쌉니다. 다른 대안이 많고 가성비가 떨어지기 때문에 구매를 고려하지 않습니다."
       },
       "flipped": false
     },
@@ -1538,17 +1538,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "예산이 없으므로 구매할 수 없다."
+        "rationale_cot": "예산이 0원이어서 구매가 불가능합니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 없어서 구매할 수 없다."
+        "confidence": 2,
+        "rationale_cot": "예산이 0원으로 제한되어 있어 구매할 수 없습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 없으므로 구매할 수 없습니다."
+        "confidence": 5,
+        "rationale_cot": "현재 예산이 부족하고, 긴급도가 낮아 이 가격에 구매하기는 어렵습니다."
       },
       "flipped": false
     },
@@ -1557,18 +1557,18 @@
       "agent_name": "임건우",
       "baselineDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "브랜드에 대한 충성도가 높아, 익숙한 브랜드의 제품만 구매할 것."
+        "confidence": 2,
+        "rationale_cot": "브랜드 충성으로 인해 가격이 비싸면 구매를 고려하지 않습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "브랜드 충성도가 높아서 익숙한 브랜드의 제품만 구매할 예정이다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "브랜드 충성도가 높아 다른 브랜드 제품을 고려할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "브랜드 충성이 강한 편이라 가격대가 비슷한 다른 브랜드를 찾을 것 같습니다."
       },
       "flipped": false
     },
@@ -1576,19 +1576,19 @@
       "agent_id": "agent-yeongja-78",
       "agent_name": "최지우",
       "baselineDecision": {
-        "buy": false,
-        "confidence": 3,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높아지고 예산 내에서 구매할 수 있어 필요합니다."
       },
       "preDiscussionDecision": {
-        "buy": false,
-        "confidence": 2,
-        "rationale_cot": "브랜드 충성도가 높고, 가전은 신중하게 구매하기 때문에 이 제품은 고려하지 않겠다."
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "긴급도가 높아 가격 인상에도 불구하고 구매해야 합니다."
       },
       "postDiscussionDecision": {
-        "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 부담스러워서 다른 저렴한 모델을 찾아야 할 것 같습니다."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높아서 가격이 비싸더라도 필요할 때는 구매해야 합니다."
       },
       "flipped": false
     },
@@ -1596,39 +1596,39 @@
       "agent_id": "agent-mikyeong-79",
       "agent_name": "김민지",
       "baselineDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 3,
-        "rationale_cot": "가격이 적정 수준이며, 가전 기기를 적극적으로 구매할 수 있는 예산이 있다."
+        "rationale_cot": "예산이 초과하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 적당하고 브랜드 충성도는 낮지만 가성비가 좋다고 판단하여 구매할 예정이다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가전제품은 보수적이어서 저렴한 모델을 찾아볼 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가성비가 떨어지는 것 같아 다른 대안을 찾아보겠습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-hyeonwoo-80",
       "agent_name": "김주원",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 저가품에 대한 불신이 있다."
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮아 가격을 고려하게 됩니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 부족하여 이 제품을 구매할 수 없다."
+        "confidence": 3,
+        "rationale_cot": "예산이 부족하여 구매할 수 없습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 4,
-        "rationale_cot": "가성비가 중요하지만 가격이 예산을 초과하므로 대안을 찾아야 합니다."
+        "confidence": 5,
+        "rationale_cot": "예산이 초과되어 구매할 수 없습니다."
       },
       "flipped": false
     },
@@ -1636,19 +1636,19 @@
       "agent_id": "agent-sua-81",
       "agent_name": "강지유",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "게임 및 스펙 비교에 관심이 많아, 가격대비 성능이 좋으면 구매할 것."
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "긴급도가 낮고 예산이 부족해 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전 제품에는 무관심하며, 필요성을 느끼지 못해 구매하지 않겠다."
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 너무 비싸 보이며, 다른 대안을 찾아볼 생각입니다."
+        "confidence": 5,
+        "rationale_cot": "현재 예산이 부족하고, 긴급도가 낮아 이 가격에 구매하기는 어렵습니다."
       },
       "flipped": false
     },
@@ -1657,18 +1657,18 @@
       "agent_name": "서윤아",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전 제품에 대한 관심이 낮아, 필요성을 느끼지 못한다."
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮아 지금 구매할 필요성을 느끼지 못합니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전 제품에 대한 관심이 낮고 구매할 생각이 없다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가전제품에 대한 관심이 적어 다른 저렴한 모델을 찾아보는 것이 좋을 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "관심도는 있지만 가격이 너무 비쌉니다. 다른 대안이 많아 고민할 필요가 있습니다."
       },
       "flipped": false
     },
@@ -1677,18 +1677,18 @@
       "agent_name": "신예준",
       "baselineDecision": {
         "buy": true,
-        "confidence": 3,
-        "rationale_cot": "가전 제품에 대한 관심이 많고, 가격대비 성능이 좋다면 구매할 것."
+        "confidence": 4,
+        "rationale_cot": "관심도가 높고 예산 내에서 구매할 수 있어 필요합니다."
       },
       "preDiscussionDecision": {
-        "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
-      },
-      "postDiscussionDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "가격 대비 성능이 좋고, 예산 내에서 구매 가능하여 흥미롭습니다."
+        "rationale_cot": "모니터에 대한 관심도가 매우 높아 구매 결정을 내렸습니다."
+      },
+      "postDiscussionDecision": {
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가성비를 중시하는데 이 가격은 너무 비쌉니다. 다른 브랜드를 찾아보겠습니다."
       },
       "flipped": true
     },
@@ -1697,18 +1697,18 @@
       "agent_name": "윤윤서",
       "baselineDecision": {
         "buy": true,
-        "confidence": 3,
-        "rationale_cot": "가격이 적당하고, 가전 제품을 자주 구매하는 편이다."
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높고 예산 내에서 구매할 수 있어 필요합니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가격이 적당하고, 모니터에 대한 관심이 매우 높아 구매할 예정이다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 구매할 수 없습니다."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "게임과 작업을 위해 필요한 제품이니 가격이 적당하면 구매할 것입니다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고 가성비가 떨어지기 때문에 구매를 하지 않겠습니다."
       },
       "flipped": false
     },
@@ -1716,19 +1716,19 @@
       "agent_id": "agent-doyoon-85",
       "agent_name": "홍지호",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전 기기를 자주 교체하며, 가격이 적정하다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮아 구매를 고려하지 않습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 초과하여 대안을 찾아야 할 것 같다."
+        "confidence": 4,
+        "rationale_cot": "예산이 부족하여 구매할 수 없습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가성비는 좋지만, 가격이 여전히 부담스럽습니다."
+        "confidence": 5,
+        "rationale_cot": "긴급도가 낮고 가격이 부담스러워 구매하지 않겠습니다."
       },
       "flipped": false
     },
@@ -1738,79 +1738,79 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 4,
-        "rationale_cot": "가전 기기에 대한 관심이 높아, 가격이 적정하다고 생각한다."
+        "rationale_cot": "관심도가 높고 예산 내에서 구매할 수 있어 필요합니다."
       },
       "preDiscussionDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "취미용으로 필요하고, 가격이 부담스럽지 않아서 구매할 예정이다."
+        "rationale_cot": "긴급도가 높고 관심도가 높아 구매 결정을 내렸습니다."
       },
       "postDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 예산 내에 있고, 성능이 좋을 것 같아 구매할 의향이 있습니다."
+        "rationale_cot": "가성비가 중요한데 이 가격은 너무 비쌉니다. 다른 대안을 찾아볼 것 같습니다."
       },
-      "flipped": false
+      "flipped": true
     },
     {
       "agent_id": "agent-taehyun-87",
       "agent_name": "전성민",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 3,
-        "rationale_cot": "가전 제품에 대한 관심이 높고, 가격이 적정하다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고 예산이 부족하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 합리적이며, 가성비와 가심비를 고려했을 때 구매할 만 하다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 구매할 수 없습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 4,
-        "rationale_cot": "가격이 부담스러워 다른 저렴한 대안 모델을 찾아봐야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "예산이 넘어서 구매하기 힘듭니다. 다른 브랜드를 찾는 것이 좋겠습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-jihye-88",
       "agent_name": "권예림",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전 제품에 대한 관심이 높고, 가격이 적정하다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고 예산이 부족하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 저렴하고 필요성이 커서 구매할 예정이다."
+        "rationale_cot": "긴급도가 높아 가격 인상에도 불구하고 구매해야 합니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 부담스러워서 대안을 찾아보는 것이 좋을 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가성비를 중시하는데 가격이 비쌉니다. 다른 대안을 고려하겠습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-yunjeong-89",
       "agent_name": "홍윤아",
       "baselineDecision": {
-        "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "관심도가 높고 예산 내에서 구매할 수 있어 필요합니다."
       },
       "preDiscussionDecision": {
-        "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "buy": true,
+        "confidence": 4,
+        "rationale_cot": "긴급도가 높아 가격 인상에도 불구하고 구매해야 합니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 부족해 구매할 수 없을 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 비쌉니다. 다른 더 저렴한 대안이 많습니다."
       },
-      "flipped": false
+      "flipped": true
     },
     {
       "agent_id": "agent-jongho-90",
@@ -1818,17 +1818,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "예산이 없어서 구매할 수 없다."
+        "rationale_cot": "예산이 초과하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 없어서 구매할 수 없다."
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 구매할 수 없습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가성비가 좋긴 하지만 가격이 너무 비쌉니다."
+        "confidence": 5,
+        "rationale_cot": "관심도가 낮고 가격이 비싸서 구매를 고려하지 않겠습니다."
       },
       "flipped": false
     },
@@ -1838,17 +1838,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "예산이 없어서 구매할 수 없다."
+        "rationale_cot": "예산이 0원이어서 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 이 제품을 구매할 수 없다."
+        "confidence": 2,
+        "rationale_cot": "예산이 0원으로 제한되어 있어 구매할 수 없습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산을 초과해 다른 저렴한 모델을 찾아봐야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비쌉니다. 다른 브랜드를 비교해볼 것입니다."
       },
       "flipped": false
     },
@@ -1857,18 +1857,18 @@
       "agent_name": "정유진",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 2,
+        "rationale_cot": "브랜드 충성으로 인해 가격이 비싸면 구매를 고려하지 않습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 초과하여 대안을 찾아야 할 것 같다."
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 구매할 수 없습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 부담스러워 저렴한 대안을 찾아야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "예산이 부족해서 구매하기 어렵습니다."
       },
       "flipped": false
     },
@@ -1878,17 +1878,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "rationale_cot": "예산이 초과하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 4,
-        "rationale_cot": "가격이 비싸고, 브랜드에 대한 충성도가 높아 다른 제품을 고려할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아 구매를 고려하지 않겠습니다."
       },
       "flipped": false
     },
@@ -1898,17 +1898,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "rationale_cot": "예산이 초과하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 부담스러워서 다른 대안을 찾아봐야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가성비가 좋지 않아 다른 대안을 찾아볼 것입니다."
       },
       "flipped": false
     },
@@ -1917,18 +1917,18 @@
       "agent_name": "최수빈",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고 예산이 부족하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 부담스러워서 다른 저렴한 모델을 찾아보는 것이 좋을 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고 긴급도가 낮아 구매를 고려하지 않겠습니다."
       },
       "flipped": false
     },
@@ -1936,19 +1936,19 @@
       "agent_id": "agent-hyeonwoo-96",
       "agent_name": "조수현",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 3,
-        "rationale_cot": "가격이 적정하고, 가전 제품에 대한 관심이 높다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 초과하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 초과하여 대안을 찾아야 할 것 같다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 4,
-        "rationale_cot": "예산이 초과되어 다른 대안을 찾아봐야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비쌉니다. 다른 대안이 많아 고민할 필요가 있습니다."
       },
       "flipped": false
     },
@@ -1956,19 +1956,19 @@
       "agent_id": "agent-sua-97",
       "agent_name": "홍지우",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 3,
-        "rationale_cot": "가격이 적정하고, 가전 제품에 대한 관심이 높다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 초과하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 4,
+        "rationale_cot": "긴급도가 높아 가격 인상에도 불구하고 구매해야 합니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 비싸서 가성비 좋은 다른 모델을 고려할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비쌉니다. 다른 대안이 많아 고민할 필요가 있습니다."
       },
       "flipped": false
     },
@@ -1977,20 +1977,20 @@
       "agent_name": "황예림",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하여 구매할 수 없다."
+        "confidence": 2,
+        "rationale_cot": "예산이 초과하여 구매할 수 없습니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 합리적이고, 가성비와 가심비를 고려했을 때 구매할 만 하다."
+        "rationale_cot": "긴급도가 높고 관심도가 높아 구매 결정을 내렸습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 초과되어 다른 저렴한 대안을 찾아봐야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비쌉니다. 다른 대안이 많아 고민할 필요가 있습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-minjun-99",
@@ -1998,19 +1998,19 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 4,
-        "rationale_cot": "게임과 관련된 기기를 자주 구매하며, 가격이 적정하다."
+        "rationale_cot": "관심도가 높고 예산 내에서 구매할 수 있어 필요합니다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가격이 적당하고 필요성이 크기 때문에 구매할 예정이다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않습니다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 4,
-        "rationale_cot": "가격이 부담스러워 다른 저렴한 제품을 찾아보아야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비쌉니다. 다른 대안이 많아 고민할 필요가 있습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-seojin-100",
@@ -2018,37 +2018,37 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "이 가격대의 모니터는 가성비가 좋고, 27인치 1440p 해상도는 충분히 만족스럽다. 가전은 그냥 쓸만하면 OK."
+        "rationale_cot": "현재 가격대가 예산 내에 있으며, 가전은 쓸만하면 OK하기 때문에 적당한 제품으로 판단."
       },
       "preDiscussionDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "가격이 적당하고, 가심비를 중요시하기 때문에 구매할 것."
+        "rationale_cot": "가격이 예산 내에 있으나, 관심도가 낮아서 신중하게 구매할 것."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 조금 부담스럽지만 성능이 좋고 가성비를 고려했을 때 충분히 가치가 있다고 생각합니다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 비싸고, 다른 대안이 많아 고민 중입니다."
       },
-      "flipped": false
+      "flipped": true
     },
     {
       "agent_id": "agent-doyoon-101",
       "agent_name": "권지훈",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "대기업 브랜드 선호이지만, 가격과 스펙이 좋다면 구매할 의향이 있다. 듀얼 모니터 환경을 갖추고 싶다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고 탐색 체력이 부족하여 구매를 미루고 싶음."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 4,
-        "rationale_cot": "고급 모니터를 선호하고, 가격이 합리적이어서 구매할 것."
+        "rationale_cot": "가격이 괜찮고, 관심도가 높아 나중에 필요할 것 같아 구매."
       },
       "postDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격 대비 성능이 뛰어나고, 듀얼 모니터 환경에서 활용할 수 있어 구매할 가치가 있다고 판단합니다."
+        "rationale_cot": "가성비가 떨어져서 다른 제품을 찾는 것이 나을 것 같습니다."
       },
       "flipped": false
     },
@@ -2056,19 +2056,19 @@
       "agent_id": "agent-minseo-102",
       "agent_name": "박수빈",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가성비가 좋고, 제안 가격이 예산에 적합하다. 자주 쓰는 가전이니만큼 좋은 품질을 원한다."
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "가격에 대한 관심이 낮고, 긴급도가 낮아 당장 구매할 필요성을 느끼지 못함."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가성비와 가심비를 중요시하며, 가격이 적당해 구매할 것."
+        "rationale_cot": "가격이 예산 내에 있으며, 필요할 것 같아 구매."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격은 괜찮은 편이고, 성능이 우수하다는 점에서 고려할 만한 제품입니다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 높아 다른 브랜드로 알아보는 게 현명하다고 생각합니다."
       },
       "flipped": false
     },
@@ -2078,39 +2078,39 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "취미로 고급 모니터를 찾고 있어 이 가격대는 적절하다. 브랜드는 중요하지만, 가격이 매력적이다."
+        "rationale_cot": "관심도가 높고 예산 내에서 괜찮은 제품이라서 구매할 의향이 있음."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 3,
-        "rationale_cot": "예산 초과로 대안을 찾아야 함."
+        "rationale_cot": "관심도가 높지만, 가격이 부담스러워서 다음 기회를 기다릴 것."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "360,000원의 가격은 부담스럽지 않으며, 성능이 좋다면 구매할 의향이 있습니다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "이 가격에 만족할 스펙이 아니어서 고민하고 있습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-jihye-104",
       "agent_name": "장지원",
       "baselineDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산 초과는 아니지만, 현재 필요한 물건이 아니라서 구매를 고려하지 않음."
+        "confidence": 3,
+        "rationale_cot": "탐색 체력이 낮아 귀찮아서 구매를 미루고 싶음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 적당하고, 가전제품은 실용적이어야 하므로 구매할 것."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "관심도와 긴급도가 낮아 구매를 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 좀 비싸다고 느껴지며, 다른 저렴한 모델도 많아 고민이 필요합니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 부담스럽고, 다른 저렴한 대안을 알아보려고 합니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-yunjeong-105",
@@ -2118,17 +2118,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "가전은 가성비가 중요하다. 이 가격이면 더 저렴한 대안을 찾을 수 있다."
+        "rationale_cot": "예산이 초과되며 긴급도가 낮아 구매하지 않기로 결정."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "예산이 부족해 구매할 수 없음."
+        "rationale_cot": "관심도와 탐색체력이 낮아 구매를 하지 않을 것."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 부담스러워서 다른 모델을 찾아보는 것이 좋을 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸서 고민하고 있으며, 다른 제품을 비교해봐야 합니다."
       },
       "flipped": false
     },
@@ -2137,18 +2137,18 @@
       "agent_name": "박연우",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하다. 현재 다른 필수 지출이 많아 구매할 수 없다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮아 당장 구매할 이유를 못 느끼고 있음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "예산 초과로 대안을 찾아야 함."
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 구매가 불가능."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 높은 편이어서 다른 대안을 찾아보는 게 좋을 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 높고, 다른 대안이 많아 고민 중입니다."
       },
       "flipped": false
     },
@@ -2157,18 +2157,18 @@
       "agent_name": "신주원",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 구매할 필요성을 느끼지 못한다."
+        "confidence": 2,
+        "rationale_cot": "예산이 없기 때문에 구매가 불가능."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 전혀 없어서 구매 불가."
+        "confidence": 1,
+        "rationale_cot": "예산이 없어서 아예 구매를 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "360,000원은 부담스러워서 다른 저렴한 모델을 고려해야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "현재 예산이 부족해서 이 가격은 부담스러워요."
       },
       "flipped": false
     },
@@ -2177,38 +2177,38 @@
       "agent_name": "최수민",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "소득이 없어서 구매할 수 없다."
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "브랜드 충성도가 낮고, 가격이 합리적이어서 구매할 것."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고, 예산도 부족해 구매를 하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 비싸고 가성비를 고려할 때 다른 대안이 많을 것 같아 고민해봐야 합니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 높아서 고민하고 있으며, 다른 대안을 찾고 있습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-jeongsu-109",
       "agent_name": "송시우",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 현재 필요하지 않다."
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아 구매할 필요성을 느끼지 못함."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산 초과로 구매할 수 없음."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고, 관심도도 낮아서 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 부담스럽고, 브랜드 신뢰도도 고려해야 해서 다시 생각해봐야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고, 필요성도 낮아서 구매하지 않을 것 같습니다."
       },
       "flipped": false
     },
@@ -2217,18 +2217,18 @@
       "agent_name": "이하은",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "현재 필요한 가전이 아니라서 구매하지 않겠다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 미루고 싶음."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "예산이 부족해 구매할 수 없음."
+        "rationale_cot": "관심도가 낮고, 예산이 부족하여 구매를 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 좀 부담스러워서 다른 브랜드를 찾아볼까 싶습니다."
+        "confidence": 5,
+        "rationale_cot": "이 가격에 이런 스펙은 만족스럽지 않아서 다른 대안을 찾아야 할 것 같습니다."
       },
       "flipped": false
     },
@@ -2237,18 +2237,18 @@
       "agent_name": "전채원",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 다른 지출이 많아 구매할 수 없다."
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "예산이 매우 제한적이라 구매할 수 없음."
+        "rationale_cot": "예산이 부족하고, 긴급도가 낮아 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가격이 너무 비싸고, 다른 저렴한 대안이 많을 것 같아 고민해 보고 싶습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고, 긴급성이 낮아서 구매를 보류하겠습니다."
       },
       "flipped": false
     },
@@ -2257,58 +2257,58 @@
       "agent_name": "윤준서",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "현재 필요한 가전이 아니라서 구매하지 않겠다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매하지 않기로 결정."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비를 중요시하며 가격이 적당해 구매할 것."
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "관심도가 낮고, 예산이 없는 상태라 구매를 하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가격이 너무 비싸고, 신중하게 비교해봐야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸서 다른 대안이 많다는 의견에 동의합니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-sua-113",
       "agent_name": "정예림",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 현재 필요하지 않다."
+        "confidence": 3,
+        "rationale_cot": "예산이 부족하며 관심도가 낮아 구매의 필요성을 느끼지 못함."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 적당하고, 실용적이어서 구매할 것."
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "관심도가 낮고, 예산이 없어 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 부담스럽고, 다른 브랜드를 찾아보는 것이 좋을 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 높아 다른 제품을 알아보는 게 좋겠다고 생각합니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-chaerin-114",
       "agent_name": "김하윤",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 현재 필요한 물건이 아니라서 구매하지 않겠다."
+        "confidence": 4,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아 구매하지 않기로 결정."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가전제품에 대한 관심이 있어 가격이 적당하면 구매할 것."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 탐색체력이 부족해 구매를 하지 않음."
       },
       "postDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가격이 적당하고 성능이 뛰어나기 때문에 구매할 의향이 있습니다."
+        "rationale_cot": "가격이 비싸고, 다른 대안이 많아 고민 중입니다."
       },
       "flipped": false
     },
@@ -2316,19 +2316,19 @@
       "agent_id": "agent-minjun-115",
       "agent_name": "임승우",
       "baselineDecision": {
-        "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 현재 필요한 물건이 아니라서 구매하지 않겠다."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "관심도가 높고 예산 내에서 구매할 수 있는 가격이라서 긍정적."
       },
       "preDiscussionDecision": {
         "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전제품에 대한 관심이 있어 가격이 적당하면 구매할 것."
+        "confidence": 5,
+        "rationale_cot": "가격이 예산 내에 있으며, 관심도가 높아 구매할 것."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 부담스러워서 다른 저렴한 모델을 찾아봐야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고, 필요성이 낮아서 구매하지 않겠습니다."
       },
       "flipped": true
     },
@@ -2337,78 +2337,78 @@
       "agent_name": "윤지우",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 현재 필요한 가전이 아니라서 구매하지 않겠다."
+        "confidence": 2,
+        "rationale_cot": "예산이 초과되며 긴급도가 낮아 구매하지 않기로 결정."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가성비와 브랜드 가치를 중요시하며 가격이 적당해 구매할 것."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하고, 긴급도가 낮아 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 조금 부담스럽고, 다른 대안을 고려해야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고, 다른 대안을 고려해야 할 것 같습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-doyoon-117",
       "agent_name": "오준호",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "현재 필요한 가전이 아니라서 구매하지 않겠다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 미루고 싶음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산 초과로 대안을 찾아야 함."
+        "confidence": 1,
+        "rationale_cot": "관심도와 예산이 부족하여 구매를 고려하지 않음."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 나쁘지 않고, 성능이 괜찮아서 구매할 가치가 있다고 생각합니다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 비싸서 고민하고 있으며, 다른 대안이 필요합니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-minseo-118",
       "agent_name": "윤민지",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 현재 필요하지 않다."
+        "confidence": 3,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 적당하고, 가전제품은 실용적이어야 하므로 구매할 것."
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고, 긴급도가 낮아 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 비싸고, 가성비를 고려할 때 다른 대안이 많을 것 같아 고민해봐야 합니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸서 다른 제품을 알아보는 것이 좋겠다고 생각합니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-taehyun-119",
       "agent_name": "권주원",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 현재 필요한 가전이 아니라서 구매하지 않겠다."
+        "confidence": 2,
+        "rationale_cot": "예산이 초과되며 긴급도가 낮아 구매하지 않기로 결정."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 부족해 구매할 수 없음."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고, 긴급도가 낮아 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 부담스럽고, 브랜드 신뢰도도 고려해야 해서 다시 생각해봐야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고, 이 정도 가격에는 다른 대안이 많아서 구매를 고려하지 않겠습니다."
       },
       "flipped": false
     },
@@ -2417,38 +2417,38 @@
       "agent_name": "강지원",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "소득이 없어서 구매할 수 없다."
+        "confidence": 4,
+        "rationale_cot": "예산이 부족하며 긴급도가 낮아 구매를 미루고 싶음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가격이 적당하고, 가전제품에 대한 관심이 많아 구매할 것."
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "관심도가 낮고, 예산이 부족하여 구매를 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가격이 부담스러워서 다른 브랜드를 찾아볼까 싶습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고, 필요성이 낮아서 구매를 보류하겠습니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-yunjeong-121",
       "agent_name": "김윤아",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "현재 필요한 가전이 아니라서 구매하지 않겠다."
+        "confidence": 2,
+        "rationale_cot": "예산이 초과되며 긴급도가 낮아 구매하지 않기로 결정."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산 초과로 대안을 찾아야 함."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고, 긴급도가 낮아 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 너무 비싸고, 다른 저렴한 대안이 많을 것 같아 고민해 보고 싶습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 너무 비싸고, 다른 대안이 많아 고민 중입니다."
       },
       "flipped": false
     },
@@ -2457,38 +2457,38 @@
       "agent_name": "조성민",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 현재 필요하지 않다."
+        "confidence": 3,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "예산이 부족해 구매할 수 없음."
+        "rationale_cot": "관심도가 낮고, 예산이 없어서 구매를 고려하지 않음."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 적당하고 성능이 뛰어나기 때문에 구매할 의향이 있습니다."
+        "buy": false,
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고, 다른 제품을 찾아볼 계획입니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-seongho-123",
       "agent_name": "조수현",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "현재 필요한 가전이 아니라서 구매하지 않겠다."
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하며 긴급도가 낮아 구매하지 않기로 결정."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산 초과로 대안을 찾아야 함."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고, 관심도도 낮아 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 부담스러워서 다른 저렴한 모델을 찾아봐야 할 것 같습니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고, 다른 대안을 고려해야 할 것 같습니다."
       },
       "flipped": false
     },
@@ -2497,18 +2497,18 @@
       "agent_name": "조윤아",
       "baselineDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족하고, 현재 필요한 물건이 아니라서 구매하지 않겠다."
+        "confidence": 2,
+        "rationale_cot": "예산이 초과되며 긴급도가 낮아 구매하지 않기로 결정."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "예산이 전혀 없어서 구매 불가."
+        "rationale_cot": "관심도가 낮고, 예산이 부족하여 구매를 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가격이 비싸고, 다른 대안이 많을 것 같아 고민해봐야 합니다."
+        "confidence": 5,
+        "rationale_cot": "가격이 비싸고, 가성비가 떨어져서 구매하지 않겠습니다."
       },
       "flipped": false
     },
@@ -2518,17 +2518,17 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "브랜드 충성도가 높고 가전 제품에 신중한 선택을 하는 편이지만, 현재 가격이 예산 내에 있어 구매하기로 결정했습니다."
+        "rationale_cot": "브랜드 충성도가 높고, 긴급도가 7로 비교적 높아 가격을 감수하고 구매할 것임. 예산 범위 내."
       },
       "preDiscussionDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "브랜드 충성도가 높아, 익숙한 제품을 구매하고 싶다. 가격도 적당하고, 27인치 모니터는 내 작업 환경에 유용할 것이다."
+        "rationale_cot": "브랜드 충성도가 높고, 가격이 예산 내에 있어 구매 결정."
       },
       "postDiscussionDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "브랜드 충성도가 높고 고가 제품을 선호하는 편이라, 성능이 뛰어난 27인치 1440p 모니터는 충분히 구매할 가치가 있다고 판단했다."
+        "rationale_cot": "브랜드 충성이 강하고 고가의 품질을 선호하는 편이라, 가격이 비싸더라도 신뢰할 수 있는 브랜드의 제품이라면 구매할 의사가 있습니다."
       },
       "flipped": false
     },
@@ -2537,18 +2537,18 @@
       "agent_name": "오채원",
       "baselineDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "예산이 너무 제한적이어서 현재 가격으로는 구매할 수 없습니다."
+        "confidence": 2,
+        "rationale_cot": "카테고리 관심도가 매우 낮고, 예산 초과로 구매가 어렵기 때문."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "예산이 초과되어 구매할 수 없다. 현재 필요한 제품이 아니어서 대체할 생각이다."
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 예산이 부족해서 구매하기 어려움."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "예산이 너무 제한적이어서 360,000원의 모니터는 구매할 수 없다. 다른 저렴한 대안을 찾아봐야겠다."
+        "rationale_cot": "예산이 부족하고 관심도가 낮아, 가격이 비싼 모니터 구매는 불가능합니다."
       },
       "flipped": false
     },
@@ -2556,19 +2556,19 @@
       "agent_id": "agent-mikyeong-127",
       "agent_name": "서하은",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "브랜드 충성도가 높지만, 가격이 적절해 구매하기로 결정했습니다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고, 카테고리 관심도가 낮아 구매 의사가 없음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "브랜드 충성도가 높고, 품질에 대한 신뢰가 있어서 구매할 것이다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고 관심도가 낮아 구매할 필요성을 느끼지 못함."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "기본적으로 브랜드 충성도가 높고 가격대가 부담스럽지만, 성능이 좋다면 고려할 만하다. 리뷰를 더 보고 결정하겠다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아, 가격이 비쌀 경우 다른 대안으로 넘어갈 것입니다."
       },
       "flipped": false
     },
@@ -2578,17 +2578,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 3,
-        "rationale_cot": "가전 제품에 대한 관심이 낮고, 예산이 초과하여 대안이 필요합니다."
+        "rationale_cot": "긴급도가 낮고, 가격이 부담스러워 구매를 고려하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 부족해 구매할 수 없다. 다른 저렴한 대안을 찾아야 한다."
+        "confidence": 4,
+        "rationale_cot": "관심도는 있으나 예산 초과로 구매가 어려움."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 부담스럽고, 비슷한 성능의 저렴한 모델이 많아 신중하게 비교 후 구매 결정을 내릴 예정이다."
+        "confidence": 3,
+        "rationale_cot": "가성비를 중시하며 가격이 비싼 제품은 구매하지 않을 것입니다."
       },
       "flipped": false
     },
@@ -2597,18 +2597,18 @@
       "agent_name": "권다은",
       "baselineDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "가성비를 중요시하지만, 현재 가격이 예산을 초과하여 구매하지 않기로 결정했습니다."
+        "confidence": 4,
+        "rationale_cot": "가성비를 중시하며, 가격이 높은 모델 대신 저렴한 대안을 찾을 것."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "현재 모니터에 큰 문제가 없어서 구매하지 않을 것이다."
+        "confidence": 3,
+        "rationale_cot": "예산 부족으로 인해 구매 결정을 내리지 못함."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 높아 다른 할인 모델을 찾아보는 것이 더 나을 것 같다. 가성비가 최고니까."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아, 가격이 비싼 모니터는 고려하지 않을 것입니다."
       },
       "flipped": false
     },
@@ -2616,19 +2616,19 @@
       "agent_id": "agent-chaerin-130",
       "agent_name": "박수민",
       "baselineDecision": {
-        "buy": false,
+        "buy": true,
         "confidence": 5,
-        "rationale_cot": "가전 제품에 대한 관심이 적고, 예산이 부족하여 구매하지 않을 것입니다."
+        "rationale_cot": "카테고리 관심도가 높고, 긴급도가 중간으로 가격을 감수하고 구매할 가능성이 높음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가성비를 중요시 여기기 때문에 가격이 더 저렴한 다른 제품이 있을 것 같다."
+        "confidence": 4,
+        "rationale_cot": "관심도는 있지만 가격이 부담스러워 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "360,000원은 비싸다. 가성비를 따져보면 다른 모델을 고려해야 할 것 같다."
+        "rationale_cot": "관심도는 있지만 긴급도가 낮고 탐색 체력이 약해 구매를 미룰 것입니다."
       },
       "flipped": false
     },
@@ -2636,39 +2636,39 @@
       "agent_id": "agent-minjun-131",
       "agent_name": "조현우",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비를 중시하며, 현재 가격이 예산 내에 있어 구매를 고려했습니다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고, 카테고리 관심도도 낮아 구매 의사가 없음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "게임을 많이 하므로 큰 화면과 높은 해상도가 필요하다. 가격도 예산 내에 있다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고 탐색 체력이 낮아 구매를 미룸."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 높아서 다른 저렴한 모델을 찾는 것이 좋을 것 같다."
+        "confidence": 2,
+        "rationale_cot": "가성비를 중시하며 가격이 비싼 제품은 구매하지 않을 것입니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-seojin-132",
       "agent_name": "장지유",
       "baselineDecision": {
         "buy": true,
-        "confidence": 3,
-        "rationale_cot": "가전 제품에 대한 관심이 높아 구매를 고려하지만, 가격이 좀 더 낮아지길 기대합니다."
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높고, 카테고리 관심도도 높아 가격을 감수하고 구매할 것."
       },
       "preDiscussionDecision": {
-        "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가전 제품에 대한 관심이 적고, 현재 필요성이 느껴지지 않는다."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높고, 예산 내에서 구매 가능하기 때문에 결정."
       },
       "postDiscussionDecision": {
-        "buy": false,
-        "confidence": 2,
-        "rationale_cot": "물가가 상승하고 있어서 36만원은 부담스럽다. 가성비를 고려해 저렴한 모델을 찾아보겠다."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "가격은 비싸지만 긴급도가 높고 관심도가 크기 때문에, 필요에 따라 구매할 것입니다."
       },
       "flipped": false
     },
@@ -2678,37 +2678,37 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "현재 가격이 적절하며, 가전 제품에 대한 가심비가 높아 구매하기로 결정했습니다."
+        "rationale_cot": "긴급도가 높고, 카테고리 관심도가 중간으로 가격이 비싸도 구매할 가능성이 높음."
       },
       "preDiscussionDecision": {
         "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가성비가 좋고, 현재 사용하는 모니터가 오래되어 교체할 시점이다."
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높아 가격 인상에도 불구하고 구매 결정을 내림."
       },
       "postDiscussionDecision": {
-        "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 너무 비싸고 가성비를 고려하면 다른 대안이 많을 것 같다."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높고 관심도가 큰 제품이기 때문에, 가격이 비싸도 구매할 것입니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-minseo-134",
       "agent_name": "박유나",
       "baselineDecision": {
         "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전 제품에 대한 관심이 높고, 가격이 적절하여 구매를 고려했습니다."
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높고, 예산 범위 내에서 만족할 만한 품질을 찾고 있음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "좋은 스펙의 모니터가 필요하고, 가격도 예산 내에 있다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아 구매를 보류."
       },
       "postDiscussionDecision": {
-        "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 부담스럽고, 브랜드 신뢰도를 고려해 다시 생각해봐야겠다."
+        "buy": true,
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높고 관심도가 큰 제품이기 때문에, 가격이 비싸도 구매할 것입니다."
       },
       "flipped": true
     },
@@ -2716,19 +2716,19 @@
       "agent_id": "agent-taehyun-135",
       "agent_name": "조건우",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가성비를 중시하며, 현재 가격이 예산 내에 있어 구매하기로 결정했습니다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고, 탐색 체력이 낮아 구매를 고려하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가전제품은 가성비가 가장 중요하므로, 다른 대안이 있을 것 같다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮아 구매 결정을 내리지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "가격이 부담스러워 다른 브랜드의 저렴한 모델을 찾아봐야겠다."
+        "rationale_cot": "긴급도가 낮고 탐색 체력이 약해 구매를 미룰 것입니다."
       },
       "flipped": false
     },
@@ -2737,40 +2737,40 @@
       "agent_name": "임가은",
       "baselineDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "예산이 초과하여 대안 제품을 고려해야 합니다."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "예산 초과로 인해 구매하지 않을 것이다."
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고 탐색 체력이 낮아 구매를 포기."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "게임과 작업에 적합한 성능을 갖춘 모니터라면 충분히 가치가 있다. 가격도 예산 내에 들어온다."
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아, 가격이 비싼 모니터는 고려하지 않을 것입니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-yunjeong-137",
       "agent_name": "권서윤",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전 제품에 대한 관심이 높아 구매를 고려했지만, 가격이 적절하여 구매하기로 결정했습니다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고, 탐색 체력이 낮아 구매할 의사가 없음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가전제품에 대한 선호가 높기 때문에, 브랜드 제품을 구매할 것이다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "관심도가 낮고 예산이 부족하여 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "가격이 너무 비싸고, 가성비를 고려하면 저렴한 모델을 찾아보는 게 좋겠다."
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아, 가격이 비싼 모니터는 고려하지 않을 것입니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-jongho-138",
@@ -2778,17 +2778,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 3,
-        "rationale_cot": "예산이 초과하여 대안 제품을 고려해야 합니다."
+        "rationale_cot": "긴급도가 낮고, 탐색 체력이 낮아 편의성을 중시하여 구매하지 않음."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "가전제품에 대한 관심이 적고, 현재 필요성이 느껴지지 않는다."
+        "rationale_cot": "예산 초과로 인해 구매를 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "가격이 부담스럽고, 브랜드 충성도는 있지만 다른 대안을 고려해야겠다."
+        "rationale_cot": "관심도는 있지만 긴급도가 낮고 탐색 체력이 약해 구매를 미룰 것입니다."
       },
       "flipped": false
     },
@@ -2797,18 +2797,18 @@
       "agent_name": "한지훈",
       "baselineDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "현재 예산이 부족하여 구매하지 않기로 결정했습니다."
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고, 예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "예산이 부족해 구매할 수 없다. 다른 저렴한 대안을 찾아야 한다."
+        "confidence": 1,
+        "rationale_cot": "예산이 없고 긴급도가 낮아 구매할 수 없음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 부담스럽고, 성능과 가격을 비교해 더 나은 선택을 해야겠다."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아, 가격이 비싼 모니터는 고려하지 않을 것입니다."
       },
       "flipped": false
     },
@@ -2816,39 +2816,39 @@
       "agent_id": "agent-eunha-140",
       "agent_name": "안수빈",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "브랜드 충성도가 높고, 현재 가격이 예산 내에 있어 구매하기로 결정했습니다."
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "예산 초과로 인해 구매하지 않을 것이다."
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아 구매를 포기."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격대비 성능이 좋고, 가전 제품에 대한 신뢰가 있다. 구매를 고려해볼 만하다."
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아, 가격이 비싼 모니터는 고려하지 않을 것입니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-jeongsu-141",
       "agent_name": "최준우",
       "baselineDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "예산이 초과하여 대안 제품을 고려해야 합니다."
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고, 예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 3,
-        "rationale_cot": "예산이 부족해 구매할 수 없다. 다른 저렴한 대안을 찾아야 한다."
+        "rationale_cot": "관심도가 낮고 탐색 체력이 낮아 구매를 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 전혀 없어서 구매가 불가능하다."
+        "confidence": 2,
+        "rationale_cot": "관심도는 있지만 긴급도가 낮고 탐색 체력이 약해 구매를 미룰 것입니다."
       },
       "flipped": false
     },
@@ -2857,58 +2857,58 @@
       "agent_name": "오지유",
       "baselineDecision": {
         "buy": false,
-        "confidence": 4,
-        "rationale_cot": "현재 예산이 부족하여 구매하지 않기로 결정했습니다."
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고, 예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 4,
-        "rationale_cot": "예산이 초과되어 구매할 수 없다. 현재 필요한 제품이 아니어서 대체할 생각이다."
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아 구매를 미룸."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "브랜드 충성도가 높고, 성능이 뛰어난 제품을 선호하므로 구매를 고려한다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "관심도는 있지만 긴급도가 낮고 탐색 체력이 약해 구매를 미룰 것입니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-mikyeong-143",
       "agent_name": "오지유",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "현재 가격이 적절하며, 가전 제품에 대한 가심비가 높아 구매하기로 결정했습니다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮아 구매를 고려하지 않음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "모니터는 필수품이고, 가격이 적당하다. 브랜드에 대한 신뢰도 있다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 예산이 부족하여 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 부담스러워 다른 대안을 찾아봐야겠다."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아, 가격이 비싼 모니터는 고려하지 않을 것입니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-hyeonwoo-144",
       "agent_name": "장승현",
       "baselineDecision": {
         "buy": false,
-        "confidence": 5,
-        "rationale_cot": "예산이 초과하여 다른 대안을 고려해야 합니다."
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고, 카테고리 관심도가 낮아 구매 의사가 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "예산을 초과해서 구매할 수 없다."
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고 탐색 체력이 낮아 구매를 포기."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산이 부족해 구매할 수 없다."
+        "confidence": 2,
+        "rationale_cot": "관심도는 있지만 긴급도가 낮고 탐색 체력이 약해 구매를 미룰 것입니다."
       },
       "flipped": false
     },
@@ -2916,19 +2916,19 @@
       "agent_id": "agent-sua-145",
       "agent_name": "최수빈",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전 제품에 대한 관심이 높아 구매를 고려했지만, 가격이 적절하여 구매하기로 결정했습니다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고, 카테고리 관심도가 낮아 구매 의사가 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "현재 필요한 제품이 아니어서 대체할 생각이다."
+        "confidence": 2,
+        "rationale_cot": "예산 초과로 인해 구매를 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 너무 비싸고, 가성비를 고려해 다른 모델을 찾아보겠다."
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고 탐색 체력이 약해 구매를 미룰 것입니다."
       },
       "flipped": false
     },
@@ -2936,39 +2936,39 @@
       "agent_id": "agent-chaerin-146",
       "agent_name": "황유진",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "현재 가격이 적절하여 가전 제품 구매를 고려했습니다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고, 카테고리 관심도가 낮아 구매 의사가 없음."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가전 제품에 대한 관심이 높고, 가격도 적당하다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 예산이 부족하여 구매하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가격이 부담스러워 다른 저렴한 대안을 찾아보아야겠다."
+        "confidence": 2,
+        "rationale_cot": "관심도는 있지만 긴급도가 낮고 탐색 체력이 약해 구매를 미룰 것입니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-minjun-147",
       "agent_name": "황주원",
       "baselineDecision": {
-        "buy": false,
+        "buy": true,
         "confidence": 5,
-        "rationale_cot": "예산이 초과하여 대안 제품을 고려해야 합니다."
+        "rationale_cot": "카테고리 관심도가 높고, 긴급도가 중간으로 가격을 감수하고 구매할 가능성이 높음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "예산이 부족해 구매할 수 없다. 다른 저렴한 대안을 찾아야 한다."
+        "confidence": 2,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아 구매를 고려하지 않음."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 비싸고, 성능 대비 가성비를 고려해 다른 모델을 찾아보겠다."
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아, 가격이 비싼 모니터는 고려하지 않을 것입니다."
       },
       "flipped": false
     },
@@ -2976,59 +2976,59 @@
       "agent_id": "agent-seojin-148",
       "agent_name": "서예림",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "브랜드 충성도가 높고, 현재 가격이 예산 내에 있어 구매하기로 결정했습니다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고, 예산이 부족하여 구매할 수 없음."
       },
       "preDiscussionDecision": {
-        "buy": true,
+        "buy": false,
         "confidence": 5,
-        "rationale_cot": "가전제품에 대한 선호가 높기 때문에, 브랜드 제품을 구매할 것이다."
+        "rationale_cot": "긴급도가 높고 예산 내에서 구매 가능하여 결정."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "가격이 부담스럽고, 가성비를 고려해야 하므로 다른 모델을 찾아봐야겠다."
+        "rationale_cot": "관심도는 있지만 긴급도가 낮고 탐색 체력이 약해 구매를 미룰 것입니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-doyoon-149",
       "agent_name": "정주원",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "현재 가격이 적절하여 가전 제품 구매를 고려했습니다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고, 카테고리 관심도가 낮아 구매 의사가 없음."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "현재 필요성이 느껴지지 않는다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 낮고 예산이 부족하여 구매하지 않음."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가성비가 좋고 성능이 뛰어나기 때문에 예산 내에서 구매가 가능하다."
+        "buy": false,
+        "confidence": 1,
+        "rationale_cot": "예산이 부족하고 긴급도가 낮아, 가격이 비싼 모니터는 고려하지 않을 것입니다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-minseo-150",
       "agent_name": "한수빈",
       "baselineDecision": {
         "buy": true,
-        "confidence": 5,
-        "rationale_cot": "가격이 적당하고 가성비가 뛰어난 모니터로, 반려동물과 자기 관리를 위해 필요한 아이템이라 구매할 것이다."
+        "confidence": 4,
+        "rationale_cot": "긴급도가 높고 탐색 체력이 높아 가격이 부담되지만, 필요한 상황이라 구매할 것이다."
       },
       "preDiscussionDecision": {
         "buy": true,
         "confidence": 4,
-        "rationale_cot": "가격대비 성능이 좋고 가성비가 높은 제품이라 생각합니다. 가심비 또한 높아서 구매할 의향이 있습니다."
+        "rationale_cot": "긴급도가 높고 탐색체력이 좋기 때문에 조금 비싸더라도 구매할 의향이 있다."
       },
       "postDiscussionDecision": {
         "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 360,000원으로 비싸지 않아서 가심비를 고려할 때 충분히 구매할만한 가치가 있다고 생각합니다. 성능도 좋다는 이야기를 들어서 확신이 생겼습니다."
+        "confidence": 5,
+        "rationale_cot": "긴급도가 높아서 가격 인상에도 불구하고 구매할 생각이지만, 가격이 비싸서 다른 대안을 고려할 필요가 있다."
       },
       "flipped": false
     },
@@ -3036,21 +3036,21 @@
       "agent_id": "agent-taehyun-151",
       "agent_name": "임건우",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "브랜드에 대한 충성도가 있지만, 가격이 적절해 가성비를 고려하여 취미용으로 사용할 모니터를 구매할 것이다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "브랜드 충성 때문에 저가 모델은 고려하지 않지만, 가격이 부담스러워 구매를 보류할 것이다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "브랜드 충성도가 높아 저가 브랜드의 모니터는 고려하지 않으며, 품질에 대한 불신이 있습니다."
+        "confidence": 3,
+        "rationale_cot": "관심도가 높지만 가격이 부담스러워 다른 모델을 고려할 것 같다."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 5,
-        "rationale_cot": "브랜드에 대한 신뢰가 높아서 이 가격에 신상 모니터를 구매하는 것이 좋다고 판단했습니다. 성능도 좋고, 가성비를 고려할 때 괜찮은 선택입니다."
+        "buy": false,
+        "confidence": 4,
+        "rationale_cot": "가격이 너무 비싸고, 다른 브랜드의 대안이 많기 때문에 구매를 보류할 것이다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-jihye-152",
@@ -3058,19 +3058,19 @@
       "baselineDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "가성비가 좋고 예산 내에서 구매할 수 있는 모니터라 자녀 학습용으로 적합하여 구매 결정을 내렸다."
+        "rationale_cot": "긴급도가 매우 높고 가격도 예산 내에 있어 바로 구매할 것이다."
       },
       "preDiscussionDecision": {
         "buy": true,
         "confidence": 5,
-        "rationale_cot": "가격이 적당하고 성능이 우수해 자녀 학용품과 함께 구매할 계획입니다."
+        "rationale_cot": "긴급도가 매우 높고, 가격에 대한 민감도가 낮아 구매 결정을 내리게 될 것이다."
       },
       "postDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "360,000원이지만 가성비가 뛰어난 제품이면 구매할 의사가 있습니다. 그러나 다른 대안과의 비교 후 결정할 예정입니다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "가성비를 중시하지만, 가격이 부담스러워서 다른 저렴한 모델을 알아보겠다."
       },
-      "flipped": false
+      "flipped": true
     },
     {
       "agent_id": "agent-yunjeong-153",
@@ -3078,17 +3078,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 3,
-        "rationale_cot": "예산이 초과되므로 구매하지 않겠지만, 가격이 매력적이다."
+        "rationale_cot": "긴급도가 적당하고 탐색 체력이 낮아 구매를 고려하지만, 가격에 부담을 느껴 보류할 것이다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "예산 초과로 인해 구매할 수 없습니다."
+        "confidence": 2,
+        "rationale_cot": "예산이 너무 낮아 구매가 불가능하다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가격이 제 예산을 초과하므로 다른 대안들을 찾아보는 것이 좋을 것 같습니다. 가성비를 중시하기 때문에 고민이 됩니다."
+        "confidence": 2,
+        "rationale_cot": "가격이 예산을 초과하여 구매가 어렵고, 탐색 체력이 낮아 다른 대안을 찾아보는 것이 힘들다."
       },
       "flipped": false
     },
@@ -3098,17 +3098,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "필요한 모니터지만 예산을 초과하여 대안 제품을 찾아볼 것이다."
+        "rationale_cot": "긴급도가 낮고 탐색 체력이 매우 낮아 귀찮아서 구매를 포기할 것이다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 3,
-        "rationale_cot": "가성비를 중시하지만, 현재 사용 중인 모니터가 있어 굳이 구매할 필요성을 느끼지 못합니다."
+        "confidence": 2,
+        "rationale_cot": "관심도는 낮고 탐색체력이 떨어져 구매를 고려하지 않을 것이다."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "360,000원은 제 예산을 초과하므로 다른 할인 모델을 찾아보는 것이 나을 것 같습니다. 가성비가 최고니까요."
+        "rationale_cot": "가격이 너무 비싸고, 가성비를 중시하기 때문에 다른 대안을 찾는 것이 더 현명할 것이다."
       },
       "flipped": false
     },
@@ -3118,17 +3118,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "예산이 전혀 없기 때문에 구매할 수 없다."
+        "rationale_cot": "예산이 없어서 구매할 수 없다."
       },
       "preDiscussionDecision": {
         "buy": false,
         "confidence": 1,
-        "rationale_cot": "예산이 전혀 없어서 구매할 수 없습니다."
+        "rationale_cot": "예산이 전혀 없어서 구매할 수 없다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 4,
-        "rationale_cot": "가격이 부담스럽고, 가성비를 고려했을 때 다른 저렴한 모델이 많으니 신중하게 비교할 필요가 있습니다."
+        "confidence": 1,
+        "rationale_cot": "예산이 없고, 긴급도도 낮아 구매할 이유가 없다."
       },
       "flipped": false
     },
@@ -3136,21 +3136,21 @@
       "agent_id": "agent-eunha-156",
       "agent_name": "이다은",
       "baselineDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "가격이 적당하고 가성비가 좋으므로, 가게에 필요한 모니터로 구매할 것이다."
+        "buy": false,
+        "confidence": 3,
+        "rationale_cot": "긴급도가 낮고 탐색 체력이 높지만, 가격이 높아 구매를 고려하지 않을 것이다."
       },
       "preDiscussionDecision": {
-        "buy": true,
-        "confidence": 4,
-        "rationale_cot": "브랜드 충성도는 낮지만, 가성비가 뛰어난 제품이라 구매할 수 있습니다."
+        "buy": false,
+        "confidence": 2,
+        "rationale_cot": "긴급도가 낮고 탐색체력이 좋지 않아서 구매할 생각이 없다."
       },
       "postDiscussionDecision": {
         "buy": false,
         "confidence": 3,
-        "rationale_cot": "가격이 너무 높아 다른 대안 모델을 고려해야 할 것 같습니다. 가성비가 중요하다고 생각합니다."
+        "rationale_cot": "가성비를 중시하지만 현재 예산을 초과하여 구매하기 어렵다."
       },
-      "flipped": true
+      "flipped": false
     },
     {
       "agent_id": "agent-jeongsu-157",
@@ -3158,17 +3158,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "브랜드 충성도가 높지만, 가격이 예산을 초과하여 구매할 수 없다."
+        "rationale_cot": "긴급도가 낮고 예산이 부족하여 구매할 수 없다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "예산이 매우 제한적이라 이 가격대의 모니터는 구매할 수 없습니다."
+        "confidence": 3,
+        "rationale_cot": "관심도와 긴급도가 낮아 구매할 가능성이 적다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가격이 부담스러운 수준이라서 다른 브랜드의 저렴한 모델을 찾아보는 것이 더 나을 것 같습니다."
+        "confidence": 2,
+        "rationale_cot": "가격이 비싸고 탐색 체력이 낮아 다른 대안을 찾아보는 것이 힘들다."
       },
       "flipped": false
     },
@@ -3178,17 +3178,17 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 3,
-        "rationale_cot": "예산이 충분하지 않지만, 가격이 매력적이어서 고민 중이다."
+        "rationale_cot": "긴급도가 낮고 가격이 부담스러워 구매를 보류할 것이다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "브랜드 충성도가 높고, 가격이 적당하더라도 품질에 대한 불신이 있어 구매할 수 없습니다."
+        "confidence": 3,
+        "rationale_cot": "예산이 부족하여 구매가 불가능하다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 2,
-        "rationale_cot": "가격이 너무 비싸고, 가성비를 고려하면 다른 대안이 많을 것 같아서 고민 중입니다."
+        "confidence": 3,
+        "rationale_cot": "가격이 비싸고, 긴급도가 낮아 다른 브랜드를 찾아보는 것이 더 나을 것 같다."
       },
       "flipped": false
     },
@@ -3198,188 +3198,188 @@
       "baselineDecision": {
         "buy": false,
         "confidence": 2,
-        "rationale_cot": "예산 내에서 구매할 수 있지만, 브랜드에 대한 신뢰가 부족해 대안 제품을 고려할 것이다."
+        "rationale_cot": "브랜드 충성 때문에 가격이 부담스러워 구매를 고려하지 않을 것이다."
       },
       "preDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가전 제품은 보수적으로 선택하는 편이라, 이 제품은 구매할 계획이 없습니다."
+        "confidence": 4,
+        "rationale_cot": "관심도가 낮고 긴급도가 낮아 구매를 고려하지 않을 것이다."
       },
       "postDiscussionDecision": {
         "buy": false,
-        "confidence": 1,
-        "rationale_cot": "가격이 제 예산을 초과하고, 다른 대안도 많으니 고민해봐야 할 것 같습니다."
+        "confidence": 2,
+        "rationale_cot": "가격이 비쌌고, 탐색 체력이 낮아 다른 대안을 찾기 힘들다."
       },
       "flipped": false
     }
   ],
   "thread": {
     "leader": {
-      "agent_id": "agent-sua-1",
-      "seedPost": "27인치 1440p 모니터, 360,000원에 이 정도 성능이면 진짜 괜찮은 선택인 듯! 게임도 잘 돌아가고 화질도 예술이야. 요즘 물가 생각하면 이 가격에 충분히 살 값어치 있다고 봐. 가성비 놓치고 싶지 않은 사람이라면 고려해볼만 해!"
+      "agent_id": "agent-hyeonwoo-0",
+      "seedPost": "가격이 360,000원이면 진짜 너무 비싸다. 요즘 같은 물가 인상에 소비 심리가 위축된 상황에서 이 가격은 도대체 누가 살 수 있는 거냐? 스펙대비 가성비는 거의 최악이고, 다른 브랜드의 더 저렴한 대안도 잔뜩 있으니까 잘 알아보고 사는 게 낫겠다. 이 가격에 이런 품질이라니, 누구를 위한 제품인지 모르겠네."
     },
     "comments": [
       {
-        "agent_id": "agent-hyeonwoo-0",
-        "text": "가격이 좀 부담스럽긴 한데 성능이 좋으면 나쁘지 않은 선택일 수도. 요즘 물가 때문에 고민이네."
+        "agent_id": "agent-sua-1",
+        "text": "맞아요ㅠㅠ 지금 같은 상황에선 36만원이면 너무 비쌉니다. 다른 좋은 대안 많이 있으니까 잘 비교해봐야 할 듯!"
       },
       {
         "agent_id": "agent-minjun-19",
-        "text": "360,000원이면 괜찮은 가격이지만, 더 저렴한 모델도 많으니 신중하게 비교해보는 게 좋음."
+        "text": "이 가격이면 좀 뻔뻔한 수준인데, 가성비 보고 다른 브랜드 찾는 게 낫겠네. 스펙도 별로인데 너무 비싸."
       },
       {
         "agent_id": "agent-seojin-36",
-        "text": "360,000원은 가격이 좀 부담스럽긴 한데 성능이 괜찮으면 고려해볼 만하긴 해. 후기 더 보고 결정해야겠다!"
+        "text": "진짜 너무 비쌈. 요즘 같은 때에 이 가격이면 차라리 다른 브랜드 찾아보는 게 낫지. 가성비 진짜 안 맞는 듯."
       },
       {
         "agent_id": "agent-minseo-54",
-        "text": "가격이 괜찮긴 한데, 360,000원은 좀 부담스러워서 다른 할인 모델 찾아봐야 할 듯. 가성비가 최고잖아!"
+        "text": "맞아요, 이번 물가 상승으로 소비 심리가 더 위축되는데 이건 너무 비싸네요. 다른 대안이 많으니 신중하게 살펴봐야겠어요."
       },
       {
         "agent_id": "agent-taehyun-71",
-        "text": "360,000원이면 너무 비쌉니다. 가성비 중요하니까 다른 모델도 잘 비교해보고 결정해야 할 듯."
+        "text": "360,000원이면 가성비 진짜 안습이지. 요즘 가격 인상에 소비자 눈치 보이고 있으니, 꼭 필요한 사람 아니면 그냥 다른 모델 찾아보는 게 낫겠어."
       },
       {
         "agent_id": "agent-yunjeong-89",
-        "text": "가격이 좀 높은 것 같아요. 차라리 조금 더 저렴한 모델 찾아보는 게 나을 듯. 가성비가 중요하니까요!"
+        "text": "정말 공감해요. 가격이 너무 올랐고 가성비가 떨어지면 아무리 스펙이 좋아도 구매하기 힘들죠. 다른 브랜드 알아보는 게 맞는 듯!"
       },
       {
         "agent_id": "agent-jongho-106",
-        "text": "요즘 물가에 36만원이라니, 좀 부담스럽네. 가성비 생각하면 저렴한 모델 찾아보는 것도 나쁘지 않을 듯."
+        "text": "정말 동감해요. 요즘 가격 오르니 가성비 좋은 다른 제품 찾는 게 더 현명한 선택인 듯해요. 내가 이 가격은 못 내겠네요."
       },
       {
         "agent_id": "agent-eunha-124",
-        "text": "가격이 너무 비싸요. 가성비 따지면 다른 대안도 많이 있을 것 같은데, 고민해보세요."
+        "text": "요즘 물가도 이러고 있는데 360,000원이라니, 진짜 너무 비싸요! 가성비 좋은 다른 대안 많으니 잘 비교해보세요."
       },
       {
         "agent_id": "agent-jeongsu-141",
-        "text": "가격이 360,000원이면 요즘 같은 물가에선 부담스러운 편이네. 브랜드 신뢰도도 고려해서 다시 생각해봐야겠어."
+        "text": "맞아요, 요즘 물가도 그렇고 이 가격은 너무 비싼 것 같아요. 다른 브랜드로 알아보는 게 현명하겠어요."
       },
       {
         "agent_id": "agent-mikyeong-159",
-        "text": "다 좋은데, 360,000원이라니… 나에겐 좀 부담스럽네. 다른 브랜드 한 번 찾아볼까 싶어져."
+        "text": "\"맞아요, 요즘은 물가도 오르고 가성비가 중요한데 이렇게 비싸면 저도 고민하게 되네요. 다른 대안 찾아봐야겠어요.\""
       }
     ]
   },
   "metrics": {
-    "Q0": 0.40625,
-    "Q1": 0.425,
-    "Q2": 0.1375,
-    "deltaQ1": 0.01874999999999999,
-    "deltaQ2": -0.26875,
-    "elasticity_sim": 0.23076923076923064,
-    "elasticity_post": -3.3076923076923075,
-    "wom_m": -14.333333333333341,
+    "Q0": 0.2125,
+    "Q1": 0.1125,
+    "Q2": 0.06875,
+    "deltaQ1": -0.09999999999999999,
+    "deltaQ2": -0.14375,
+    "elasticity_sim": -2.352941176470588,
+    "elasticity_post": -3.38235294117647,
+    "wom_m": 1.4375,
     "mcnemar": {
-      "b": 55,
-      "c": 9,
-      "chi2": 31.640625,
-      "significant": true
+      "b": 9,
+      "c": 2,
+      "chi2": 3.272727272727273,
+      "significant": false
     },
-    "flipCount": 64,
+    "flipCount": 11,
     "cohort": {
       "gen": {
         "Z": {
           "n": 30,
-          "Q0": 0.4,
-          "Q1": 0.4,
-          "Q2": 0.03333333333333333
+          "Q0": 0.03333333333333333,
+          "Q1": 0,
+          "Q2": 0
         },
         "M": {
           "n": 70,
-          "Q0": 0.5857142857142857,
-          "Q1": 0.5571428571428572,
-          "Q2": 0.21428571428571427
+          "Q0": 0.38571428571428573,
+          "Q1": 0.22857142857142856,
+          "Q2": 0.11428571428571428
         },
         "X": {
           "n": 30,
-          "Q0": 0.23333333333333334,
-          "Q1": 0.26666666666666666,
-          "Q2": 0.1
+          "Q0": 0.06666666666666667,
+          "Q1": 0,
+          "Q2": 0.03333333333333333
         },
         "Boomer": {
           "n": 30,
-          "Q0": 0.16666666666666666,
-          "Q1": 0.3,
-          "Q2": 0.1
+          "Q0": 0.13333333333333333,
+          "Q1": 0.06666666666666667,
+          "Q2": 0.06666666666666667
         }
       },
       "val": {
         "미닝아웃": {
           "n": 13,
-          "Q0": 0.38461538461538464,
-          "Q1": 0.46153846153846156,
-          "Q2": 0
+          "Q0": 0.23076923076923078,
+          "Q1": 0.15384615384615385,
+          "Q2": 0.07692307692307693
         },
         "가성비": {
           "n": 64,
-          "Q0": 0.375,
-          "Q1": 0.375,
-          "Q2": 0.125
+          "Q0": 0.171875,
+          "Q1": 0.109375,
+          "Q2": 0.015625
         },
         "가심비": {
           "n": 46,
-          "Q0": 0.5652173913043478,
-          "Q1": 0.5869565217391305,
-          "Q2": 0.1956521739130435
+          "Q0": 0.30434782608695654,
+          "Q1": 0.15217391304347827,
+          "Q2": 0.13043478260869565
         },
         "브랜드": {
           "n": 37,
-          "Q0": 0.2702702702702703,
-          "Q1": 0.2972972972972973,
-          "Q2": 0.13513513513513514
+          "Q0": 0.16216216216216217,
+          "Q1": 0.05405405405405406,
+          "Q2": 0.08108108108108109
         }
       },
       "inc": {
         "저소득(<300만)": {
           "n": 40,
-          "Q0": 0.275,
-          "Q1": 0.25,
+          "Q0": 0.075,
+          "Q1": 0.025,
           "Q2": 0.05
         },
         "중소득(300-500만)": {
           "n": 64,
-          "Q0": 0.484375,
-          "Q1": 0.59375,
-          "Q2": 0.1875
+          "Q0": 0.296875,
+          "Q1": 0.15625,
+          "Q2": 0.0625
         },
         "고소득(>500만)": {
           "n": 56,
-          "Q0": 0.4107142857142857,
-          "Q1": 0.35714285714285715,
-          "Q2": 0.14285714285714285
+          "Q0": 0.21428571428571427,
+          "Q1": 0.125,
+          "Q2": 0.08928571428571429
         }
       },
       "house": {
         "부모동거": {
           "n": 10,
-          "Q0": 0.3,
-          "Q1": 0.3,
+          "Q0": 0,
+          "Q1": 0,
           "Q2": 0
         },
         "1인가구": {
           "n": 60,
-          "Q0": 0.5166666666666667,
-          "Q1": 0.48333333333333334,
-          "Q2": 0.16666666666666666
+          "Q0": 0.3333333333333333,
+          "Q1": 0.18333333333333332,
+          "Q2": 0.08333333333333333
         },
         "딩크": {
           "n": 20,
-          "Q0": 0.65,
-          "Q1": 0.55,
-          "Q2": 0.25
+          "Q0": 0.35,
+          "Q1": 0.2,
+          "Q2": 0.2
         },
         "자녀가족": {
           "n": 50,
-          "Q0": 0.26,
-          "Q1": 0.34,
-          "Q2": 0.1
+          "Q0": 0.1,
+          "Q1": 0.04,
+          "Q2": 0.02
         },
         "시니어": {
           "n": 20,
-          "Q0": 0.25,
-          "Q1": 0.4,
-          "Q2": 0.1
+          "Q0": 0.1,
+          "Q1": 0.05,
+          "Q2": 0.05
         }
       }
     }
