@@ -194,7 +194,7 @@ export async function POST(request: Request) {
 
     // Scale batch size up for larger N to stay under 60s Vercel timeout.
     // gpt-4o-mini handles 80 agents per batch well within context limits.
-    const BATCH_SIZE = N <= 30 ? 16 : 80;
+    const BATCH_SIZE = N <= 30 ? 16 : 40;
     const DELAY_MS = N <= 30 ? 200 : 100;
 
     // Stage 1: Run base and priced decisions IN PARALLEL (they're independent)
