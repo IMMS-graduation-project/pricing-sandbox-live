@@ -107,13 +107,22 @@ function archetypeBuckets(decisions: AgentDecision[], agents: Agent[]) {
 function pickLeader(
   agents: Agent[],
   preDecision: Decision[],
-  _goodType: 'search' | 'experience',
+  goodType: 'search' | 'experience',
 ) {
-  // Pick the most confident agent regardless of buy/no-buy stance.
-  // Biasing toward skeptic for search goods caused Q2→0% (all-negative discussion).
-  return agents
+  // For search goods, prefer a skeptic leader (triggers information cascade).
+  // For experience goods, prefer an advocate leader (triggers bandwagon).
+  const preferBuy = goodType === 'experience';
+  const candidates = agents
     .map((p, i) => ({ p, d: preDecision[i] }))
-    .sort((a, b) => b.d.confidence - a.d.confidence)[0] ?? null;
+    .filter((c) => c.d.buy === preferBuy)
+    .sort((a, b) => b.d.confidence - a.d.confidence);
+  // Fallback to most confident regardless of stance if no match
+  if (candidates.length === 0) {
+    return agents
+      .map((p, i) => ({ p, d: preDecision[i] }))
+      .sort((a, b) => b.d.confidence - a.d.confidence)[0] ?? null;
+  }
+  return candidates[0];
 }
 
 // Batch processing helper
@@ -239,7 +248,8 @@ export async function POST(request: Request) {
       },
     }));
 
-    if (product.goodType === 'experience' && deltaPct > 0) {
+    // Guardrail: If didn't buy at base price, shouldn't buy at higher price (both good types)
+    if (deltaPct > 0) {
       for (const d of decisions) {
         if (!d.baselineDecision.buy && d.preDiscussionDecision.buy) {
           d.preDiscussionDecision = { ...d.preDiscussionDecision, buy: false };
@@ -326,9 +336,13 @@ export async function POST(request: Request) {
             confidence: 1,
             rationale_cot: 'err',
           };
+          // Guardrail: didn't buy at base → can't buy after discussion at higher price
+          if (deltaPct > 0 && !decisions[i].baselineDecision.buy && decisions[i].postDiscussionDecision?.buy) {
+            decisions[i].postDiscussionDecision = { ...decisions[i].postDiscussionDecision!, buy: false };
+          }
           decisions[i].flipped =
             decisions[i].preDiscussionDecision.buy !==
-            (stage2[i]?.buy ?? false);
+            (decisions[i].postDiscussionDecision?.buy ?? false);
         }
       }
     }
