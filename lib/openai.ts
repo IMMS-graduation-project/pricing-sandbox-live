@@ -303,7 +303,7 @@ ${priceLine}${discussion}`;
 
   const completion = await openaiClient.chat.completions.create({
     model: MODEL,
-    max_tokens: 3000,
+    max_tokens: Math.max(3000, agents.length * 80),
     temperature: 0.6,
     messages: [
       { role: 'system', content: systemPrompt },
