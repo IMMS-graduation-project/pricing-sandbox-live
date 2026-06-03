@@ -145,19 +145,16 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 async function mapInBatchesEx<T>(
   items: Agent[],
   batchSize: number,
-  delayMs: number,
+  _delayMs: number,
   fn: (batch: Agent[]) => Promise<Decision[]>,
 ): Promise<Decision[]> {
-  const results: Decision[] = [];
+  // Split into chunks then run ALL chunks in parallel for speed
+  const chunks: Agent[][] = [];
   for (let i = 0; i < items.length; i += batchSize) {
-    const batch = items.slice(i, i + batchSize);
-    const batchResults = await fn(batch);
-    results.push(...batchResults);
-    if (i + batchSize < items.length) {
-      await sleep(delayMs);
-    }
+    chunks.push(items.slice(i, i + batchSize));
   }
-  return results;
+  const batchResults = await Promise.all(chunks.map(fn));
+  return batchResults.flat();
 }
 
 export async function POST(request: Request) {
@@ -194,7 +191,7 @@ export async function POST(request: Request) {
 
     // Scale batch size up for larger N to stay under 60s Vercel timeout.
     // gpt-4o-mini handles 80 agents per batch well within context limits.
-    const BATCH_SIZE = N <= 30 ? 16 : 40;
+    const BATCH_SIZE = N <= 30 ? 16 : 80;
     const DELAY_MS = N <= 30 ? 200 : 100;
 
     // Stage 1: Run base and priced decisions IN PARALLEL (they're independent)
