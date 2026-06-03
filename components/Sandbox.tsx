@@ -346,17 +346,11 @@ export default function Sandbox({ personas }: SandboxProps) {
             <section className="console" style={{ display: 'block', padding: 24 }}>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 16, marginBottom: 20, flexWrap: 'wrap' }}>
                 <h3 style={{ margin: 0, fontSize: 15 }}>저장된 시뮬레이션 결과</h3>
-                {nOptions.length > 0 && (
+              {nOptions.length > 0 && (
                   <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                    <span style={{ fontSize: 11, color: 'var(--ink-mute)', alignSelf: 'center' }}>모수 필터:</span>
-                    <button onClick={() => setSavedNFilter(null)} style={{ padding: '3px 12px', fontSize: 11, fontWeight: 600, borderRadius: 20, cursor: 'pointer', border: '1px solid var(--line)', background: activeN === null ? 'var(--navy)' : 'var(--paper-2)', color: activeN === null ? '#fff' : 'var(--ink-soft)' }}>
+                    <button onClick={() => setSavedNFilter(null)} style={{ padding: '3px 12px', fontSize: 11, fontWeight: 600, borderRadius: 20, cursor: 'pointer', border: '1px solid var(--line)', background: 'var(--navy)', color: '#fff' }}>
                       전체
                     </button>
-                    {nOptions.map(n => (
-                      <button key={n} onClick={() => setSavedNFilter(n)} style={{ padding: '3px 12px', fontSize: 11, fontWeight: 600, borderRadius: 20, cursor: 'pointer', border: '1px solid var(--line)', background: activeN === n ? 'var(--navy)' : 'var(--paper-2)', color: activeN === n ? '#fff' : 'var(--ink-soft)' }}>
-                        N = {n.toLocaleString()}
-                      </button>
-                    ))}
                   </div>
                 )}
               </div>
