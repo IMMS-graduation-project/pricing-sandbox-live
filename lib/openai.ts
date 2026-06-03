@@ -252,8 +252,8 @@ export async function callDecideBatch(
   const goodTypeKR = product.goodType === 'search' ? '탐색재' : '경험재';
   const goodTypeHint =
     product.goodType === 'search'
-      ? '노트북·모니터·휴대폰·냉장고 등은 사치품이 아니다. 스펙·가격 비교가 쉬워 가격 인상에 매우 민감하다. 예산 내에서는 사지만 초과 시 바로 대안 픽.'
-      : '직접 써봐야 안다. 브랜드·경험 중시. 가격이 올라도 쉽게 단념 안함.';
+      ? '노트북·모니터·휴대폰·냉장고·이어폰 같은 카테고리는 사치품이 아니라 한국 가정의 보편적 구매물이다. 그러나 스펙·가격·리뷰 비교가 쉬워서 가격 인상에 민감하다. 살 만한 사람들 중에서도 가격이 부담되면 상당수가 더 싼 모델로 갈아타거나 다음 할인·세일까지 구매를 보류한다. 가령 +20% 인상이면 평소 살 사람의 약 30~50%가 빠진다. 관심도가 매우 높고(80 이상) 당장 꼭 필요한 사람만 다소 비싸도 그대로 구매한다. 기본가에 안 사던 사람이 비싸진 가격에 새로 살 리 없다.'
+      : '직접 써봐야 가치를 아는 제품군이다. 브랜드·경험·후기가 중요하고, 한번 만족하면 가격이 올라도 잘 바꾸지 않는다(가격 둔감). 절대 원칙: 가격이 오르면 구매자 수는 같거나 줄어들 뿐 절대 늘지 않는다. 평소 관심이 낮아 기본가에도 안 사던 사람이 가격이 비싸졌다고 새로 살 이유는 없다 — 오히려 더 안 산다. 기본가에서 안 사기로 한 결정은 가격이 올랐을 때도 그대로 유지된다.';
 
   const agentsDescriptions = agents
     .map((agent, i) => {
@@ -262,6 +262,7 @@ export async function callDecideBatch(
 소득: ${agent.income.toLocaleString()}원 / 예산 상한: 약 ${agent.budget_limit_krw?.toLocaleString()}원
 우선가치: ${dominantValueKR(agent)} (가성비 ${Math.round(agent.values.gaseong * 100)}, 가심비 ${Math.round(agent.values.gasim * 100)}, 미닝아웃 ${Math.round(agent.values.meaning * 100)}, 브랜드 ${Math.round(agent.values.brand * 100)})
 카테고리 관심도: ${Math.round(productInterest(agent, product) * 100)}/100
+긴급도: ${((agent.emergency_need ?? 0.5) * 10).toFixed(0)}/10 · 탐색체력: ${((agent.search_capacity ?? 0.5) * 10).toFixed(0)}/10
 트라우마: ${agent.trauma ? agent.trauma : '특이사항 없음'}
 요약: ${agent.bio}`;
     })
@@ -276,8 +277,15 @@ export async function callDecideBatch(
     : '';
 
   const systemPrompt = `당신은 ${agents.length}명의 각기 다른 한국 소비자를 시뮬레이션해야 합니다.
+
+【${goodTypeKR} 판단 원칙】
 ${goodTypeHint}
-예산초과 등 한계를 철저히 지키시오. 각 소비자마다 사는지 안사는지 여부(buy)와 확신도, 이유(rationale)를 반환하세요.
+
+【공통 제약】
+- 예산(Budget Limit)을 초과하는 가격이면 아무리 관심도가 높아도 구매하기 매우 어렵습니다 (물리적 한계).
+- 긴급도가 높다면(8/10 이상) 웬만한 가격 인상은 감수합니다.
+- 탐색 체력이 낮으면(3/10 이하) 귀찮아서 그냥 사거나 아예 안 삽니다.
+- 각 소비자마다 사는지 안사는지 여부(buy)와 확신도, 이유(rationale)를 반환하세요.
 
 ${priceLine}${discussion}`;
 
